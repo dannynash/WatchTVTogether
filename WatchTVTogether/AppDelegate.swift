@@ -9,6 +9,7 @@
 import UIKit
 
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
@@ -16,6 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        AFPDetector.showAllLog(AFPConfig.kShouldShowAllLog)
+        
+        
         return true
     }
 
@@ -44,3 +50,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+/*
+    SwiftyJSON: https://github.com/SwiftyJSON/SwiftyJSON.git
+    SocketIO: https://github.com/socketio/socket.io-client-swift
+    Chatto (ChatView): https://techblog.badoo.com/blog/2015/12/04/how-we-made-chatto/
+*/

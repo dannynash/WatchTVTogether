@@ -1,13 +1,91 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ccQ-02-db1">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Chat View Controller-->
+        <scene sceneID="0GF-N9-eY3">
+            <objects>
+                <viewController id="VSt-2a-NTl" customClass="WTChatViewController" customModule="WatchTVTogether" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aCC-OH-Ov9"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Bs-Kp-ECL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="37q-vj-hbz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uHY-VY-FBn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2688" y="721"/>
+        </scene>
+        <!--Post Wall View Controller-->
+        <scene sceneID="Aoq-0D-DSd">
+            <objects>
+                <viewController id="9O7-uU-hhC" customClass="WTPostWallViewController" customModule="WatchTVTogether" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4bj-tS-oBi"/>
+                        <viewControllerLayoutGuide type="bottom" id="qNC-pp-B1U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H8W-9S-DFY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KC4-RN-hIx">
+                                <rect key="frame" x="0.0" y="209" width="600" height="342"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="7FG-xG-bP7">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7FG-xG-bP7" id="Byu-qj-YdT">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="WkQ-It-Yus" kind="show" id="dBI-KE-AXx"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mva-Mp-FD8">
+                                <rect key="frame" x="0.0" y="65" width="600" height="136"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OAS-mr-DXU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7W6-A4-j37" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1610" y="-523"/>
+        </scene>
+        <!--Program Over View Controller-->
+        <scene sceneID="lEm-ka-l0D">
+            <objects>
+                <viewController id="WkQ-It-Yus" customClass="WTProgramOverViewController" customModule="WatchTVTogether" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="G6R-v6-qnY"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pix-Qf-zTl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r6H-BU-e30">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5sM-Ai-jST" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2994" y="-17"/>
+        </scene>
+        <!--Test-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WatchTVTogether" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +93,267 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvu-FO-9V3">
+                                <rect key="frame" x="35" y="28" width="77" height="30"/>
+                                <state key="normal" title="send string"/>
+                                <connections>
+                                    <action selector="tapSendMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ca7-Z7-8cq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="El2-e4-tFq">
+                                <rect key="frame" x="35" y="77" width="84" height="30"/>
+                                <state key="normal" title="send Object"/>
+                                <connections>
+                                    <action selector="sendJson:" destination="BYZ-38-t0r" eventType="touchUpInside" id="goy-OX-5YS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yk-C7-bNa">
+                                <rect key="frame" x="35" y="132" width="71" height="30"/>
+                                <state key="normal" title="Enter chat"/>
+                                <connections>
+                                    <segue destination="VSt-2a-NTl" kind="show" identifier="gotoChat" id="QPS-LE-j3E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ka8-rr-ZkL">
+                                <rect key="frame" x="35" y="184" width="83" height="30"/>
+                                <state key="normal" title="detector VC"/>
+                                <connections>
+                                    <segue destination="9cO-Id-g2q" kind="show" identifier="gotoDetect" id="xai-2f-Sbj"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Test" id="SGT-EH-zOT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="798" y="1650"/>
+        </scene>
+        <!--Audio Detector View Controller-->
+        <scene sceneID="DfW-jy-RSk">
+            <objects>
+                <viewController id="9cO-Id-g2q" customClass="WTAudioDetectorViewController" customModule="WatchTVTogether" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o61-2b-EYK"/>
+                        <viewControllerLayoutGuide type="bottom" id="5gE-jd-se4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vKP-hB-Cqk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="detector" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5n-3A-Ueq">
+                                <rect key="frame" x="22" y="20" width="66" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWQ-3j-fB5">
+                                <rect key="frame" x="25" y="84" width="81" height="30"/>
+                                <state key="normal" title="start detect"/>
+                                <connections>
+                                    <action selector="startDetect:" destination="9cO-Id-g2q" eventType="touchUpInside" id="CvN-ch-Qnl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQe-Ls-43j">
+                                <rect key="frame" x="40" y="228" width="48" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Clock" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9j-1t-TeD">
+                                <rect key="frame" x="40" y="188" width="44" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YY9-F5-Hgv">
+                                <rect key="frame" x="22" y="122" width="79" height="30"/>
+                                <state key="normal" title="stop detect"/>
+                                <connections>
+                                    <action selector="stopDetect:" destination="9cO-Id-g2q" eventType="touchUpInside" id="Y78-7B-Wuy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonDetect" destination="CWQ-3j-fB5" id="14C-Uu-QV5"/>
+                        <outlet property="labelClock" destination="A9j-1t-TeD" id="X2x-v2-BHB"/>
+                        <outlet property="resultLabel" destination="dQe-Ls-43j" id="vzS-bB-BTp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oed-mu-O78" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2688" y="1532"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="TG1-uT-pbv">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ccQ-02-db1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="ngm-qh-lrC">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="5nU-qg-S5y" kind="relationship" relationship="viewControllers" id="YH0-ci-Fjm"/>
+                        <segue destination="LYG-4v-RDs" kind="relationship" relationship="viewControllers" id="taF-rf-q6R"/>
+                        <segue destination="Srr-1b-fcM" kind="relationship" relationship="viewControllers" id="kPE-Yz-WYd"/>
+                        <segue destination="BL0-hw-o5C" kind="relationship" relationship="viewControllers" id="U7P-GO-qec"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="tTB-dZ-MPi"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ofP-ch-BNX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-130" y="902"/>
+        </scene>
+        <!--Audio Detector View Controller-->
+        <scene sceneID="wTC-sW-L0G">
+            <objects>
+                <viewController id="rNw-0E-Kyn" customClass="WTAudioDetectorViewController" customModule="WatchTVTogether" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wER-iN-WpQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="JlV-ef-FI4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gxc-ie-XgA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWK-Th-jod">
+                                <rect key="frame" x="253" y="363" width="95" height="30"/>
+                                <state key="normal" title="EnterProgram"/>
+                                <connections>
+                                    <segue destination="WkQ-It-Yus" kind="show" id="rTw-Mx-pf5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GON-E2-Wms"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YWw-IS-Vzn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1610" y="902"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="pJU-gK-aEn">
+            <objects>
+                <viewController id="BL0-hw-o5C" customClass="WTUserProfileViewController" customModule="WatchTVTogether" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Wv-DO-r3y"/>
+                        <viewControllerLayoutGuide type="bottom" id="wgC-px-Wj4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4HI-wh-wxN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" id="8Ap-oY-LON"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WgD-jL-LAd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="798" y="2396"/>
+        </scene>
+        <!--Friends List View Controller-->
+        <scene sceneID="9mN-U9-XBy">
+            <objects>
+                <viewController id="fUN-hK-emI" customClass="WTFriendsListViewController" customModule="WatchTVTogether" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ECN-HG-2Um"/>
+                        <viewControllerLayoutGuide type="bottom" id="uqf-Cn-7pE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ulk-pH-pUo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KHq-yc-v0C">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gPj-Dc-G3E">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gPj-Dc-G3E" id="2iq-5q-7IW">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="VSt-2a-NTl" kind="show" id="oUn-3e-Zng"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="src-dF-HM2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eev-1d-Dwx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1610" y="180"/>
+        </scene>
+        <!--Post-->
+        <scene sceneID="hGZ-0K-MpF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5nU-qg-S5y" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Post" id="rb1-Zf-kqB"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vtZ-AU-AzY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9O7-uU-hhC" kind="relationship" relationship="rootViewController" id="8v4-pY-PZi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zuj-yo-cWt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="798" y="-523"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="LeE-u6-4vB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LYG-4v-RDs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" id="da4-qW-o8l"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WcN-CE-rez">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rNw-0E-Kyn" kind="relationship" relationship="rootViewController" id="dAd-iG-Gea"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hcv-wL-Psz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="798" y="902"/>
+        </scene>
+        <!--Friends-->
+        <scene sceneID="x7k-rS-0cV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Srr-1b-fcM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Friends" id="dGZ-08-mRE"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="34F-lY-sCB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fUN-hK-emI" kind="relationship" relationship="rootViewController" id="gdo-zi-gZo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EMy-6V-5xP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="798" y="180"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="rTw-Mx-pf5"/>
+        <segue reference="QPS-LE-j3E"/>
+    </inferredMetricsTieBreakers>
 </document>

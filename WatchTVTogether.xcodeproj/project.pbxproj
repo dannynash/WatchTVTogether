@@ -14,6 +14,30 @@
 		774F61091C913B1500101065 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774F61071C913B1500101065 /* LaunchScreen.storyboard */; };
 		774F61141C913B1500101065 /* WatchTVTogetherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774F61131C913B1500101065 /* WatchTVTogetherTests.swift */; };
 		774F611F1C913B1500101065 /* WatchTVTogetherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774F611E1C913B1500101065 /* WatchTVTogetherUITests.swift */; };
+		774F61361C9149A400101065 /* WTSocketIOClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774F61351C9149A400101065 /* WTSocketIOClient.swift */; };
+		77E7AFB01C915E6F002B0467 /* WTChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E7AFAF1C915E6F002B0467 /* WTChatViewController.swift */; };
+		77E7AFBD1C9260DF002B0467 /* SlidingDatasSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E7AFB81C9260DF002B0467 /* SlidingDatasSource.swift */; };
+		77E7AFC21C926142002B0467 /* SendingStatusPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E7AFBF1C926142002B0467 /* SendingStatusPresenter.swift */; };
+		77E7AFC31C926142002B0467 /* SendingStatusCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E7AFC01C926142002B0467 /* SendingStatusCollectionViewCell.swift */; };
+		77E7AFC41C926142002B0467 /* SendingStatusCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77E7AFC11C926142002B0467 /* SendingStatusCollectionViewCell.xib */; };
+		77E7AFC91C92620B002B0467 /* ChatItemsDemoDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E7AFC71C92620B002B0467 /* ChatItemsDemoDecorator.swift */; };
+		77E7AFD21C926B5D002B0467 /* WTChatMessageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E7AFD11C926B5D002B0467 /* WTChatMessageDataSource.swift */; };
+		77E7AFD41C92A236002B0467 /* WTChatMessageSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E7AFD31C92A236002B0467 /* WTChatMessageSender.swift */; };
+		77E7AFD61C92A42B002B0467 /* WTChatUserActionHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E7AFD51C92A42B002B0467 /* WTChatUserActionHandlers.swift */; };
+		77E7AFD81C92AD1F002B0467 /* WTChatMessageFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E7AFD71C92AD1F002B0467 /* WTChatMessageFactory.swift */; };
+		77F3218C1C96CD6E00C9BF4A /* libAFPDetectLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F3218B1C96CD6E00C9BF4A /* libAFPDetectLibrary.a */; };
+		77F321941C96CF8F00C9BF4A /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F321931C96CF8F00C9BF4A /* Accelerate.framework */; };
+		77F321961C96CF9500C9BF4A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F321951C96CF9500C9BF4A /* AudioToolbox.framework */; };
+		77F321981C96CFA100C9BF4A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F321971C96CFA100C9BF4A /* SystemConfiguration.framework */; };
+		77F3219A1C96CFAB00C9BF4A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F321991C96CFAB00C9BF4A /* AVFoundation.framework */; };
+		77F3219C1C96D06600C9BF4A /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F3219B1C96D06600C9BF4A /* libstdc++.6.0.9.tbd */; };
+		77F3219E1C96D0FD00C9BF4A /* AFPConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F3219D1C96D0FD00C9BF4A /* AFPConfig.swift */; };
+		77F321A01C96D2DE00C9BF4A /* WTAudioDetectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F3219F1C96D2DE00C9BF4A /* WTAudioDetectorViewController.swift */; };
+		77F321A71C97EC9700C9BF4A /* WTPostWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F321A61C97EC9700C9BF4A /* WTPostWallViewController.swift */; };
+		77F321AD1C97ED1B00C9BF4A /* WTUserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F321AC1C97ED1B00C9BF4A /* WTUserProfileViewController.swift */; };
+		77F321AF1C97ED9800C9BF4A /* WTFriendsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F321AE1C97ED9800C9BF4A /* WTFriendsListViewController.swift */; };
+		77F321B11C97F00000C9BF4A /* WTProgramOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F321B01C97F00000C9BF4A /* WTProgramOverViewController.swift */; };
+		CF4FEBCD738ABE741FFFB87E /* Pods_WatchTVTogether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B90C6E4F7FF8DD2DF04A8E /* Pods_WatchTVTogether.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00B90C6E4F7FF8DD2DF04A8E /* Pods_WatchTVTogether.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchTVTogether.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		774F60FB1C913B1400101065 /* WatchTVTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchTVTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		774F60FE1C913B1500101065 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		774F61001C913B1500101065 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +72,36 @@
 		774F611A1C913B1500101065 /* WatchTVTogetherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchTVTogetherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		774F611E1C913B1500101065 /* WatchTVTogetherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchTVTogetherUITests.swift; sourceTree = "<group>"; };
 		774F61201C913B1500101065 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		774F61351C9149A400101065 /* WTSocketIOClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSocketIOClient.swift; sourceTree = "<group>"; };
+		77E7AFAF1C915E6F002B0467 /* WTChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTChatViewController.swift; sourceTree = "<group>"; };
+		77E7AFB81C9260DF002B0467 /* SlidingDatasSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidingDatasSource.swift; sourceTree = "<group>"; };
+		77E7AFBF1C926142002B0467 /* SendingStatusPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendingStatusPresenter.swift; sourceTree = "<group>"; };
+		77E7AFC01C926142002B0467 /* SendingStatusCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendingStatusCollectionViewCell.swift; sourceTree = "<group>"; };
+		77E7AFC11C926142002B0467 /* SendingStatusCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendingStatusCollectionViewCell.xib; sourceTree = "<group>"; };
+		77E7AFC71C92620B002B0467 /* ChatItemsDemoDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatItemsDemoDecorator.swift; sourceTree = "<group>"; };
+		77E7AFD11C926B5D002B0467 /* WTChatMessageDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTChatMessageDataSource.swift; path = worker/WTChatMessageDataSource.swift; sourceTree = "<group>"; };
+		77E7AFD31C92A236002B0467 /* WTChatMessageSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTChatMessageSender.swift; path = worker/WTChatMessageSender.swift; sourceTree = "<group>"; };
+		77E7AFD51C92A42B002B0467 /* WTChatUserActionHandlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTChatUserActionHandlers.swift; path = worker/WTChatUserActionHandlers.swift; sourceTree = "<group>"; };
+		77E7AFD71C92AD1F002B0467 /* WTChatMessageFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTChatMessageFactory.swift; path = worker/WTChatMessageFactory.swift; sourceTree = "<group>"; };
+		77F321871C96CB8A00C9BF4A /* WatchTVTogether-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WatchTVTogether-Bridging-Header.h"; sourceTree = "<group>"; };
+		77F3218B1C96CD6E00C9BF4A /* libAFPDetectLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFPDetectLibrary.a; path = WatchTVTogether/thrid_party/ACR/libAFPDetectLibrary.a; sourceTree = "<group>"; };
+		77F3218E1C96CECC00C9BF4A /* AFPDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFPDetector.h; path = thrid_party/ACR/headers/AFPDetector.h; sourceTree = "<group>"; };
+		77F3218F1C96CECC00C9BF4A /* AFPSampleConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFPSampleConst.h; path = thrid_party/ACR/headers/AFPSampleConst.h; sourceTree = "<group>"; };
+		77F321901C96CECC00C9BF4A /* AFPUploadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFPUploadManager.h; path = thrid_party/ACR/headers/AFPUploadManager.h; sourceTree = "<group>"; };
+		77F321911C96CED200C9BF4A /* libAFPDetectLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFPDetectLibrary.a; path = thrid_party/ACR/libAFPDetectLibrary.a; sourceTree = "<group>"; };
+		77F321931C96CF8F00C9BF4A /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		77F321951C96CF9500C9BF4A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		77F321971C96CFA100C9BF4A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		77F321991C96CFAB00C9BF4A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		77F3219B1C96D06600C9BF4A /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		77F3219D1C96D0FD00C9BF4A /* AFPConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AFPConfig.swift; path = config/AFPConfig.swift; sourceTree = "<group>"; };
+		77F3219F1C96D2DE00C9BF4A /* WTAudioDetectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTAudioDetectorViewController.swift; path = viewController/WTAudioDetectorViewController.swift; sourceTree = "<group>"; };
+		77F321A61C97EC9700C9BF4A /* WTPostWallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTPostWallViewController.swift; path = viewController/WTPostWallViewController.swift; sourceTree = "<group>"; };
+		77F321AC1C97ED1B00C9BF4A /* WTUserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTUserProfileViewController.swift; path = viewController/WTUserProfileViewController.swift; sourceTree = "<group>"; };
+		77F321AE1C97ED9800C9BF4A /* WTFriendsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTFriendsListViewController.swift; path = viewController/WTFriendsListViewController.swift; sourceTree = "<group>"; };
+		77F321B01C97F00000C9BF4A /* WTProgramOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTProgramOverViewController.swift; path = viewController/WTProgramOverViewController.swift; sourceTree = "<group>"; };
+		9C3AD2C1289F715CB1D9D621 /* Pods-WatchTVTogether.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTVTogether.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchTVTogether/Pods-WatchTVTogether.release.xcconfig"; sourceTree = "<group>"; };
+		A2050A9907B07256A8046A49 /* Pods-WatchTVTogether.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTVTogether.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchTVTogether/Pods-WatchTVTogether.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +109,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77F3219C1C96D06600C9BF4A /* libstdc++.6.0.9.tbd in Frameworks */,
+				77F3219A1C96CFAB00C9BF4A /* AVFoundation.framework in Frameworks */,
+				77F321981C96CFA100C9BF4A /* SystemConfiguration.framework in Frameworks */,
+				77F321961C96CF9500C9BF4A /* AudioToolbox.framework in Frameworks */,
+				77F321941C96CF8F00C9BF4A /* Accelerate.framework in Frameworks */,
+				77F3218C1C96CD6E00C9BF4A /* libAFPDetectLibrary.a in Frameworks */,
+				CF4FEBCD738ABE741FFFB87E /* Pods_WatchTVTogether.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +143,8 @@
 				774F61121C913B1500101065 /* WatchTVTogetherTests */,
 				774F611D1C913B1500101065 /* WatchTVTogetherUITests */,
 				774F60FC1C913B1400101065 /* Products */,
+				A83B50E02FF77D97876F9A10 /* Pods */,
+				7A3564893B9924DC49C1F685 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +161,18 @@
 		774F60FD1C913B1400101065 /* WatchTVTogether */ = {
 			isa = PBXGroup;
 			children = (
+				77E7AFAE1C915E52002B0467 /* viewController */,
+				774F61341C91498300101065 /* worker */,
+				77E7AFB31C925DC8002B0467 /* sampleChat */,
 				774F60FE1C913B1500101065 /* AppDelegate.swift */,
+				77F3219D1C96D0FD00C9BF4A /* AFPConfig.swift */,
 				774F61001C913B1500101065 /* ViewController.swift */,
 				774F61021C913B1500101065 /* Main.storyboard */,
 				774F61051C913B1500101065 /* Assets.xcassets */,
 				774F61071C913B1500101065 /* LaunchScreen.storyboard */,
 				774F610A1C913B1500101065 /* Info.plist */,
+				77F3218D1C96CEB700C9BF4A /* Supporting Files */,
+				77F321871C96CB8A00C9BF4A /* WatchTVTogether-Bridging-Header.h */,
 			);
 			path = WatchTVTogether;
 			sourceTree = "<group>";
@@ -125,6 +195,85 @@
 			path = WatchTVTogetherUITests;
 			sourceTree = "<group>";
 		};
+		774F61341C91498300101065 /* worker */ = {
+			isa = PBXGroup;
+			children = (
+				774F61351C9149A400101065 /* WTSocketIOClient.swift */,
+				77E7AFD11C926B5D002B0467 /* WTChatMessageDataSource.swift */,
+				77E7AFD31C92A236002B0467 /* WTChatMessageSender.swift */,
+				77E7AFD51C92A42B002B0467 /* WTChatUserActionHandlers.swift */,
+				77E7AFD71C92AD1F002B0467 /* WTChatMessageFactory.swift */,
+			);
+			name = worker;
+			sourceTree = "<group>";
+		};
+		77E7AFAE1C915E52002B0467 /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				77E7AFAF1C915E6F002B0467 /* WTChatViewController.swift */,
+				77F321AE1C97ED9800C9BF4A /* WTFriendsListViewController.swift */,
+				77F321AC1C97ED1B00C9BF4A /* WTUserProfileViewController.swift */,
+				77F321A61C97EC9700C9BF4A /* WTPostWallViewController.swift */,
+				77F3219F1C96D2DE00C9BF4A /* WTAudioDetectorViewController.swift */,
+				77F321B01C97F00000C9BF4A /* WTProgramOverViewController.swift */,
+			);
+			name = viewController;
+			sourceTree = "<group>";
+		};
+		77E7AFB31C925DC8002B0467 /* sampleChat */ = {
+			isa = PBXGroup;
+			children = (
+				77E7AFC71C92620B002B0467 /* ChatItemsDemoDecorator.swift */,
+				77E7AFB81C9260DF002B0467 /* SlidingDatasSource.swift */,
+				77E7AFBE1C926134002B0467 /* Cutstom items */,
+			);
+			name = sampleChat;
+			sourceTree = "<group>";
+		};
+		77E7AFBE1C926134002B0467 /* Cutstom items */ = {
+			isa = PBXGroup;
+			children = (
+				77E7AFBF1C926142002B0467 /* SendingStatusPresenter.swift */,
+				77E7AFC01C926142002B0467 /* SendingStatusCollectionViewCell.swift */,
+				77E7AFC11C926142002B0467 /* SendingStatusCollectionViewCell.xib */,
+			);
+			name = "Cutstom items";
+			sourceTree = "<group>";
+		};
+		77F3218D1C96CEB700C9BF4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				77F3218E1C96CECC00C9BF4A /* AFPDetector.h */,
+				77F3218F1C96CECC00C9BF4A /* AFPSampleConst.h */,
+				77F321901C96CECC00C9BF4A /* AFPUploadManager.h */,
+				77F321911C96CED200C9BF4A /* libAFPDetectLibrary.a */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7A3564893B9924DC49C1F685 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77F3219B1C96D06600C9BF4A /* libstdc++.6.0.9.tbd */,
+				77F321991C96CFAB00C9BF4A /* AVFoundation.framework */,
+				77F321971C96CFA100C9BF4A /* SystemConfiguration.framework */,
+				77F321951C96CF9500C9BF4A /* AudioToolbox.framework */,
+				77F321931C96CF8F00C9BF4A /* Accelerate.framework */,
+				77F3218B1C96CD6E00C9BF4A /* libAFPDetectLibrary.a */,
+				00B90C6E4F7FF8DD2DF04A8E /* Pods_WatchTVTogether.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A83B50E02FF77D97876F9A10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2050A9907B07256A8046A49 /* Pods-WatchTVTogether.debug.xcconfig */,
+				9C3AD2C1289F715CB1D9D621 /* Pods-WatchTVTogether.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +281,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 774F61231C913B1500101065 /* Build configuration list for PBXNativeTarget "WatchTVTogether" */;
 			buildPhases = (
+				CDEDB6A6551B2D70F2890D59 /* Check Pods Manifest.lock */,
 				774F60F71C913B1400101065 /* Sources */,
 				774F60F81C913B1400101065 /* Frameworks */,
 				774F60F91C913B1400101065 /* Resources */,
+				43922820964A26EF2C14759E /* Embed Pods Frameworks */,
+				2351043B3B956CC33AA50776 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,6 +384,7 @@
 				774F61091C913B1500101065 /* LaunchScreen.storyboard in Resources */,
 				774F61061C913B1500101065 /* Assets.xcassets in Resources */,
 				774F61041C913B1500101065 /* Main.storyboard in Resources */,
+				77E7AFC41C926142002B0467 /* SendingStatusCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +404,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2351043B3B956CC33AA50776 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchTVTogether/Pods-WatchTVTogether-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43922820964A26EF2C14759E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchTVTogether/Pods-WatchTVTogether-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDEDB6A6551B2D70F2890D59 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		774F60F71C913B1400101065 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77E7AFD61C92A42B002B0467 /* WTChatUserActionHandlers.swift in Sources */,
 				774F61011C913B1500101065 /* ViewController.swift in Sources */,
+				77F321AD1C97ED1B00C9BF4A /* WTUserProfileViewController.swift in Sources */,
+				774F61361C9149A400101065 /* WTSocketIOClient.swift in Sources */,
+				77E7AFD21C926B5D002B0467 /* WTChatMessageDataSource.swift in Sources */,
+				77F321A01C96D2DE00C9BF4A /* WTAudioDetectorViewController.swift in Sources */,
+				77E7AFC91C92620B002B0467 /* ChatItemsDemoDecorator.swift in Sources */,
 				774F60FF1C913B1500101065 /* AppDelegate.swift in Sources */,
+				77F321AF1C97ED9800C9BF4A /* WTFriendsListViewController.swift in Sources */,
+				77F3219E1C96D0FD00C9BF4A /* AFPConfig.swift in Sources */,
+				77F321A71C97EC9700C9BF4A /* WTPostWallViewController.swift in Sources */,
+				77E7AFB01C915E6F002B0467 /* WTChatViewController.swift in Sources */,
+				77E7AFD81C92AD1F002B0467 /* WTChatMessageFactory.swift in Sources */,
+				77E7AFBD1C9260DF002B0467 /* SlidingDatasSource.swift in Sources */,
+				77F321B11C97F00000C9BF4A /* WTProgramOverViewController.swift in Sources */,
+				77E7AFD41C92A236002B0467 /* WTChatMessageSender.swift in Sources */,
+				77E7AFC21C926142002B0467 /* SendingStatusPresenter.swift in Sources */,
+				77E7AFC31C926142002B0467 /* SendingStatusCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,23 +614,42 @@
 		};
 		774F61241C913B1500101065 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2050A9907B07256A8046A49 /* Pods-WatchTVTogether.debug.xcconfig */;
 			buildSettings = {
+				AFP_SDK_ROOT = "${SRCROOT}/WatchTVTogether/thrid_party/ACR";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = "$(AFP_SDK_ROOT)/headers";
 				INFOPLIST_FILE = WatchTVTogether/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ChenDanny.WatchTVTogether;
+				LIBRARY_SEARCH_PATHS = (
+					"$(AFP_SDK_ROOT)/",
+					"$(PROJECT_DIR)/WatchTVTogether/thrid_party/ACR",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qri.fl2.cc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WatchTVTogether/WatchTVTogether-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		774F61251C913B1500101065 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C3AD2C1289F715CB1D9D621 /* Pods-WatchTVTogether.release.xcconfig */;
 			buildSettings = {
+				AFP_SDK_ROOT = "${SRCROOT}/WatchTVTogether/thrid_party/ACR";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = "$(AFP_SDK_ROOT)/headers";
 				INFOPLIST_FILE = WatchTVTogether/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ChenDanny.WatchTVTogether;
+				LIBRARY_SEARCH_PATHS = (
+					"$(AFP_SDK_ROOT)/",
+					"$(PROJECT_DIR)/WatchTVTogether/thrid_party/ACR",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qri.fl2.cc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WatchTVTogether/WatchTVTogether-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -484,6 +720,7 @@
 				774F61251C913B1500101065 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		774F61261C913B1500101065 /* Build configuration list for PBXNativeTarget "WatchTVTogetherTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +729,7 @@
 				774F61281C913B1500101065 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		774F61291C913B1500101065 /* Build configuration list for PBXNativeTarget "WatchTVTogetherUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +738,7 @@
 				774F612B1C913B1500101065 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
