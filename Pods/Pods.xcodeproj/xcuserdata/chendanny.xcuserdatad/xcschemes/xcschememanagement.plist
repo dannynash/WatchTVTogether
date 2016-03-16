@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Chatto.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ChattoAdditions.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-WatchTVTogether.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Socket.IO-Client-Swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>11BC8A497513D1C01A4A7199A80EB3DC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7AF7E2DF8892E014AE5FCDF57A214D19</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7DD08A69500CBF4A4EFFEEE3FF9E3C54</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7E5F79AE152A56E5D5D8B03BC0C49DD2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A3FDA7EF27A191DB2B107D11526E6A8C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

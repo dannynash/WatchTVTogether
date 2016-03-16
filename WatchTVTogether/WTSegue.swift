@@ -17,5 +17,6 @@ struct WTSegue {
 struct WTNibIdentifier {
     static let kPostCellIdentifier = "WTPostTabelViewCell"
     static let kFriendCellIdentifier = "WTFriendTabelViewCell"
+    static let kHotDiscussCellIdentifier = "HotDiscussCell"
 
 }

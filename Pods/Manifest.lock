@@ -1,0 +1,29 @@
+PODS:
+  - Chatto (1.0.0)
+  - ChattoAdditions (1.0.0):
+    - Chatto
+  - Socket.IO-Client-Swift (5.5.0)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - Chatto (= 1.0.0)
+  - ChattoAdditions (= 1.0.0)
+  - Socket.IO-Client-Swift (~> 5.5.0)
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: 42bdb102d2624b143c07850ebdc1537d5b6579b6
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  Chatto: 531b14bbb7d21dfc50a86fc4ff70a90367171403
+  ChattoAdditions: 27c7b59f4c1b1d51d5f37c7199164982fcc59edf
+  Socket.IO-Client-Swift: f39dbd4e9b295907bb7fd4b9588b89c00426783d
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+COCOAPODS: 0.39.0

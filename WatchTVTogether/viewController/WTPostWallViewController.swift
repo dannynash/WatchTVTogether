@@ -26,7 +26,7 @@ class WTPostWallViewController: UIViewController, UITableViewDelegate {
         if segue.identifier == WTSegue.kPostWallToProgram {
             let programVC = segue.destinationViewController as! WTProgramOverViewController
             let post = sender as! WTPost
-            programVC.programId = post.programId
+            programVC.program = post.program
             
         }
     }

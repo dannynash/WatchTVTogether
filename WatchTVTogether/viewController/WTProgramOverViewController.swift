@@ -11,14 +11,14 @@ import UIKit
 
 class WTProgramOverViewController:UIViewController, UITableViewDelegate, UITableViewDataSource{
     
-    var programId:String?{
+    var program:WTProgram?{
         didSet {
-            guard let wrappedName = programId else {
+            guard let wrappedProgram = program else {
                 return
             }
-
+            
             let friendsDataSource = WTFriendsDataSource.sharedInstance
-            friends = friendsDataSource.friendsWithProgram(wrappedName)!
+            friends = friendsDataSource.friendsWithProgram(wrappedProgram.programId)!
         }
         
     }
@@ -27,11 +27,11 @@ class WTProgramOverViewController:UIViewController, UITableViewDelegate, UITable
             friendsTableView.reloadData()
         }
     }
+    var hotDiscusses = Array<WTHostDiscuss>()
     
     @IBOutlet weak var picturceView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
-    
     @IBOutlet weak var friendsTableView: UITableView!
     @IBOutlet weak var hotDiscussTableView: UITableView!
     
@@ -55,21 +55,40 @@ class WTProgramOverViewController:UIViewController, UITableViewDelegate, UITable
 
             chatController.dataSource = dataSource
             chatController.messageSender = dataSource.messageSender
-
         }
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: false)
 
-        let friend = friends[indexPath.row]
-        self.performSegueWithIdentifier(WTSegue.kProgramToChat, sender: friend)
+        if tableView == friendsTableView{
+            let friend = friends[indexPath.row]
+            self.performSegueWithIdentifier(WTSegue.kProgramToChat, sender: friend)
+        }
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return friends.count
+        if tableView == friendsTableView{
+            return friends.count
+        } else if tableView == hotDiscussTableView{
+            return hotDiscusses.count
+        } else {
+            return 0
+        }
     }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        if tableView == friendsTableView{
+            return createFriendCell(tableView, cellForRowAtIndexPath: indexPath)
+        } else if tableView == hotDiscussTableView{
+            return createHotDiscussCell(tableView, cellForRowAtIndexPath: indexPath)
+        } else {
+            return UITableViewCell()
+        }
+
+    }
+    
+    func createFriendCell(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier(WTNibIdentifier.kFriendCellIdentifier)
         
         if cell == nil{
@@ -80,4 +99,17 @@ class WTProgramOverViewController:UIViewController, UITableViewDelegate, UITable
         
         return cell!
     }
+    func createHotDiscussCell(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        // TODO
+        var cell = tableView.dequeueReusableCellWithIdentifier(WTNibIdentifier.kHotDiscussCellIdentifier)
+        
+        if cell == nil{
+            cell = WTFriendsTableViewCell()
+        }
+        
+        (cell as! WTFriendsTableViewCell).setFriend(friends[indexPath.row])
+        
+        return cell!
+    }
+
 }

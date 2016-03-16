@@ -1,5 +1,5 @@
 //
-//  WTProgramOverview.swift
+//  WTHostDiscuss.swift
 //  WatchTVTogether
 //
 //  Created by ChenDanny on 2016/3/16.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-
-class WTProgramOverview{
+struct WTHostDiscuss {
+    
     
 }

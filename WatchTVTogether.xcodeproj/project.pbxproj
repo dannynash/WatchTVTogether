@@ -47,11 +47,11 @@
 		77F321E41C994BAB00C9BF4A /* 1330867871-491610638.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77F321E11C994BAB00C9BF4A /* 1330867871-491610638.jpg */; };
 		77F321E51C994BAB00C9BF4A /* maxresdefault.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77F321E21C994BAB00C9BF4A /* maxresdefault.jpg */; };
 		77F321E61C994BAB00C9BF4A /* photo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 77F321E31C994BAB00C9BF4A /* photo.jpeg */; };
-		77F321E81C995A6000C9BF4A /* WTProgramOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F321E71C995A6000C9BF4A /* WTProgramOverview.swift */; };
 		77F321EA1C996A4900C9BF4A /* WTFriendsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F321E91C996A4900C9BF4A /* WTFriendsDataSource.swift */; };
 		77F321EE1C996AA200C9BF4A /* WTFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F321ED1C996AA200C9BF4A /* WTFriend.swift */; };
 		77F321F01C996F0300C9BF4A /* WTPrograms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F321EF1C996F0300C9BF4A /* WTPrograms.swift */; };
 		77F321F21C996F7200C9BF4A /* WTProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F321F11C996F7200C9BF4A /* WTProgram.swift */; };
+		77F321F51C999A4E00C9BF4A /* WTHostDiscuss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F321F41C999A4E00C9BF4A /* WTHostDiscuss.swift */; };
 		CF4FEBCD738ABE741FFFB87E /* Pods_WatchTVTogether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B90C6E4F7FF8DD2DF04A8E /* Pods_WatchTVTogether.framework */; };
 /* End PBXBuildFile section */
 
@@ -125,11 +125,11 @@
 		77F321E11C994BAB00C9BF4A /* 1330867871-491610638.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1330867871-491610638.jpg"; sourceTree = "<group>"; };
 		77F321E21C994BAB00C9BF4A /* maxresdefault.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = maxresdefault.jpg; sourceTree = "<group>"; };
 		77F321E31C994BAB00C9BF4A /* photo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo.jpeg; sourceTree = "<group>"; };
-		77F321E71C995A6000C9BF4A /* WTProgramOverview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTProgramOverview.swift; path = model/WTProgramOverview.swift; sourceTree = "<group>"; };
 		77F321E91C996A4900C9BF4A /* WTFriendsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTFriendsDataSource.swift; path = modelManager/WTFriendsDataSource.swift; sourceTree = "<group>"; };
 		77F321ED1C996AA200C9BF4A /* WTFriend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTFriend.swift; path = model/WTFriend.swift; sourceTree = "<group>"; };
 		77F321EF1C996F0300C9BF4A /* WTPrograms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTPrograms.swift; path = modelManager/WTPrograms.swift; sourceTree = "<group>"; };
 		77F321F11C996F7200C9BF4A /* WTProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTProgram.swift; path = model/WTProgram.swift; sourceTree = "<group>"; };
+		77F321F41C999A4E00C9BF4A /* WTHostDiscuss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTHostDiscuss.swift; path = model/WTHostDiscuss.swift; sourceTree = "<group>"; };
 		9C3AD2C1289F715CB1D9D621 /* Pods-WatchTVTogether.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTVTogether.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchTVTogether/Pods-WatchTVTogether.release.xcconfig"; sourceTree = "<group>"; };
 		A2050A9907B07256A8046A49 /* Pods-WatchTVTogether.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTVTogether.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchTVTogether/Pods-WatchTVTogether.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -234,10 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				774F61351C9149A400101065 /* WTSocketIOClient.swift */,
-				77E7AFD11C926B5D002B0467 /* WTChatMessageDataSource.swift */,
-				77E7AFD31C92A236002B0467 /* WTChatMessageSender.swift */,
-				77E7AFD51C92A42B002B0467 /* WTChatUserActionHandlers.swift */,
-				77E7AFD71C92AD1F002B0467 /* WTChatMessageFactory.swift */,
+				77F321F31C9990A000C9BF4A /* chat */,
 			);
 			name = worker;
 			sourceTree = "<group>";
@@ -310,8 +307,8 @@
 			children = (
 				77F321C51C9812DA00C9BF4A /* WTPost.swift */,
 				77F321ED1C996AA200C9BF4A /* WTFriend.swift */,
-				77F321E71C995A6000C9BF4A /* WTProgramOverview.swift */,
 				77F321F11C996F7200C9BF4A /* WTProgram.swift */,
+				77F321F41C999A4E00C9BF4A /* WTHostDiscuss.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -334,6 +331,17 @@
 				77F321E31C994BAB00C9BF4A /* photo.jpeg */,
 			);
 			path = assets;
+			sourceTree = "<group>";
+		};
+		77F321F31C9990A000C9BF4A /* chat */ = {
+			isa = PBXGroup;
+			children = (
+				77E7AFD11C926B5D002B0467 /* WTChatMessageDataSource.swift */,
+				77E7AFD31C92A236002B0467 /* WTChatMessageSender.swift */,
+				77E7AFD51C92A42B002B0467 /* WTChatUserActionHandlers.swift */,
+				77E7AFD71C92AD1F002B0467 /* WTChatMessageFactory.swift */,
+			);
+			name = chat;
 			sourceTree = "<group>";
 		};
 		7A3564893B9924DC49C1F685 /* Frameworks */ = {
@@ -564,6 +572,7 @@
 				77F3219E1C96D0FD00C9BF4A /* AFPConfig.swift in Sources */,
 				77F321A71C97EC9700C9BF4A /* WTPostWallViewController.swift in Sources */,
 				77E7AFB01C915E6F002B0467 /* WTChatViewController.swift in Sources */,
+				77F321F51C999A4E00C9BF4A /* WTHostDiscuss.swift in Sources */,
 				77E7AFD81C92AD1F002B0467 /* WTChatMessageFactory.swift in Sources */,
 				77E7AFBD1C9260DF002B0467 /* SlidingDatasSource.swift in Sources */,
 				77F321CD1C98F4C400C9BF4A /* WTSegue.swift in Sources */,
@@ -571,7 +580,6 @@
 				77F321F21C996F7200C9BF4A /* WTProgram.swift in Sources */,
 				77F321B11C97F00000C9BF4A /* WTProgramOverViewController.swift in Sources */,
 				77E7AFD41C92A236002B0467 /* WTChatMessageSender.swift in Sources */,
-				77F321E81C995A6000C9BF4A /* WTProgramOverview.swift in Sources */,
 				77E7AFC21C926142002B0467 /* SendingStatusPresenter.swift in Sources */,
 				77F321B61C97F30200C9BF4A /* WTPostTableViewCell.swift in Sources */,
 				77E7AFC31C926142002B0467 /* SendingStatusCollectionViewCell.swift in Sources */,
