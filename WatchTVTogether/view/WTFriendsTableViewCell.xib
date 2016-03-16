@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WTFriendsTableViewCell" customModule="WatchTVTogether" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xcV-3J-bsv">
+                    <rect key="frame" x="8" y="8" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Siv-r2-2P6"/>
+                        <constraint firstAttribute="width" secondItem="xcV-3J-bsv" secondAttribute="height" multiplier="1:1" id="jf1-Pb-bod"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Danny" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a57-dx-tMs">
+                    <rect key="frame" x="66" y="23" width="49" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NBA 勇士v.s.小牛" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ai-BQ-RQy">
+                    <rect key="frame" x="460" y="23" width="132" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="4ai-BQ-RQy" secondAttribute="trailing" constant="8" id="0xE-yc-aC6"/>
+                <constraint firstItem="a57-dx-tMs" firstAttribute="leading" secondItem="xcV-3J-bsv" secondAttribute="trailing" constant="8" id="1tB-SB-0dv"/>
+                <constraint firstItem="xcV-3J-bsv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="81u-iE-YXV"/>
+                <constraint firstItem="xcV-3J-bsv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="8A1-Xp-vMG"/>
+                <constraint firstItem="a57-dx-tMs" firstAttribute="centerY" secondItem="xcV-3J-bsv" secondAttribute="centerY" id="TRs-e2-xft"/>
+                <constraint firstItem="4ai-BQ-RQy" firstAttribute="centerY" secondItem="xcV-3J-bsv" secondAttribute="centerY" id="ceq-Mc-lge"/>
+            </constraints>
+            <connections>
+                <outlet property="nameLabel" destination="a57-dx-tMs" id="6XW-ed-tJw"/>
+                <outlet property="pictureView" destination="xcV-3J-bsv" id="uXp-Iv-VB3"/>
+                <outlet property="programLabel" destination="4ai-BQ-RQy" id="KTs-XK-bMP"/>
+            </connections>
+            <point key="canvasLocation" x="84" y="388"/>
+        </view>
+    </objects>
+</document>

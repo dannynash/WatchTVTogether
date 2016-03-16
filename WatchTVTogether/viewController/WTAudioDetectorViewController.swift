@@ -56,14 +56,13 @@ class WTAudioDetectorViewController: UIViewController, AFPDetectorDelegate{
         timerClock?.invalidate()
         timerClock = nil
         
-        
         guard let unwrappedName = results else {
             return
         }
         
         resultLabel.text = unwrappedName["score"] as? String
-        
     }
+    
     func readyToDeleteAFPObject() {
         if timerClock != nil {
             timerClock?.invalidate()

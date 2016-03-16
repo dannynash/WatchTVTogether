@@ -11,7 +11,7 @@ import Chatto
 import ChattoAdditions
 
 class WTChatViewController: ChatViewController {
-
+    var friend:WTFriend?
     var messageSender: WTChatMessageSender!
     var dataSource: WTChatMessageDataSource! {
         didSet {
@@ -29,8 +29,46 @@ class WTChatViewController: ChatViewController {
         super.chatItemsDecorator = ChatItemsDemoDecorator()
         let addIncomingMessageButton = UIBarButtonItem(image: image, style: .Plain, target: self, action: "addRandomIncomingMessage")
         self.navigationItem.rightBarButtonItem = addIncomingMessageButton
+        
+        
+        self.setTabBarVisible(false, animated: false)
     }
     
+    override func didMoveToParentViewController(parent: UIViewController?) {
+        if (!(parent?.isEqual(self.parentViewController) ?? false)) {
+//            self.setTabBarVisible(true, animated: false)
+
+        }
+
+    }
+
+    override func viewWillDisappear(animated: Bool) {
+        self.setTabBarVisible(true, animated: false)
+    }
+    func setTabBarVisible(visible:Bool, animated:Bool) {
+        // get a frame calculation ready
+        
+        if (tabBarIsVisible() == visible) { return }
+
+        let frame = self.tabBarController?.tabBar.frame
+        let height = frame?.size.height
+        let offsetY = (visible ? -height! : height)
+        
+        // zero duration means no animation
+        let duration:NSTimeInterval = (animated ? 0.3 : 0.0)
+        
+        //  animate the tabBar
+        if frame != nil {
+            UIView.animateWithDuration(duration) {
+                self.tabBarController?.tabBar.frame = CGRectOffset(frame!, 0, offsetY!)
+                return
+            }
+        }
+    }
+    func tabBarIsVisible() ->Bool {
+        return self.tabBarController?.tabBar.frame.origin.y < CGRectGetMaxY(self.view.frame)
+    }
+
     @objc
     private func addRandomIncomingMessage() {
 //        self.dataSource.addRandomIncomingMessage()
