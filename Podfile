@@ -15,6 +15,8 @@ target 'WatchTVTogether' do
 
     pod 'Chatto', '= 1.0.0'
     pod 'ChattoAdditions', '= 1.0.0' # if you want to use the cells or the input component
+    pod 'Alamofire', '~> 3.0'
+
 
 end
 
