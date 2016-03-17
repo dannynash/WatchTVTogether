@@ -37,13 +37,13 @@ class ViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == ViewControllerIdentifier.kGotoChat {
-            let pageSize = 50
-            let dataSource = WTChatMessageDataSource(messages: [], pageSize: pageSize)
-            
-            let chatController = segue.destinationViewController as! WTChatViewController
-            
-            chatController.dataSource = dataSource
-            chatController.messageSender = dataSource.messageSender
+//            let pageSize = 50
+//            let dataSource = WTChatMessageDataSource(messages: [], pageSize: pageSize)
+//            
+//            let chatController = segue.destinationViewController as! WTChatViewController
+//            
+//            chatController.dataSource = dataSource
+//            chatController.messageSender = dataSource.messageSender
             
         } else if segue.identifier == ViewControllerIdentifier.kGotoDetect {
         

@@ -18,6 +18,8 @@ class WTChatViewController: ChatViewController {
             self.chatDataSource = self.dataSource
         }
     }
+
+    @IBOutlet weak var navigationTitle: UINavigationItem!
     
     lazy private var baseMessageHandler: WTBaseMessageHandler = {
         return WTBaseMessageHandler(messageSender: self.messageSender)
@@ -30,18 +32,10 @@ class WTChatViewController: ChatViewController {
         let addIncomingMessageButton = UIBarButtonItem(image: image, style: .Plain, target: self, action: "addRandomIncomingMessage")
         self.navigationItem.rightBarButtonItem = addIncomingMessageButton
         
-        
+        self.navigationTitle.title = friend?.userName        
         self.setTabBarVisible(false, animated: false)
     }
     
-    override func didMoveToParentViewController(parent: UIViewController?) {
-        if (!(parent?.isEqual(self.parentViewController) ?? false)) {
-//            self.setTabBarVisible(true, animated: false)
-
-        }
-
-    }
-
     override func viewWillDisappear(animated: Bool) {
         self.setTabBarVisible(true, animated: false)
     }

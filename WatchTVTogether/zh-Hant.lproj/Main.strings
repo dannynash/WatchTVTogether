@@ -1,0 +1,51 @@
+
+/* Class = "UIButton"; normalTitle = "Enter chat"; ObjectID = "3Yk-C7-bNa"; */
+"3Yk-C7-bNa.normalTitle" = "Enter chat";
+
+/* Class = "UILabel"; text = "NBA 勇士v.s.小牛"; ObjectID = "831-PI-CFC"; */
+"831-PI-CFC.text" = "NBA 勇士v.s.小牛";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "8Ap-oY-LON"; */
+"8Ap-oY-LON.title" = "Profile";
+
+/* Class = "UILabel"; text = "Clock"; ObjectID = "A9j-1t-TeD"; */
+"A9j-1t-TeD.text" = "Clock";
+
+/* Class = "UILabel"; text = "detector"; ObjectID = "C5n-3A-Ueq"; */
+"C5n-3A-Ueq.text" = "detector";
+
+/* Class = "UIButton"; normalTitle = "EnterProgram"; ObjectID = "CWK-Th-jod"; */
+"CWK-Th-jod.normalTitle" = "EnterProgram";
+
+/* Class = "UIButton"; normalTitle = "start detect"; ObjectID = "CWQ-3j-fB5"; */
+"CWQ-3j-fB5.normalTitle" = "start detect";
+
+/* Class = "UIButton"; normalTitle = "send Object"; ObjectID = "El2-e4-tFq"; */
+"El2-e4-tFq.normalTitle" = "send Object";
+
+/* Class = "UIButton"; normalTitle = "detector VC"; ObjectID = "Ka8-rr-ZkL"; */
+"Ka8-rr-ZkL.normalTitle" = "detector VC";
+
+/* Class = "UITabBarItem"; title = "Test"; ObjectID = "SGT-EH-zOT"; */
+"SGT-EH-zOT.title" = "Test";
+
+/* Class = "UIButton"; normalTitle = "stop detect"; ObjectID = "YY9-F5-Hgv"; */
+"YY9-F5-Hgv.normalTitle" = "stop detect";
+
+/* Class = "UITabBarItem"; title = "Friends"; ObjectID = "dGZ-08-mRE"; */
+"dGZ-08-mRE.title" = "Friends";
+
+/* Class = "UILabel"; text = "Result"; ObjectID = "dQe-Ls-43j"; */
+"dQe-Ls-43j.text" = "Result";
+
+/* Class = "UITabBarItem"; title = "Search"; ObjectID = "da4-qW-o8l"; */
+"da4-qW-o8l.title" = "Search";
+
+/* Class = "UILabel"; text = "07:00~09:30"; ObjectID = "qbf-KD-IKH"; */
+"qbf-KD-IKH.text" = "07:00~09:30";
+
+/* Class = "UITabBarItem"; title = "Post"; ObjectID = "rb1-Zf-kqB"; */
+"rb1-Zf-kqB.title" = "Post";
+
+/* Class = "UIButton"; normalTitle = "send string"; ObjectID = "uvu-FO-9V3"; */
+"uvu-FO-9V3.normalTitle" = "send string";

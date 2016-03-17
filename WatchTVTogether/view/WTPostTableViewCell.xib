@@ -3,85 +3,69 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WTPostTableViewCell" customModule="WatchTVTogether" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="266"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="NBA 勇士v.s.小牛" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jj2-tD-8em">
-                    <rect key="frame" x="9" y="8" width="533" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dc6-TF-LXf">
-                    <rect key="frame" x="0.0" y="37" width="600" height="138"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="138" id="3Mk-m0-fRG"/>
-                    </constraints>
-                </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="3599則回應" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txb-sG-cab">
-                    <rect key="frame" x="8" y="183" width="200" height="21"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="200" id="iBf-5Q-InG"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更新時間:5分鐘前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXP-WD-tsl">
-                    <rect key="frame" x="458" y="183" width="134" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ESPN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caD-FG-T23">
-                    <rect key="frame" x="549" y="8" width="43" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Danny:blah~blah~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exR-ev-e4K">
-                    <rect key="frame" x="8" y="212" width="584" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-            </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstItem="dc6-TF-LXf" firstAttribute="top" secondItem="caD-FG-T23" secondAttribute="bottom" constant="8" id="1yj-Nh-CrN"/>
-                <constraint firstItem="exR-ev-e4K" firstAttribute="top" secondItem="txb-sG-cab" secondAttribute="bottom" constant="8" id="3gq-vC-xtE"/>
-                <constraint firstItem="dc6-TF-LXf" firstAttribute="top" secondItem="caD-FG-T23" secondAttribute="bottom" constant="8" id="6hF-7t-zaj"/>
-                <constraint firstItem="eXP-WD-tsl" firstAttribute="height" secondItem="txb-sG-cab" secondAttribute="height" id="76Q-HX-cnZ"/>
-                <constraint firstItem="txb-sG-cab" firstAttribute="top" secondItem="dc6-TF-LXf" secondAttribute="bottom" constant="8" id="GHL-V5-55p"/>
-                <constraint firstItem="exR-ev-e4K" firstAttribute="top" secondItem="txb-sG-cab" secondAttribute="bottom" constant="8" id="I56-4F-E9V"/>
-                <constraint firstItem="Jj2-tD-8em" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="KKm-oV-HOU"/>
-                <constraint firstItem="dc6-TF-LXf" firstAttribute="top" secondItem="Jj2-tD-8em" secondAttribute="bottom" constant="8" id="KqJ-wt-8wf"/>
-                <constraint firstAttribute="trailing" secondItem="exR-ev-e4K" secondAttribute="trailing" constant="8" id="OhG-VB-dpr"/>
-                <constraint firstItem="dc6-TF-LXf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PVm-m1-TQW"/>
-                <constraint firstAttribute="trailing" secondItem="caD-FG-T23" secondAttribute="trailing" constant="8" id="Tks-gi-ysR"/>
-                <constraint firstItem="Jj2-tD-8em" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Wql-yA-Ib3"/>
-                <constraint firstItem="caD-FG-T23" firstAttribute="leading" secondItem="Jj2-tD-8em" secondAttribute="trailing" constant="8" id="cc8-Bo-mFP"/>
-                <constraint firstAttribute="trailing" secondItem="dc6-TF-LXf" secondAttribute="trailing" id="fPn-PH-JhH"/>
-                <constraint firstItem="exR-ev-e4K" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="gga-BF-GGo"/>
-                <constraint firstAttribute="trailing" secondItem="eXP-WD-tsl" secondAttribute="trailing" constant="8" id="plt-92-7Ht"/>
-                <constraint firstItem="txb-sG-cab" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="qxT-vU-kiK"/>
-                <constraint firstItem="caD-FG-T23" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="rWT-mp-ppO"/>
-                <constraint firstItem="eXP-WD-tsl" firstAttribute="top" secondItem="dc6-TF-LXf" secondAttribute="bottom" constant="8" id="rm4-48-Ur7"/>
-            </constraints>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WTPostTabelViewCell" id="wgB-bo-gMc" customClass="WTPostTableViewCell" customModule="WatchTVTogether" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="621" height="197"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wgB-bo-gMc" id="h7u-6l-gxT">
+                <rect key="frame" x="0.0" y="0.0" width="621" height="196"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="1330867871-491610638.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dc6-TF-LXf">
+                        <rect key="frame" x="0.0" y="8" width="621" height="138"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="NBA 勇士v.s.小牛" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jj2-tD-8em">
+                        <rect key="frame" x="8" y="111" width="605" height="35"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Danny:blah~blah~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exR-ev-e4K">
+                        <rect key="frame" x="8" y="154" width="605" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="3599則回應" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txb-sG-cab">
+                        <rect key="frame" x="8" y="17" width="303" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="2DG-7e-v7N"/>
+                            <constraint firstAttribute="width" constant="303" id="dA6-zA-hc8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="exR-ev-e4K" firstAttribute="trailing" secondItem="h7u-6l-gxT" secondAttribute="trailingMargin" id="38w-Wh-cLl"/>
+                    <constraint firstItem="exR-ev-e4K" firstAttribute="leading" secondItem="h7u-6l-gxT" secondAttribute="leadingMargin" id="6BQ-sh-QBd"/>
+                    <constraint firstItem="dc6-TF-LXf" firstAttribute="leading" secondItem="h7u-6l-gxT" secondAttribute="leading" id="Gaf-O1-zen"/>
+                    <constraint firstItem="txb-sG-cab" firstAttribute="leading" secondItem="h7u-6l-gxT" secondAttribute="leadingMargin" id="gQT-r1-XVx"/>
+                    <constraint firstItem="Jj2-tD-8em" firstAttribute="leading" secondItem="exR-ev-e4K" secondAttribute="leading" id="gXi-df-AcO"/>
+                    <constraint firstItem="exR-ev-e4K" firstAttribute="top" secondItem="dc6-TF-LXf" secondAttribute="bottom" constant="8" id="jUE-Fe-eTM"/>
+                    <constraint firstAttribute="trailing" secondItem="dc6-TF-LXf" secondAttribute="trailing" id="kXA-M3-1Ln"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="exR-ev-e4K" secondAttribute="bottom" constant="13" id="qAX-3o-yru"/>
+                    <constraint firstItem="txb-sG-cab" firstAttribute="top" secondItem="h7u-6l-gxT" secondAttribute="topMargin" constant="9" id="qKS-Y3-0V3"/>
+                    <constraint firstItem="Jj2-tD-8em" firstAttribute="trailing" secondItem="exR-ev-e4K" secondAttribute="trailing" id="uaz-L6-d5b"/>
+                    <constraint firstItem="exR-ev-e4K" firstAttribute="top" secondItem="Jj2-tD-8em" secondAttribute="bottom" constant="8" id="vO9-OE-ZpQ"/>
+                    <constraint firstItem="dc6-TF-LXf" firstAttribute="top" secondItem="h7u-6l-gxT" secondAttribute="top" constant="8" id="zrW-Ma-jKZ"/>
+                </constraints>
+            </tableViewCellContentView>
             <connections>
-                <outlet property="channelTitle" destination="caD-FG-T23" id="WZW-kd-IOr"/>
-                <outlet property="lastResponse" destination="exR-ev-e4K" id="Db0-EL-Bga"/>
-                <outlet property="lastUpdateTime" destination="eXP-WD-tsl" id="XpQ-v0-jpc"/>
-                <outlet property="pictrueView" destination="dc6-TF-LXf" id="ziJ-yW-WMm"/>
-                <outlet property="programTitle" destination="Jj2-tD-8em" id="sBJ-gt-oip"/>
-                <outlet property="responseNums" destination="txb-sG-cab" id="EdS-dF-Hro"/>
+                <outlet property="lastResponse" destination="exR-ev-e4K" id="ph1-sW-Emr"/>
+                <outlet property="pictrueView" destination="dc6-TF-LXf" id="wPD-BU-atZ"/>
+                <outlet property="programTitle" destination="Jj2-tD-8em" id="vC6-Mc-rzU"/>
+                <outlet property="responseNums" destination="txb-sG-cab" id="SJr-K6-ptm"/>
             </connections>
-            <point key="canvasLocation" x="35" y="489"/>
-        </view>
+            <point key="canvasLocation" x="35.5" y="387.5"/>
+        </tableViewCell>
     </objects>
+    <resources>
+        <image name="1330867871-491610638.jpg" width="600" height="400"/>
+    </resources>
 </document>

@@ -13,15 +13,22 @@ class WTChatMessageDataSource:ChatDataSourceProtocol {
     
     var nextMessageId: Int = 0
     let preferredMaxWindowSize = 500
-    
+    var peerId:String
     var slidingWindow: SlidingDataSource<ChatItemProtocol>!
-
-    init(messages: [ChatItemProtocol], pageSize: Int) {
+    let receiver = WTChatMessageReceiver()
+    
+    init(messages: [ChatItemProtocol], pageSize: Int, peerId:String) {
         self.slidingWindow = SlidingDataSource(items: messages, pageSize: pageSize)
+        self.peerId = peerId
+        
+        receiver.onMessage = {[weak self] (message) in
+            guard let sSelf = self else { return }
+            sSelf.addIncomingTextMessage(message)
+        }
     }
     
     lazy var messageSender: WTChatMessageSender = {
-        let sender = WTChatMessageSender()
+        let sender = WTChatMessageSender(peerId: self.peerId)
         sender.onMessageChanged = { [weak self] (message) in
             guard let sSelf = self else { return }
             sSelf.delegate?.chatDataSourceDidUpdate(sSelf)
@@ -60,18 +67,18 @@ class WTChatMessageDataSource:ChatDataSourceProtocol {
         let uid = "\(self.nextMessageId)"
         self.nextMessageId += 1
         let message = createTextMessageModel(uid, text: text, isIncoming: false)
-        self.messageSender.sendMessage(message)
+        self.messageSender.sendTextMessage(message)
         self.slidingWindow.insertItem(message, position: .Bottom)
         self.delegate?.chatDataSourceDidUpdate(self)
     }
     
     func addPhotoMessage(image: UIImage) {
-        let uid = "\(self.nextMessageId)"
-        self.nextMessageId += 1
-        let message = createPhotoMessageModel(uid, image: image, size: image.size, isIncoming: false)
-        self.messageSender.sendMessage(message)
-        self.slidingWindow.insertItem(message, position: .Bottom)
-        self.delegate?.chatDataSourceDidUpdate(self)
+//        let uid = "\(self.nextMessageId)"
+//        self.nextMessageId += 1
+//        let message = createPhotoMessageModel(uid, image: image, size: image.size, isIncoming: false)
+//        self.messageSender.sendMessage(message)
+//        self.slidingWindow.insertItem(message, position: .Bottom)
+//        self.delegate?.chatDataSourceDidUpdate(self)
     }
     
     func addIncomingTextMessage(text: String) {

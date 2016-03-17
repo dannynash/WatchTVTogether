@@ -11,10 +11,15 @@ import SocketIOClientSwift
 import SwiftyJSON
 
 public final class WTSocketIOClient{
-    
+    static let sharedInstance = WTSocketIOClient()
     let socket = SocketIOClient(socketURL: NSURL(string: "http://172.22.3.108:3000")!, options: [.Log(true), .ForcePolling(true)])
     
-    init() {
+    var currentUserId:String
+    
+    init(){
+        //TODO
+        currentUserId = ""
+        
         socket.on("connect") {data, ack in
             print("socket connected")
         }
@@ -28,7 +33,11 @@ public final class WTSocketIOClient{
             }
         }
         
-        socket.on("chat message") {[weak self]data, ack in
+        socket.on("chat") {[weak self]data, ack in
+            
+            guard let sSelf = self else { return }
+
+            sSelf.onChatMessage!(message: data)
             print("on chat message", data);
         }
 
@@ -39,5 +48,6 @@ public final class WTSocketIOClient{
         socket.emit(event, items)
     }
     
-    
+    public var onChatMessage: ((message: AnyObject) -> Void)?
+
 }

@@ -10,51 +10,46 @@ import Foundation
 import Chatto
 import ChattoAdditions
 
-public class WTChatMessageSender {
-    let channel = WTSocketIOClient()
+extension MessageModel{
     
+}
+extension TextMessageModel{
+    func toPackage(userId:String, peerId:String) -> AnyObject {
+        var package = [String:AnyObject]()
+        package["senderId"] = userId
+        package["peerId"] = peerId
+        package["uid"] = self.uid
+        package["date"] = self.messageModel.date.timeIntervalSince1970/1000
+        package["text"] = self.text
+
+        return package
+    }
+}
+
+public class WTChatMessageSender {
+    let channel = WTSocketIOClient.sharedInstance
+    
+    var peerId:String
+    var currentUserId:String
+    
+    init(peerId:String){
+        self.peerId = peerId
+        self.currentUserId = channel.currentUserId
+    }
     public var onMessageChanged: ((message: MessageModelProtocol) -> Void)?
     
     public func sendMessages(messages: [MessageModelProtocol]) {
-        for message in messages {
-            self.fakeMessageStatus(message)
+    }
+    
+    public func sendTextMessage(message:TextMessageModel){
+        if channel.socket.status == .Connected{
+            channel.emit("chat", message.toPackage(currentUserId, peerId: peerId))
+            self.updateMessage(message, status: .Success)
         }
     }
     
-    public func sendMessage(message: MessageModelProtocol) {
-//        channel.emit("", message.)
-        self.fakeMessageStatus(message)
-        
-        let test = message as! TextMessageModel
-        print("test", test)
-    }
-    
-    private func fakeMessageStatus(message: MessageModelProtocol) {
-        switch message.status {
-        case .Success:
-            break
-        case .Failed:
-            self.updateMessage(message, status: .Sending)
-            self.fakeMessageStatus(message)
-        case .Sending:
-            
-            print("")
-            
-//            switch arc4random_uniform(100) % 5 {
-//            case 0:
-//                if arc4random_uniform(100) % 2 == 0 {
-//                    self.updateMessage(message, status: .Failed)
-//                } else {
-//                    self.updateMessage(message, status: .Success)
-//                }
-//            default:
-//                let delaySeconds: Double = Double(arc4random_uniform(1200)) / 1000.0
-//                let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delaySeconds * Double(NSEC_PER_SEC)))
-//                dispatch_after(delayTime, dispatch_get_main_queue()) {
-//                    self.fakeMessageStatus(message)
-//                }
-//            }
-        }
+    public func sendPhotoMessage(message:PhotoMessageModel){
+        // TODO
     }
     
     private func updateMessage(message: MessageModelProtocol, status: MessageStatus) {

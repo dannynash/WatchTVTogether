@@ -25,20 +25,15 @@ class WTFriendsListViewController: UIViewController, UITableViewDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if segue.identifier == WTSegue.kFriendsToChat{
-            let vc = segue.destinationViewController as! WTChatViewController
             let friend = sender as! WTFriend
-            vc.friend = friend
-            
             let pageSize = 50
-            let dataSource = WTChatMessageDataSource(messages: [], pageSize: pageSize)
+            let dataSource = WTChatMessageDataSource(messages: [], pageSize: pageSize, peerId: friend.userId)
             
             let chatController = segue.destinationViewController as! WTChatViewController
-            
             chatController.dataSource = dataSource
             chatController.messageSender = dataSource.messageSender
-
+            chatController.friend = friend
         }
-        
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

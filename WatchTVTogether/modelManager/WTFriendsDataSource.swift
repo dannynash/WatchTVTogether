@@ -26,16 +26,16 @@ class WTFriendsDataSource:NSObject, UITableViewDataSource {
         friends.append(friend2)
     }
     
-    func friendsWithProgram(programId:String) -> Array<WTFriend>? {
+    func friendsWithProgram(programId:String) -> Array<WTFriend> {
         return collectFriendsWithProgram(programId)
     }
     
-    func collectFriendsWithProgram(programId:String) -> Array<WTFriend>?{
-        var friendsWithSameProgram = Array<WTFriend>?()
+    func collectFriendsWithProgram(programId:String) -> Array<WTFriend>{
+        var friendsWithSameProgram = Array<WTFriend>()
         
         for friend in friends {
             if friend.programId == programId{
-                friendsWithSameProgram?.append(friend)
+                friendsWithSameProgram.append(friend)
             }
         }
         

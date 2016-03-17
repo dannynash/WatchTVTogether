@@ -55,7 +55,7 @@ class WTBaseMessageHandler {
     }
     func userDidTapOnFailIcon(viewModel viewModel: MessageViewModelProtocol) {
         NSLog("userDidTapOnFailIcon")
-        self.messageSender.sendMessage(viewModel.messageModel)
+//        self.messageSender.sendTextMessage(viewModel.messageModel)
     }
     
     func userDidTapOnBubble(viewModel viewModel: MessageViewModelProtocol) {

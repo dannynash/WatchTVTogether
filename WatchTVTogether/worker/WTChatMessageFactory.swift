@@ -37,57 +37,6 @@ func createPhotoMessageModel(uid: String, image: UIImage, size: CGSize, isIncomi
 }
 
 
-
-//class WTMessageFactory {
-//    class func createChatItem(uid: String) -> MessageModelProtocol {
-//        let isIncoming: Bool = arc4random_uniform(100) % 2 == 0
-//        return self.createChatItem(uid, isIncoming: isIncoming)
-//    }
-//    
-//    class func createChatItem(uid: String, isIncoming: Bool) -> MessageModelProtocol {
-//        if arc4random_uniform(100) % 2 == 0 {
-//            return self.createTextMessageModel(uid, isIncoming: isIncoming)
-//        } else {
-//            return self.createPhotoMessageModel(uid, isIncoming: isIncoming)
-//        }
-//    }
-//    
-//    class func createTextMessageModel(uid: String, isIncoming: Bool) -> TextMessageModel {
-//        let incomingText: String = isIncoming ? "incoming" : "outgoing"
-//        let maxText = self.demoTexts.randomItem()
-//        let length: Int = 10 + Int(arc4random_uniform(300))
-//        let text = "\(maxText.substringToIndex(maxText.startIndex.advancedBy(length))) incoming:\(incomingText), #:\(uid)"
-//        return ChattoApp.createTextMessageModel(uid, text: text, isIncoming: isIncoming)
-//    }
-//    class func createPhotoMessageModel(uid: String, isIncoming: Bool) -> PhotoMessageModel {
-//        var imageSize = CGSize.zero
-//        switch arc4random_uniform(100) % 3 {
-//        case 0:
-//            imageSize = CGSize(width: 400, height: 300)
-//        case 1:
-//            imageSize = CGSize(width: 300, height: 400)
-//        case 2:
-//            fallthrough
-//        default:
-//            imageSize = CGSize(width: 300, height: 300)
-//        }
-//        
-//        var imageName: String
-//        switch arc4random_uniform(100) % 3 {
-//        case 0:
-//            imageName = "pic-test-1"
-//        case 1:
-//            imageName = "pic-test-2"
-//        case 2:
-//            fallthrough
-//        default:
-//            imageName = "pic-test-3"
-//        }
-//        return ChattoApp.createPhotoMessageModel(uid, image: UIImage(named: imageName)!, size: imageSize, isIncoming: isIncoming)
-//    }
-//
-//}
-
 extension TextMessageModel {
     static var chatItemType: ChatItemType {
         return "text"

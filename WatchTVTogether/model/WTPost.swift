@@ -36,7 +36,6 @@ class WTPost {
         }
     }
 
-
     init(program:WTProgram, responseNums:String, lastResponse:String, lastUpdateTime:String){
         self.program = program
         self.responseNums = responseNums

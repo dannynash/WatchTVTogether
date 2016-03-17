@@ -17,9 +17,18 @@ class WTPostWallViewController: UIViewController, UITableViewDelegate {
     
     override func viewDidLoad() {
         postTableView.registerNib(UINib(nibName: "WTPostTableViewCell", bundle: nil), forCellReuseIdentifier: WTNibIdentifier.kPostCellIdentifier)
+        postTableView.estimatedRowHeight = 196.0
         postTableView.rowHeight = UITableViewAutomaticDimension
         postTableView.dataSource = dataSource
         postTableView.delegate = self
+        postTableView.separatorStyle = .None
+        
+        navigationController?.navigationBar.topItem?.title = NSLocalizedString("SpoilAlert", comment: "")
+
+    }
+
+    override func viewWillAppear(animated: Bool) {
+        navigationController?.navigationBar.topItem?.title = NSLocalizedString("SpoilAlert", comment: "")
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -28,6 +37,7 @@ class WTPostWallViewController: UIViewController, UITableViewDelegate {
             let post = sender as! WTPost
             programVC.program = post.program
             
+
         }
     }
     
@@ -41,8 +51,11 @@ class WTPostWallViewController: UIViewController, UITableViewDelegate {
         }
         
         if var wrappedCell = cell {
+
             setUpCell(&wrappedCell, indexPath: indexPath)
-            return calculateHeightForConfiguredSizingCell(wrappedCell)
+            wrappedCell.layoutIfNeeded()
+            return 196.0
+//            return calculateHeightForConfiguredSizingCell(wrappedCell)
         }
         
         return CGFloat(0.0)
