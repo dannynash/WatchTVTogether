@@ -53,7 +53,9 @@
                             <constraint firstItem="KC4-RN-hIx" firstAttribute="top" secondItem="4bj-tS-oBi" secondAttribute="bottom" constant="-64" id="fk3-VL-TcS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="OAS-mr-DXU"/>
+                    <navigationItem key="navigationItem" id="OAS-mr-DXU">
+                        <nil key="title"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="postTableView" destination="KC4-RN-hIx" id="APN-HA-P4g"/>
                         <segue destination="WkQ-It-Yus" kind="show" identifier="PostWallToProgram" id="sdS-76-M3G"/>
@@ -136,6 +138,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5sM-Ai-jST" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2448" y="-47"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="ejS-HA-NHE">
+            <objects>
+                <viewController id="uPv-bW-sHD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lad-ig-JSo"/>
+                        <viewControllerLayoutGuide type="bottom" id="gkq-Mv-bEx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ewh-cK-3O1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Chat" image="ic_chat.png" id="r6i-qq-cCq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hqp-Db-QhA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37" y="1946"/>
         </scene>
         <!--Chat-->
         <scene sceneID="tne-QT-ifu">
@@ -248,7 +269,7 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ccQ-02-db1" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="ngm-qh-lrC">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="ngm-qh-lrC" customClass="WTTabBar" customModule="WatchTVTogether" customModuleProvider="target">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.8862745098" green="0.35686274509999999" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
@@ -256,7 +277,7 @@
                         <segue destination="5nU-qg-S5y" kind="relationship" relationship="viewControllers" id="YH0-ci-Fjm"/>
                         <segue destination="Srr-1b-fcM" kind="relationship" relationship="viewControllers" id="kPE-Yz-WYd"/>
                         <segue destination="LYG-4v-RDs" kind="relationship" relationship="viewControllers" id="taF-rf-q6R"/>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="tTB-dZ-MPi"/>
+                        <segue destination="uPv-bW-sHD" kind="relationship" relationship="viewControllers" id="q0q-nS-KV8"/>
                         <segue destination="BL0-hw-o5C" kind="relationship" relationship="viewControllers" id="U7P-GO-qec"/>
                     </connections>
                 </tabBarController>
@@ -352,7 +373,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5nU-qg-S5y" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Post" image="ic_hot.png" selectedImage="ic_hot_h@3x.png" id="rb1-Zf-kqB"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vtZ-AU-AzY">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vtZ-AU-AzY" customClass="WTNavgationBar" customModule="WatchTVTogether" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -369,7 +390,7 @@
         <scene sceneID="LeE-u6-4vB">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LYG-4v-RDs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="ic_icon.png" id="da4-qW-o8l"/>
+                    <tabBarItem key="tabBarItem" title="" image="ic_logo.png" selectedImage="ic_icon.png" id="da4-qW-o8l"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="WcN-CE-rez">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -390,7 +411,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Srr-1b-fcM" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Friends" image="ic_friend.png" selectedImage="ic_friend_h.png" id="dGZ-08-mRE"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="34F-lY-sCB">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="34F-lY-sCB" customClass="WTNavgationBar" customModule="WatchTVTogether" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -405,18 +426,20 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic_chat_h.png" width="180" height="180"/>
+        <image name="ic_chat.png" width="60" height="60"/>
+        <image name="ic_chat_h.png" width="60" height="60"/>
         <image name="ic_chat_ranking＠3x.png" width="168" height="168"/>
-        <image name="ic_friend.png" width="180" height="180"/>
-        <image name="ic_friend_h.png" width="180" height="180"/>
-        <image name="ic_hot.png" width="180" height="180"/>
+        <image name="ic_friend.png" width="60" height="60"/>
+        <image name="ic_friend_h.png" width="60" height="60"/>
+        <image name="ic_hot.png" width="60" height="60"/>
         <image name="ic_hot_h@3x.png" width="167" height="167"/>
-        <image name="ic_icon.png" width="240" height="240"/>
-        <image name="ic_profile.png" width="180" height="180"/>
-        <image name="ic_profile_h.png" width="180" height="180"/>
+        <image name="ic_icon.png" width="80" height="80"/>
+        <image name="ic_logo.png" width="167" height="167"/>
+        <image name="ic_profile.png" width="60" height="60"/>
+        <image name="ic_profile_h.png" width="60" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="sdS-76-M3G"/>
-        <segue reference="3w7-H1-cLm"/>
+        <segue reference="QPS-LE-j3E"/>
     </inferredMetricsTieBreakers>
 </document>

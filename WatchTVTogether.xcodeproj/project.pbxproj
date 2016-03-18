@@ -57,6 +57,32 @@
 		77F321FE1C9A3FCB00C9BF4A /* WTServerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F321FD1C9A3FCB00C9BF4A /* WTServerConfig.swift */; };
 		77F322051C9A987200C9BF4A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77F322071C9A987200C9BF4A /* Localizable.strings */; };
 		77F3220C1C9ADAD500C9BF4A /* WTChatMessageReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F3220B1C9ADAD500C9BF4A /* WTChatMessageReceiver.swift */; };
+		77F3220F1C9B8F4700C9BF4A /* WTUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F3220E1C9B8F4700C9BF4A /* WTUtility.swift */; };
+		77F3225D1C9BBD2A00C9BF4A /* WTFriendCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F3225C1C9BBD2A00C9BF4A /* WTFriendCollectionCell.swift */; };
+		77F322611C9BC00F00C9BF4A /* WTThreadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F322601C9BC00F00C9BF4A /* WTThreadCell.swift */; };
+		77F322661C9BC6FD00C9BF4A /* WTFriendCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77F322651C9BC6FD00C9BF4A /* WTFriendCollectionCell.xib */; };
+		77F322681C9BC8B000C9BF4A /* s27209056.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77F322671C9BC8B000C9BF4A /* s27209056.jpg */; };
+		77F3226A1C9BCF6500C9BF4A /* WTResponseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F322691C9BCF6500C9BF4A /* WTResponseView.swift */; };
+		77F3226C1C9BCF7800C9BF4A /* WTResponseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77F3226B1C9BCF7800C9BF4A /* WTResponseView.xib */; };
+		77F322701C9BD17700C9BF4A /* WTResponseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F3226F1C9BD17700C9BF4A /* WTResponseDataSource.swift */; };
+		77F322721C9BD1C000C9BF4A /* WTResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F322711C9BD1C000C9BF4A /* WTResponse.swift */; };
+		77F322831C9BE6FD00C9BF4A /* ic_chat_ Bubble@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F322771C9BE6FD00C9BF4A /* ic_chat_ Bubble@3x.png */; };
+		77F322841C9BE6FD00C9BF4A /* ic_chat_h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F322781C9BE6FD00C9BF4A /* ic_chat_h@3x.png */; };
+		77F322851C9BE6FD00C9BF4A /* ic_chat_ranking@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F322791C9BE6FD00C9BF4A /* ic_chat_ranking@3x.png */; };
+		77F322861C9BE6FD00C9BF4A /* ic_chat@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F3227A1C9BE6FD00C9BF4A /* ic_chat@3x.png */; };
+		77F322871C9BE6FD00C9BF4A /* ic_friend_h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F3227B1C9BE6FD00C9BF4A /* ic_friend_h@3x.png */; };
+		77F322881C9BE6FD00C9BF4A /* ic_friend@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F3227C1C9BE6FD00C9BF4A /* ic_friend@3x.png */; };
+		77F322891C9BE6FD00C9BF4A /* ic_hot_h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F3227D1C9BE6FD00C9BF4A /* ic_hot_h@3x.png */; };
+		77F3228A1C9BE6FD00C9BF4A /* ic_hot@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F3227E1C9BE6FD00C9BF4A /* ic_hot@3x.png */; };
+		77F3228B1C9BE6FD00C9BF4A /* ic_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F3227F1C9BE6FD00C9BF4A /* ic_icon@3x.png */; };
+		77F3228C1C9BE6FD00C9BF4A /* ic_logo_big@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F322801C9BE6FD00C9BF4A /* ic_logo_big@3x.png */; };
+		77F3228D1C9BE6FD00C9BF4A /* ic_profile_h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F322811C9BE6FD00C9BF4A /* ic_profile_h@3x.png */; };
+		77F3228E1C9BE6FD00C9BF4A /* ic_profile@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F322821C9BE6FD00C9BF4A /* ic_profile@3x.png */; };
+		77F322901C9BEDF000C9BF4A /* WTGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F3228F1C9BEDF000C9BF4A /* WTGradientView.swift */; };
+		77F322921C9BF5AA00C9BF4A /* WTNavgationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F322911C9BF5AA00C9BF4A /* WTNavgationBar.swift */; };
+		77F322941C9BF81500C9BF4A /* WTTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F322931C9BF81500C9BF4A /* WTTabBar.swift */; };
+		77F322961C9BFBBF00C9BF4A /* WTTabBottomItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F322951C9BFBBF00C9BF4A /* WTTabBottomItem.swift */; };
+		77F322981C9BFF5900C9BF4A /* WTTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F322971C9BFF5900C9BF4A /* WTTabBarController.swift */; };
 		CF4FEBCD738ABE741FFFB87E /* Pods_WatchTVTogether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B90C6E4F7FF8DD2DF04A8E /* Pods_WatchTVTogether.framework */; };
 /* End PBXBuildFile section */
 
@@ -142,6 +168,34 @@
 		77F322061C9A987200C9BF4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		77F3220A1C9A9A5E00C9BF4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		77F3220B1C9ADAD500C9BF4A /* WTChatMessageReceiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTChatMessageReceiver.swift; path = worker/WTChatMessageReceiver.swift; sourceTree = "<group>"; };
+		77F3220E1C9B8F4700C9BF4A /* WTUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTUtility.swift; path = Utility/WTUtility.swift; sourceTree = "<group>"; };
+		77F322281C9B9F6F00C9BF4A /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		77F322291C9BA01F00C9BF4A /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		77F3225C1C9BBD2A00C9BF4A /* WTFriendCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTFriendCollectionCell.swift; path = view/WTFriendCollectionCell.swift; sourceTree = "<group>"; };
+		77F322601C9BC00F00C9BF4A /* WTThreadCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTThreadCell.swift; path = view/WTThreadCell.swift; sourceTree = "<group>"; };
+		77F322651C9BC6FD00C9BF4A /* WTFriendCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WTFriendCollectionCell.xib; path = view/WTFriendCollectionCell.xib; sourceTree = "<group>"; };
+		77F322671C9BC8B000C9BF4A /* s27209056.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = s27209056.jpg; sourceTree = "<group>"; };
+		77F322691C9BCF6500C9BF4A /* WTResponseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTResponseView.swift; path = view/WTResponseView.swift; sourceTree = "<group>"; };
+		77F3226B1C9BCF7800C9BF4A /* WTResponseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WTResponseView.xib; path = view/WTResponseView.xib; sourceTree = "<group>"; };
+		77F3226F1C9BD17700C9BF4A /* WTResponseDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTResponseDataSource.swift; path = model/WTResponseDataSource.swift; sourceTree = "<group>"; };
+		77F322711C9BD1C000C9BF4A /* WTResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTResponse.swift; path = model/WTResponse.swift; sourceTree = "<group>"; };
+		77F322771C9BE6FD00C9BF4A /* ic_chat_ Bubble@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_chat_ Bubble@3x.png"; sourceTree = "<group>"; };
+		77F322781C9BE6FD00C9BF4A /* ic_chat_h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_chat_h@3x.png"; sourceTree = "<group>"; };
+		77F322791C9BE6FD00C9BF4A /* ic_chat_ranking@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_chat_ranking@3x.png"; sourceTree = "<group>"; };
+		77F3227A1C9BE6FD00C9BF4A /* ic_chat@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_chat@3x.png"; sourceTree = "<group>"; };
+		77F3227B1C9BE6FD00C9BF4A /* ic_friend_h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_friend_h@3x.png"; sourceTree = "<group>"; };
+		77F3227C1C9BE6FD00C9BF4A /* ic_friend@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_friend@3x.png"; sourceTree = "<group>"; };
+		77F3227D1C9BE6FD00C9BF4A /* ic_hot_h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_hot_h@3x.png"; sourceTree = "<group>"; };
+		77F3227E1C9BE6FD00C9BF4A /* ic_hot@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_hot@3x.png"; sourceTree = "<group>"; };
+		77F3227F1C9BE6FD00C9BF4A /* ic_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_icon@3x.png"; sourceTree = "<group>"; };
+		77F322801C9BE6FD00C9BF4A /* ic_logo_big@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_logo_big@3x.png"; sourceTree = "<group>"; };
+		77F322811C9BE6FD00C9BF4A /* ic_profile_h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_profile_h@3x.png"; sourceTree = "<group>"; };
+		77F322821C9BE6FD00C9BF4A /* ic_profile@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_profile@3x.png"; sourceTree = "<group>"; };
+		77F3228F1C9BEDF000C9BF4A /* WTGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTGradientView.swift; path = view/WTGradientView.swift; sourceTree = "<group>"; };
+		77F322911C9BF5AA00C9BF4A /* WTNavgationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTNavgationBar.swift; path = view/WTNavgationBar.swift; sourceTree = "<group>"; };
+		77F322931C9BF81500C9BF4A /* WTTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTTabBar.swift; path = view/WTTabBar.swift; sourceTree = "<group>"; };
+		77F322951C9BFBBF00C9BF4A /* WTTabBottomItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTTabBottomItem.swift; path = view/WTTabBottomItem.swift; sourceTree = "<group>"; };
+		77F322971C9BFF5900C9BF4A /* WTTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTTabBarController.swift; path = viewController/WTTabBarController.swift; sourceTree = "<group>"; };
 		9C3AD2C1289F715CB1D9D621 /* Pods-WatchTVTogether.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTVTogether.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchTVTogether/Pods-WatchTVTogether.release.xcconfig"; sourceTree = "<group>"; };
 		A2050A9907B07256A8046A49 /* Pods-WatchTVTogether.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTVTogether.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchTVTogether/Pods-WatchTVTogether.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -209,8 +263,9 @@
 				77F321C41C9812BF00C9BF4A /* model */,
 				774F61341C91498300101065 /* worker */,
 				77E7AFB31C925DC8002B0467 /* sampleChat */,
-				774F60FE1C913B1500101065 /* AppDelegate.swift */,
+				77F3220D1C9B8F2900C9BF4A /* Utility */,
 				77F3219D1C96D0FD00C9BF4A /* AFPConfig.swift */,
+				774F60FE1C913B1500101065 /* AppDelegate.swift */,
 				77F321CC1C98F4C400C9BF4A /* WTSegue.swift */,
 				77F321FD1C9A3FCB00C9BF4A /* WTServerConfig.swift */,
 				774F61001C913B1500101065 /* ViewController.swift */,
@@ -265,6 +320,7 @@
 				77F321A61C97EC9700C9BF4A /* WTPostWallViewController.swift */,
 				77F3219F1C96D2DE00C9BF4A /* WTAudioDetectorViewController.swift */,
 				77F321B01C97F00000C9BF4A /* WTProgramOverViewController.swift */,
+				77F322971C9BFF5900C9BF4A /* WTTabBarController.swift */,
 			);
 			name = viewController;
 			sourceTree = "<group>";
@@ -304,9 +360,18 @@
 			isa = PBXGroup;
 			children = (
 				77F321B51C97F30200C9BF4A /* WTPostTableViewCell.swift */,
-				77F321B71C97F31900C9BF4A /* WTFriendsTableViewCell.swift */,
-				77F321C01C98110400C9BF4A /* WTFriendsTableViewCell.xib */,
 				77F321C21C98111600C9BF4A /* WTPostTableViewCell.xib */,
+				77F321B71C97F31900C9BF4A /* WTFriendsTableViewCell.swift */,
+				77F3225C1C9BBD2A00C9BF4A /* WTFriendCollectionCell.swift */,
+				77F322651C9BC6FD00C9BF4A /* WTFriendCollectionCell.xib */,
+				77F322601C9BC00F00C9BF4A /* WTThreadCell.swift */,
+				77F321C01C98110400C9BF4A /* WTFriendsTableViewCell.xib */,
+				77F322691C9BCF6500C9BF4A /* WTResponseView.swift */,
+				77F3226B1C9BCF7800C9BF4A /* WTResponseView.xib */,
+				77F3228F1C9BEDF000C9BF4A /* WTGradientView.swift */,
+				77F322911C9BF5AA00C9BF4A /* WTNavgationBar.swift */,
+				77F322931C9BF81500C9BF4A /* WTTabBar.swift */,
+				77F322951C9BFBBF00C9BF4A /* WTTabBottomItem.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -325,6 +390,7 @@
 				77F321ED1C996AA200C9BF4A /* WTFriend.swift */,
 				77F321F11C996F7200C9BF4A /* WTProgram.swift */,
 				77F321FB1C9A3D9700C9BF4A /* WTHotDiscuss.swift */,
+				77F322711C9BD1C000C9BF4A /* WTResponse.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -333,6 +399,7 @@
 			isa = PBXGroup;
 			children = (
 				77F321CA1C98F33800C9BF4A /* WTPostsDataSource.swift */,
+				77F3226F1C9BD17700C9BF4A /* WTResponseDataSource.swift */,
 				77F321E91C996A4900C9BF4A /* WTFriendsDataSource.swift */,
 				77F321EF1C996F0300C9BF4A /* WTPrograms.swift */,
 			);
@@ -345,6 +412,19 @@
 				77F321E11C994BAB00C9BF4A /* 1330867871-491610638.jpg */,
 				77F321E21C994BAB00C9BF4A /* maxresdefault.jpg */,
 				77F321E31C994BAB00C9BF4A /* photo.jpeg */,
+				77F322671C9BC8B000C9BF4A /* s27209056.jpg */,
+				77F322771C9BE6FD00C9BF4A /* ic_chat_ Bubble@3x.png */,
+				77F322781C9BE6FD00C9BF4A /* ic_chat_h@3x.png */,
+				77F322791C9BE6FD00C9BF4A /* ic_chat_ranking@3x.png */,
+				77F3227A1C9BE6FD00C9BF4A /* ic_chat@3x.png */,
+				77F3227B1C9BE6FD00C9BF4A /* ic_friend_h@3x.png */,
+				77F3227C1C9BE6FD00C9BF4A /* ic_friend@3x.png */,
+				77F3227D1C9BE6FD00C9BF4A /* ic_hot_h@3x.png */,
+				77F3227E1C9BE6FD00C9BF4A /* ic_hot@3x.png */,
+				77F3227F1C9BE6FD00C9BF4A /* ic_icon@3x.png */,
+				77F322801C9BE6FD00C9BF4A /* ic_logo_big@3x.png */,
+				77F322811C9BE6FD00C9BF4A /* ic_profile_h@3x.png */,
+				77F322821C9BE6FD00C9BF4A /* ic_profile@3x.png */,
 			);
 			path = assets;
 			sourceTree = "<group>";
@@ -367,6 +447,14 @@
 				77F321F91C9A3D0A00C9BF4A /* WTHotDiscussProxy.swift */,
 			);
 			name = proxy;
+			sourceTree = "<group>";
+		};
+		77F3220D1C9B8F2900C9BF4A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				77F3220E1C9B8F4700C9BF4A /* WTUtility.swift */,
+			);
+			name = Utility;
 			sourceTree = "<group>";
 		};
 		7A3564893B9924DC49C1F685 /* Frameworks */ = {
@@ -501,15 +589,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				77F321C31C98111600C9BF4A /* WTPostTableViewCell.xib in Resources */,
+				77F3228A1C9BE6FD00C9BF4A /* ic_hot@3x.png in Resources */,
 				77F321C11C98110400C9BF4A /* WTFriendsTableViewCell.xib in Resources */,
 				774F61091C913B1500101065 /* LaunchScreen.storyboard in Resources */,
+				77F322681C9BC8B000C9BF4A /* s27209056.jpg in Resources */,
+				77F322871C9BE6FD00C9BF4A /* ic_friend_h@3x.png in Resources */,
 				774F61061C913B1500101065 /* Assets.xcassets in Resources */,
 				77F321E41C994BAB00C9BF4A /* 1330867871-491610638.jpg in Resources */,
+				77F3228B1C9BE6FD00C9BF4A /* ic_icon@3x.png in Resources */,
 				77F322051C9A987200C9BF4A /* Localizable.strings in Resources */,
 				77F321E51C994BAB00C9BF4A /* maxresdefault.jpg in Resources */,
+				77F322851C9BE6FD00C9BF4A /* ic_chat_ranking@3x.png in Resources */,
+				77F3228D1C9BE6FD00C9BF4A /* ic_profile_h@3x.png in Resources */,
+				77F322891C9BE6FD00C9BF4A /* ic_hot_h@3x.png in Resources */,
+				77F322881C9BE6FD00C9BF4A /* ic_friend@3x.png in Resources */,
+				77F322861C9BE6FD00C9BF4A /* ic_chat@3x.png in Resources */,
+				77F322831C9BE6FD00C9BF4A /* ic_chat_ Bubble@3x.png in Resources */,
 				77F321E61C994BAB00C9BF4A /* photo.jpeg in Resources */,
 				774F61041C913B1500101065 /* Main.storyboard in Resources */,
+				77F322841C9BE6FD00C9BF4A /* ic_chat_h@3x.png in Resources */,
+				77F3228E1C9BE6FD00C9BF4A /* ic_profile@3x.png in Resources */,
 				77E7AFC41C926142002B0467 /* SendingStatusCollectionViewCell.xib in Resources */,
+				77F322661C9BC6FD00C9BF4A /* WTFriendCollectionCell.xib in Resources */,
+				77F3228C1C9BE6FD00C9BF4A /* ic_logo_big@3x.png in Resources */,
+				77F3226C1C9BCF7800C9BF4A /* WTResponseView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +687,7 @@
 			files = (
 				77F321F01C996F0300C9BF4A /* WTPrograms.swift in Sources */,
 				77F321B81C97F31900C9BF4A /* WTFriendsTableViewCell.swift in Sources */,
+				77F3225D1C9BBD2A00C9BF4A /* WTFriendCollectionCell.swift in Sources */,
 				77E7AFD61C92A42B002B0467 /* WTChatUserActionHandlers.swift in Sources */,
 				77F321CB1C98F33800C9BF4A /* WTPostsDataSource.swift in Sources */,
 				774F61011C913B1500101065 /* ViewController.swift in Sources */,
@@ -591,6 +695,7 @@
 				77F321FE1C9A3FCB00C9BF4A /* WTServerConfig.swift in Sources */,
 				774F61361C9149A400101065 /* WTSocketIOClient.swift in Sources */,
 				77F321FC1C9A3D9700C9BF4A /* WTHotDiscuss.swift in Sources */,
+				77F322961C9BFBBF00C9BF4A /* WTTabBottomItem.swift in Sources */,
 				77F321F71C9A3CCF00C9BF4A /* WTNetworkManager.swift in Sources */,
 				77F321EE1C996AA200C9BF4A /* WTFriend.swift in Sources */,
 				77E7AFD21C926B5D002B0467 /* WTChatMessageDataSource.swift in Sources */,
@@ -602,18 +707,27 @@
 				77F3219E1C96D0FD00C9BF4A /* AFPConfig.swift in Sources */,
 				77F321A71C97EC9700C9BF4A /* WTPostWallViewController.swift in Sources */,
 				77E7AFB01C915E6F002B0467 /* WTChatViewController.swift in Sources */,
+				77F3220F1C9B8F4700C9BF4A /* WTUtility.swift in Sources */,
 				77F321FA1C9A3D0A00C9BF4A /* WTHotDiscussProxy.swift in Sources */,
+				77F322901C9BEDF000C9BF4A /* WTGradientView.swift in Sources */,
+				77F322701C9BD17700C9BF4A /* WTResponseDataSource.swift in Sources */,
 				77E7AFD81C92AD1F002B0467 /* WTChatMessageFactory.swift in Sources */,
 				77E7AFBD1C9260DF002B0467 /* SlidingDatasSource.swift in Sources */,
 				77F321CD1C98F4C400C9BF4A /* WTSegue.swift in Sources */,
 				77F321C61C9812DA00C9BF4A /* WTPost.swift in Sources */,
 				77F321F21C996F7200C9BF4A /* WTProgram.swift in Sources */,
+				77F322941C9BF81500C9BF4A /* WTTabBar.swift in Sources */,
+				77F322921C9BF5AA00C9BF4A /* WTNavgationBar.swift in Sources */,
 				77F321B11C97F00000C9BF4A /* WTProgramOverViewController.swift in Sources */,
 				77F3220C1C9ADAD500C9BF4A /* WTChatMessageReceiver.swift in Sources */,
 				77E7AFD41C92A236002B0467 /* WTChatMessageSender.swift in Sources */,
 				77E7AFC21C926142002B0467 /* SendingStatusPresenter.swift in Sources */,
+				77F322721C9BD1C000C9BF4A /* WTResponse.swift in Sources */,
+				77F3226A1C9BCF6500C9BF4A /* WTResponseView.swift in Sources */,
 				77F321B61C97F30200C9BF4A /* WTPostTableViewCell.swift in Sources */,
+				77F322981C9BFF5900C9BF4A /* WTTabBarController.swift in Sources */,
 				77E7AFC31C926142002B0467 /* SendingStatusCollectionViewCell.swift in Sources */,
+				77F322611C9BC00F00C9BF4A /* WTThreadCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,6 +768,7 @@
 			children = (
 				774F61031C913B1500101065 /* Base */,
 				77F3220A1C9A9A5E00C9BF4A /* en */,
+				77F322291C9BA01F00C9BF4A /* zh-Hant */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -671,6 +786,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				77F322061C9A987200C9BF4A /* en */,
+				77F322281C9B9F6F00C9BF4A /* zh-Hant */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -714,7 +830,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -753,7 +869,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

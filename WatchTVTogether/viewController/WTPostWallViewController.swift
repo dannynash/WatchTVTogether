@@ -30,24 +30,26 @@ class WTPostWallViewController: UIViewController, UITableViewDelegate {
 //    func setTabIcon(){
 //        self.tabBarController.
 //    }
+    
+    let myGradientView = WTGradientView()
+    
     func setGradient(){
-        let firstColor = UIColor(red: 232.0/255.0, green: 121.0/255.0, blue: 117.0/255.0, alpha: 1.0).CGColor
-        let secondColor = UIColor(red: 243.0/255.0, green: 199.0/255.0, blue: 161.0/255.0, alpha: 1.0).CGColor
-        let gl = CAGradientLayer()
-        gl.frame = (self.navigationController?.navigationBar.bounds)!
-        gl.colors = [firstColor, secondColor]
-        gl.locations = [0.0, 1.0]
-        gl.startPoint = CGPointMake(0.0, 0.0)
-        gl.endPoint = CGPointMake(1.0, 0.0)
+//        let firstColor = UIColor(red: 232.0/255.0, green: 121.0/255.0, blue: 117.0/255.0, alpha: 1.0)
+//        let secondColor = UIColor(red: 243.0/255.0, green: 199.0/255.0, blue: 161.0/255.0, alpha: 1.0)
         
-        let view = UIView(frame: (self.navigationController?.navigationBar.bounds)!)
-        view.layer.insertSublayer(gl, atIndex: 0)
+//        let view = WTGradientView()
+//        let a = self.navigationController?.navigationBar.frame
+//        myGradientView.frame = a!
+//        myGradientView.backgroundColor = UIColor.yellowColor()
+//        myGradientView.gradientWithColors(firstColor, secondColor)
 
-//        navigationController?.navigationBar.layer.addSublayer(gl)
-        
-        navigationController?.navigationBar.layer.insertSublayer(gl, atIndex: 0)
-//        navigationController?.navigationBar.insertSubview(view, atIndex: 0)
+//        navigationController?.navigationBar.insertSubview(myGradientView, atIndex: 0)
     }
+    
+    override func viewDidLayoutSubviews() {
+        self.myGradientView.gradientWithColors(UIColor.whiteColor(), UIColor.blueColor())
+    }
+
 
     override func viewWillAppear(animated: Bool) {
         navigationController?.navigationBar.topItem?.title = NSLocalizedString("SpoilAlert", comment: "")
@@ -63,8 +65,8 @@ class WTPostWallViewController: UIViewController, UITableViewDelegate {
         }
     }
     
-    var cell:UITableViewCell?
-    
+//    var cell:UITableViewCell?
+//    
 //    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
 //        cell = tableView.dequeueReusableCellWithIdentifier(WTNibIdentifier.kPostCellIdentifier)
 //        
