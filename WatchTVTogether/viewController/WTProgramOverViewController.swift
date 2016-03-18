@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class WTProgramOverViewController:UIViewController, UITableViewDelegate, UITableViewDataSource{
+class WTProgramOverViewController:UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate{
     
     var program:WTProgram?
     
@@ -25,7 +25,7 @@ class WTProgramOverViewController:UIViewController, UITableViewDelegate, UITable
     }
     
     @IBOutlet weak var picturceView: UIImageView!
-    @IBOutlet weak var friendsTableView: UITableView!
+    @IBOutlet weak var friendsCollectionView: UICollectionView!
     @IBOutlet weak var hotDiscussTableView: UITableView!
     @IBOutlet weak var navigationTitle: UINavigationItem!
     
@@ -53,11 +53,10 @@ class WTProgramOverViewController:UIViewController, UITableViewDelegate, UITable
     }
     
     override func viewDidLoad() {
-        friendsTableView.registerNib(UINib(nibName: "WTFriendsTableViewCell", bundle: nil), forCellReuseIdentifier: WTNibIdentifier.kFriendCellIdentifier)
+        friendsCollectionView.registerNib(UINib(nibName: "WTFriendCollectionCell", bundle: nil), forCellWithReuseIdentifier: WTNibIdentifier.kFriendCollectionCellIdentifier)
         
-        friendsTableView.dataSource = self
-        friendsTableView.delegate = self
-        friendsTableView.separatorStyle = .None
+        friendsCollectionView.dataSource = self
+        friendsCollectionView.delegate = self
         
         hotDiscussTableView.dataSource = self
         hotDiscussTableView.delegate = self
@@ -66,8 +65,9 @@ class WTProgramOverViewController:UIViewController, UITableViewDelegate, UITable
         setProgramUI(program!)
         setFriendsTable(program!)
         setHotDiscussTable(program!)
-        
-        navigationController?.navigationBar.backItem?.title = ""
+
+
+//        navigationController?.navigationBar.backItem?.title = ""
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -86,10 +86,10 @@ class WTProgramOverViewController:UIViewController, UITableViewDelegate, UITable
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: false)
 
-        if tableView == friendsTableView{
-            let friend = friends[indexPath.row]
-            self.performSegueWithIdentifier(WTSegue.kProgramToChat, sender: friend)
-        }
+//        if tableView == friendsTableView{
+//            let friend = friends[indexPath.row]
+//            self.performSegueWithIdentifier(WTSegue.kProgramToChat, sender: friend)
+//        }
     }
     
     
@@ -99,9 +99,7 @@ class WTProgramOverViewController:UIViewController, UITableViewDelegate, UITable
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if tableView == friendsTableView{
-            return friends.count
-        } else if tableView == hotDiscussTableView{
+        if tableView == hotDiscussTableView{
             return hotDiscusses.count
         } else {
             return 0
@@ -109,9 +107,7 @@ class WTProgramOverViewController:UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        if tableView == friendsTableView{
-            return createFriendCell(tableView, cellForRowAtIndexPath: indexPath)
-        } else if tableView == hotDiscussTableView{
+        if tableView == hotDiscussTableView{
             return createHotDiscussCell(tableView, cellForRowAtIndexPath: indexPath)
         } else {
             return UITableViewCell()
@@ -124,9 +120,7 @@ class WTProgramOverViewController:UIViewController, UITableViewDelegate, UITable
         let view = UIView(frame: frame)
         let label = UILabel(frame: CGRectMake(8.0, 8.0, tableView.frame.width, 12.0))
         
-        if tableView == friendsTableView{
-            label.text = NSLocalizedString("Friends", comment: "")
-        } else if tableView == hotDiscussTableView{
+        if tableView == hotDiscussTableView{
             label.text = NSLocalizedString("Thread", comment: "")
         } else {
             return nil
@@ -160,6 +154,18 @@ class WTProgramOverViewController:UIViewController, UITableViewDelegate, UITable
         (cell as! WTFriendsTableViewCell).setFriend(friends[indexPath.row])
         
         return cell!
+    }
+    
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return friends.count
+    }
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(WTNibIdentifier.kFriendCollectionCellIdentifier, forIndexPath: indexPath)
+        
+        (cell as! WTFriendCollectionCell).setFriend(friends[indexPath.row])
+
+        return cell
     }
 
 }

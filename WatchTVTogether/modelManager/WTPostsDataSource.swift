@@ -20,9 +20,9 @@ class WTPostsDataSource:NSObject, UITableViewDataSource {
     }
     
     func createFakeData(){
-        let post1 = WTPost(programId:"1", programTitle: "NBA 勇士 v.s. 小牛", channelTitle: "ESPN", responseNums: "356則回應", lastResponse: "danny:食神實在太棒啦", lastUpdateTime: "5分鐘前", picture: UIImage(named: "photo.jpeg"))
+        let post1 = WTPost(programId:"1", programTitle: "NBA 勇士 v.s. 小牛", channelTitle: "ESPN", responseNums: "356", lastResponse: "danny:食神實在太棒啦", lastUpdateTime: "5分鐘前", picture: UIImage(named: "photo.jpeg"))
         posts.append(post1)
-        let post2 = WTPost(programId:"2", programTitle: "正晶限時批", channelTitle: "壹電視", responseNums: "3156則回應", lastResponse: "danny:限時批政經", lastUpdateTime: "１分鐘前", picture: UIImage(named: "maxresdefault.jpg"))
+        let post2 = WTPost(programId:"2", programTitle: "正晶限時批", channelTitle: "壹電視", responseNums: "3156", lastResponse: "danny:限時批政經", lastUpdateTime: "1分鐘前", picture: UIImage(named: "maxresdefault.jpg"))
         posts.append(post2)
     }
     
@@ -38,7 +38,7 @@ class WTPostsDataSource:NSObject, UITableViewDataSource {
             cell = WTPostTableViewCell()
         }
         
-        (cell as! WTPostTableViewCell).setPost(posts[indexPath.row])
+        (cell as! WTPostTableViewCell).setPost(posts[indexPath.row], rank: indexPath.row+1)
         return cell!
     }
     

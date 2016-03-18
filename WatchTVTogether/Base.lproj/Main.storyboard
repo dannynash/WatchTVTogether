@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Title-->
@@ -41,7 +42,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="192" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KC4-RN-hIx">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.11372549019607843" green="0.11372549019607843" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -74,25 +75,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EEH-aO-Foj">
-                                <rect key="frame" x="0.0" y="64" width="600" height="164"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EEH-aO-Foj">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="193"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="193" id="gXf-Zr-kjX"/>
+                                </constraints>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="W6E-In-sSM">
-                                <rect key="frame" x="0.0" y="265" width="600" height="126"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u6o-fr-ZoF">
-                                <rect key="frame" x="0.0" y="391" width="600" height="160"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dXn-c4-dhk">
+                                <rect key="frame" x="0.0" y="201" width="600" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="PVn-SC-vYg"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eTf-Rz-40X">
+                                    <size key="itemSize" width="150" height="150"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <view key="backgroundView" contentMode="scaleToFill" id="ubF-VI-L7X">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <cells/>
+                            </collectionView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_chat_ranking＠3x.png" translatesAutoresizingMaskIntoConstraints="NO" id="FfM-DN-qEx">
+                                <rect key="frame" x="0.0" y="0.0" width="88" height="64"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u6o-fr-ZoF">
+                                <rect key="frame" x="0.0" y="359" width="600" height="197"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.11372549019607843" green="0.11372549019607843" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pix-Qf-zTl" firstAttribute="top" secondItem="u6o-fr-ZoF" secondAttribute="bottom" id="61r-va-gKQ"/>
+                            <constraint firstItem="u6o-fr-ZoF" firstAttribute="leading" secondItem="r6H-BU-e30" secondAttribute="leadingMargin" constant="-20" id="7Jq-Wc-ojg"/>
+                            <constraint firstItem="EEH-aO-Foj" firstAttribute="top" secondItem="G6R-v6-qnY" secondAttribute="bottom" constant="-64" id="E0h-18-qcI"/>
+                            <constraint firstItem="u6o-fr-ZoF" firstAttribute="top" secondItem="dXn-c4-dhk" secondAttribute="bottom" constant="8" id="G29-BS-pUb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="u6o-fr-ZoF" secondAttribute="trailing" constant="-20" id="JmR-2y-kDg"/>
+                            <constraint firstItem="dXn-c4-dhk" firstAttribute="leading" secondItem="r6H-BU-e30" secondAttribute="leadingMargin" constant="-20" id="Qum-5Z-Inu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EEH-aO-Foj" secondAttribute="trailing" constant="-20" id="U82-tv-ijR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dXn-c4-dhk" secondAttribute="trailing" constant="-20" id="VJb-4C-Ngl"/>
+                            <constraint firstItem="dXn-c4-dhk" firstAttribute="top" secondItem="EEH-aO-Foj" secondAttribute="bottom" constant="8" id="cE3-K3-m6s"/>
+                            <constraint firstItem="Pix-Qf-zTl" firstAttribute="top" secondItem="u6o-fr-ZoF" secondAttribute="bottom" id="kxa-ie-TpR"/>
+                            <constraint firstItem="EEH-aO-Foj" firstAttribute="leading" secondItem="r6H-BU-e30" secondAttribute="leadingMargin" constant="-20" id="m7y-km-irs"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Title" id="buG-OQ-QQ3"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="friendsTableView" destination="W6E-In-sSM" id="zRG-Lg-yyy"/>
+                        <outlet property="friendsCollectionView" destination="dXn-c4-dhk" id="fdk-cb-gkx"/>
                         <outlet property="hotDiscussTableView" destination="u6o-fr-ZoF" id="MDE-X7-DNr"/>
                         <outlet property="navigationTitle" destination="buG-OQ-QQ3" id="0rw-2d-C03"/>
                         <outlet property="picturceView" destination="EEH-aO-Foj" id="dAs-fE-s7H"/>
@@ -103,7 +137,7 @@
             </objects>
             <point key="canvasLocation" x="2448" y="-47"/>
         </scene>
-        <!--Test-->
+        <!--Chat-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WatchTVTogether" customModuleProvider="target" sceneMemberID="viewController">
@@ -146,7 +180,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Test" id="SGT-EH-zOT"/>
+                    <tabBarItem key="tabBarItem" title="Chat" selectedImage="ic_chat_h.png" id="SGT-EH-zOT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -216,7 +250,7 @@
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="ngm-qh-lrC">
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.8862745098" green="0.35686274509999999" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="5nU-qg-S5y" kind="relationship" relationship="viewControllers" id="YH0-ci-Fjm"/>
@@ -271,7 +305,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="8Ap-oY-LON"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="ic_profile.png" selectedImage="ic_profile_h.png" id="8Ap-oY-LON"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WgD-jL-LAd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -316,7 +350,7 @@
         <scene sceneID="hGZ-0K-MpF">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5nU-qg-S5y" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Post" id="rb1-Zf-kqB"/>
+                    <tabBarItem key="tabBarItem" title="Post" image="ic_hot.png" selectedImage="ic_hot_h@3x.png" id="rb1-Zf-kqB"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vtZ-AU-AzY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -331,11 +365,11 @@
             </objects>
             <point key="canvasLocation" x="798" y="-523"/>
         </scene>
-        <!--Search-->
+        <!--Navigation Controller-->
         <scene sceneID="LeE-u6-4vB">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LYG-4v-RDs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Search" id="da4-qW-o8l"/>
+                    <tabBarItem key="tabBarItem" title="" image="ic_icon.png" id="da4-qW-o8l"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="WcN-CE-rez">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -354,7 +388,7 @@
         <scene sceneID="x7k-rS-0cV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Srr-1b-fcM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Friends" id="dGZ-08-mRE"/>
+                    <tabBarItem key="tabBarItem" title="Friends" image="ic_friend.png" selectedImage="ic_friend_h.png" id="dGZ-08-mRE"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="34F-lY-sCB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -370,6 +404,17 @@
             <point key="canvasLocation" x="798" y="180"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_chat_h.png" width="180" height="180"/>
+        <image name="ic_chat_ranking＠3x.png" width="168" height="168"/>
+        <image name="ic_friend.png" width="180" height="180"/>
+        <image name="ic_friend_h.png" width="180" height="180"/>
+        <image name="ic_hot.png" width="180" height="180"/>
+        <image name="ic_hot_h@3x.png" width="167" height="167"/>
+        <image name="ic_icon.png" width="240" height="240"/>
+        <image name="ic_profile.png" width="180" height="180"/>
+        <image name="ic_profile_h.png" width="180" height="180"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="sdS-76-M3G"/>
         <segue reference="3w7-H1-cLm"/>

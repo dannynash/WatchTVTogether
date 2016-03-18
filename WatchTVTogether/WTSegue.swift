@@ -18,5 +18,5 @@ struct WTNibIdentifier {
     static let kPostCellIdentifier = "WTPostTabelViewCell"
     static let kFriendCellIdentifier = "WTFriendTabelViewCell"
     static let kHotDiscussCellIdentifier = "HotDiscussCell"
-
+    static let kFriendCollectionCellIdentifier = "FriendCollectionCell"
 }

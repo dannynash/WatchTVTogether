@@ -6,7 +6,7 @@
 "831-PI-CFC.text" = "NBA 勇士v.s.小牛";
 
 /* Class = "UITabBarItem"; title = "Profile"; ObjectID = "8Ap-oY-LON"; */
-"8Ap-oY-LON.title" = "Profile";
+"8Ap-oY-LON.title" = "個人檔案";
 
 /* Class = "UILabel"; text = "Clock"; ObjectID = "A9j-1t-TeD"; */
 "A9j-1t-TeD.text" = "Clock";
@@ -33,7 +33,7 @@
 "YY9-F5-Hgv.normalTitle" = "stop detect";
 
 /* Class = "UITabBarItem"; title = "Friends"; ObjectID = "dGZ-08-mRE"; */
-"dGZ-08-mRE.title" = "Friends";
+"dGZ-08-mRE.title" = "好友";
 
 /* Class = "UILabel"; text = "Result"; ObjectID = "dQe-Ls-43j"; */
 "dQe-Ls-43j.text" = "Result";
@@ -45,7 +45,7 @@
 "qbf-KD-IKH.text" = "07:00~09:30";
 
 /* Class = "UITabBarItem"; title = "Post"; ObjectID = "rb1-Zf-kqB"; */
-"rb1-Zf-kqB.title" = "Post";
+"rb1-Zf-kqB.title" = "最熱";
 
 /* Class = "UIButton"; normalTitle = "send string"; ObjectID = "uvu-FO-9V3"; */
 "uvu-FO-9V3.normalTitle" = "send string";
