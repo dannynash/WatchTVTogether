@@ -67,15 +67,10 @@
 		77F322831C9BE6FD00C9BF4A /* ic_chat_ Bubble@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F322771C9BE6FD00C9BF4A /* ic_chat_ Bubble@3x.png */; };
 		77F322841C9BE6FD00C9BF4A /* ic_chat_h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F322781C9BE6FD00C9BF4A /* ic_chat_h@3x.png */; };
 		77F322851C9BE6FD00C9BF4A /* ic_chat_ranking@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F322791C9BE6FD00C9BF4A /* ic_chat_ranking@3x.png */; };
-		77F322861C9BE6FD00C9BF4A /* ic_chat@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F3227A1C9BE6FD00C9BF4A /* ic_chat@3x.png */; };
 		77F322871C9BE6FD00C9BF4A /* ic_friend_h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F3227B1C9BE6FD00C9BF4A /* ic_friend_h@3x.png */; };
-		77F322881C9BE6FD00C9BF4A /* ic_friend@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F3227C1C9BE6FD00C9BF4A /* ic_friend@3x.png */; };
 		77F322891C9BE6FD00C9BF4A /* ic_hot_h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F3227D1C9BE6FD00C9BF4A /* ic_hot_h@3x.png */; };
-		77F3228A1C9BE6FD00C9BF4A /* ic_hot@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F3227E1C9BE6FD00C9BF4A /* ic_hot@3x.png */; };
-		77F3228B1C9BE6FD00C9BF4A /* ic_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F3227F1C9BE6FD00C9BF4A /* ic_icon@3x.png */; };
 		77F3228C1C9BE6FD00C9BF4A /* ic_logo_big@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F322801C9BE6FD00C9BF4A /* ic_logo_big@3x.png */; };
 		77F3228D1C9BE6FD00C9BF4A /* ic_profile_h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F322811C9BE6FD00C9BF4A /* ic_profile_h@3x.png */; };
-		77F3228E1C9BE6FD00C9BF4A /* ic_profile@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F322821C9BE6FD00C9BF4A /* ic_profile@3x.png */; };
 		77F322901C9BEDF000C9BF4A /* WTGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F3228F1C9BEDF000C9BF4A /* WTGradientView.swift */; };
 		77F322921C9BF5AA00C9BF4A /* WTNavgationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F322911C9BF5AA00C9BF4A /* WTNavgationBar.swift */; };
 		77F322941C9BF81500C9BF4A /* WTTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F322931C9BF81500C9BF4A /* WTTabBar.swift */; };
@@ -113,6 +108,13 @@
 		BD10F8D71C9DAEEE008A6196 /* profile_16.png in Resources */ = {isa = PBXBuildFile; fileRef = BD10F8C71C9DAEEE008A6196 /* profile_16.png */; };
 		BD10F8D91C9DBFF3008A6196 /* cancel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD10F8D81C9DBFF3008A6196 /* cancel@3x.png */; };
 		BD10F8DB1C9DC12F008A6196 /* WTFakeTmpStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD10F8DA1C9DC12F008A6196 /* WTFakeTmpStorage.swift */; };
+		BD10F8DD1C9DC575008A6196 /* WTNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD10F8DC1C9DC575008A6196 /* WTNavigationViewController.swift */; };
+		BD10F8DF1C9DC77C008A6196 /* ic_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD10F8DE1C9DC77C008A6196 /* ic_icon@3x.png */; };
+		BD10F8E41C9DC979008A6196 /* ic_chat@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD10F8E01C9DC979008A6196 /* ic_chat@3x.png */; };
+		BD10F8E51C9DC979008A6196 /* ic_friend@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD10F8E11C9DC979008A6196 /* ic_friend@3x.png */; };
+		BD10F8E61C9DC979008A6196 /* ic_hot@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD10F8E21C9DC979008A6196 /* ic_hot@3x.png */; };
+		BD10F8E71C9DC979008A6196 /* ic_profile@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD10F8E31C9DC979008A6196 /* ic_profile@3x.png */; };
+		BD10F8E91C9DCE4D008A6196 /* ic_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD10F8E81C9DCE4D008A6196 /* ic_back@3x.png */; };
 		CF4FEBCD738ABE741FFFB87E /* Pods_WatchTVTogether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B90C6E4F7FF8DD2DF04A8E /* Pods_WatchTVTogether.framework */; };
 /* End PBXBuildFile section */
 
@@ -210,15 +212,10 @@
 		77F322771C9BE6FD00C9BF4A /* ic_chat_ Bubble@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_chat_ Bubble@3x.png"; sourceTree = "<group>"; };
 		77F322781C9BE6FD00C9BF4A /* ic_chat_h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_chat_h@3x.png"; sourceTree = "<group>"; };
 		77F322791C9BE6FD00C9BF4A /* ic_chat_ranking@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_chat_ranking@3x.png"; sourceTree = "<group>"; };
-		77F3227A1C9BE6FD00C9BF4A /* ic_chat@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_chat@3x.png"; sourceTree = "<group>"; };
 		77F3227B1C9BE6FD00C9BF4A /* ic_friend_h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_friend_h@3x.png"; sourceTree = "<group>"; };
-		77F3227C1C9BE6FD00C9BF4A /* ic_friend@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_friend@3x.png"; sourceTree = "<group>"; };
 		77F3227D1C9BE6FD00C9BF4A /* ic_hot_h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_hot_h@3x.png"; sourceTree = "<group>"; };
-		77F3227E1C9BE6FD00C9BF4A /* ic_hot@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_hot@3x.png"; sourceTree = "<group>"; };
-		77F3227F1C9BE6FD00C9BF4A /* ic_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_icon@3x.png"; sourceTree = "<group>"; };
 		77F322801C9BE6FD00C9BF4A /* ic_logo_big@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_logo_big@3x.png"; sourceTree = "<group>"; };
 		77F322811C9BE6FD00C9BF4A /* ic_profile_h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_profile_h@3x.png"; sourceTree = "<group>"; };
-		77F322821C9BE6FD00C9BF4A /* ic_profile@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_profile@3x.png"; sourceTree = "<group>"; };
 		77F3228F1C9BEDF000C9BF4A /* WTGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTGradientView.swift; path = view/WTGradientView.swift; sourceTree = "<group>"; };
 		77F322911C9BF5AA00C9BF4A /* WTNavgationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTNavgationBar.swift; path = view/WTNavgationBar.swift; sourceTree = "<group>"; };
 		77F322931C9BF81500C9BF4A /* WTTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTTabBar.swift; path = view/WTTabBar.swift; sourceTree = "<group>"; };
@@ -258,6 +255,13 @@
 		BD10F8C71C9DAEEE008A6196 /* profile_16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_16.png; sourceTree = "<group>"; };
 		BD10F8D81C9DBFF3008A6196 /* cancel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancel@3x.png"; sourceTree = "<group>"; };
 		BD10F8DA1C9DC12F008A6196 /* WTFakeTmpStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTFakeTmpStorage.swift; path = modelManager/WTFakeTmpStorage.swift; sourceTree = "<group>"; };
+		BD10F8DC1C9DC575008A6196 /* WTNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTNavigationViewController.swift; path = viewController/WTNavigationViewController.swift; sourceTree = "<group>"; };
+		BD10F8DE1C9DC77C008A6196 /* ic_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_icon@3x.png"; sourceTree = "<group>"; };
+		BD10F8E01C9DC979008A6196 /* ic_chat@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_chat@3x.png"; sourceTree = "<group>"; };
+		BD10F8E11C9DC979008A6196 /* ic_friend@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_friend@3x.png"; sourceTree = "<group>"; };
+		BD10F8E21C9DC979008A6196 /* ic_hot@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_hot@3x.png"; sourceTree = "<group>"; };
+		BD10F8E31C9DC979008A6196 /* ic_profile@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_profile@3x.png"; sourceTree = "<group>"; };
+		BD10F8E81C9DCE4D008A6196 /* ic_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_back@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -381,6 +385,7 @@
 				77F3219F1C96D2DE00C9BF4A /* WTAudioDetectorViewController.swift */,
 				77F321B01C97F00000C9BF4A /* WTProgramOverViewController.swift */,
 				77F322971C9BFF5900C9BF4A /* WTTabBarController.swift */,
+				BD10F8DC1C9DC575008A6196 /* WTNavigationViewController.swift */,
 				BD10F89D1C9D108C008A6196 /* WTDetailThreadViewController.swift */,
 			);
 			name = viewController;
@@ -487,16 +492,17 @@
 				77F322771C9BE6FD00C9BF4A /* ic_chat_ Bubble@3x.png */,
 				77F322781C9BE6FD00C9BF4A /* ic_chat_h@3x.png */,
 				77F322791C9BE6FD00C9BF4A /* ic_chat_ranking@3x.png */,
-				77F3227A1C9BE6FD00C9BF4A /* ic_chat@3x.png */,
 				77F3227B1C9BE6FD00C9BF4A /* ic_friend_h@3x.png */,
-				77F3227C1C9BE6FD00C9BF4A /* ic_friend@3x.png */,
 				77F3227D1C9BE6FD00C9BF4A /* ic_hot_h@3x.png */,
-				77F3227E1C9BE6FD00C9BF4A /* ic_hot@3x.png */,
-				77F3227F1C9BE6FD00C9BF4A /* ic_icon@3x.png */,
 				77F322801C9BE6FD00C9BF4A /* ic_logo_big@3x.png */,
 				77F322811C9BE6FD00C9BF4A /* ic_profile_h@3x.png */,
-				77F322821C9BE6FD00C9BF4A /* ic_profile@3x.png */,
 				BD10F8D81C9DBFF3008A6196 /* cancel@3x.png */,
+				BD10F8E01C9DC979008A6196 /* ic_chat@3x.png */,
+				BD10F8E11C9DC979008A6196 /* ic_friend@3x.png */,
+				BD10F8E21C9DC979008A6196 /* ic_hot@3x.png */,
+				BD10F8E31C9DC979008A6196 /* ic_profile@3x.png */,
+				BD10F8DE1C9DC77C008A6196 /* ic_icon@3x.png */,
+				BD10F8E81C9DCE4D008A6196 /* ic_back@3x.png */,
 			);
 			path = assets;
 			sourceTree = "<group>";
@@ -687,7 +693,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				77F321C31C98111600C9BF4A /* WTPostTableViewCell.xib in Resources */,
-				77F3228A1C9BE6FD00C9BF4A /* ic_hot@3x.png in Resources */,
 				77F321C11C98110400C9BF4A /* WTFriendsTableViewCell.xib in Resources */,
 				BD10F8B41C9D7000008A6196 /* landing@3x.jpg in Resources */,
 				774F61091C913B1500101065 /* LaunchScreen.storyboard in Resources */,
@@ -695,10 +700,11 @@
 				77F322871C9BE6FD00C9BF4A /* ic_friend_h@3x.png in Resources */,
 				774F61061C913B1500101065 /* Assets.xcassets in Resources */,
 				77F321E41C994BAB00C9BF4A /* 1330867871-491610638.jpg in Resources */,
+				BD10F8E51C9DC979008A6196 /* ic_friend@3x.png in Resources */,
 				BD10F89A1C9CFD55008A6196 /* WTTheadTitleCell.xib in Resources */,
+				BD10F8E71C9DC979008A6196 /* ic_profile@3x.png in Resources */,
 				BD10F8D71C9DAEEE008A6196 /* profile_16.png in Resources */,
 				BD10F8D91C9DBFF3008A6196 /* cancel@3x.png in Resources */,
-				77F3228B1C9BE6FD00C9BF4A /* ic_icon@3x.png in Resources */,
 				BD10F8A61C9D1490008A6196 /* WTDetailResponseCell.xib in Resources */,
 				BD10F8C81C9DAEEE008A6196 /* profile_01.png in Resources */,
 				77F322051C9A987200C9BF4A /* Localizable.strings in Resources */,
@@ -713,19 +719,20 @@
 				BD10F8D01C9DAEEE008A6196 /* profile_09.png in Resources */,
 				BD10F8D41C9DAEEE008A6196 /* profile_13.png in Resources */,
 				BD10F8C91C9DAEEE008A6196 /* profile_02.png in Resources */,
-				77F322881C9BE6FD00C9BF4A /* ic_friend@3x.png in Resources */,
 				BD10F8CA1C9DAEEE008A6196 /* profile_03.png in Resources */,
-				77F322861C9BE6FD00C9BF4A /* ic_chat@3x.png in Resources */,
 				77F322831C9BE6FD00C9BF4A /* ic_chat_ Bubble@3x.png in Resources */,
 				77F321E61C994BAB00C9BF4A /* photo.jpeg in Resources */,
 				774F61041C913B1500101065 /* Main.storyboard in Resources */,
 				BD10F8CE1C9DAEEE008A6196 /* profile_07.png in Resources */,
 				BD10F8D21C9DAEEE008A6196 /* profile_11.png in Resources */,
+				BD10F8E41C9DC979008A6196 /* ic_chat@3x.png in Resources */,
+				BD10F8E61C9DC979008A6196 /* ic_hot@3x.png in Resources */,
 				BD10F8CD1C9DAEEE008A6196 /* profile_06.png in Resources */,
 				BD10F8D51C9DAEEE008A6196 /* profile_14.png in Resources */,
+				BD10F8DF1C9DC77C008A6196 /* ic_icon@3x.png in Resources */,
 				77F322841C9BE6FD00C9BF4A /* ic_chat_h@3x.png in Resources */,
-				77F3228E1C9BE6FD00C9BF4A /* ic_profile@3x.png in Resources */,
 				BD10F8CC1C9DAEEE008A6196 /* profile_05.png in Resources */,
+				BD10F8E91C9DCE4D008A6196 /* ic_back@3x.png in Resources */,
 				BD10F8D11C9DAEEE008A6196 /* profile_10.png in Resources */,
 				77E7AFC41C926142002B0467 /* SendingStatusCollectionViewCell.xib in Resources */,
 				BD10F8B61C9D8257008A6196 /* searching@3x.png in Resources */,
@@ -851,6 +858,7 @@
 				BD10F8A41C9D1477008A6196 /* WTDetailResponseCell.swift in Sources */,
 				BD10F8921C9CF8CA008A6196 /* WTThreadDataSource.swift in Sources */,
 				BD10F8AE1C9D5FC8008A6196 /* WTImageProxy.swift in Sources */,
+				BD10F8DD1C9DC575008A6196 /* WTNavigationViewController.swift in Sources */,
 				77F322721C9BD1C000C9BF4A /* WTResponse.swift in Sources */,
 				77F3226A1C9BCF6500C9BF4A /* WTResponseView.swift in Sources */,
 				77F321B61C97F30200C9BF4A /* WTPostTableViewCell.swift in Sources */,

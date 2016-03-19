@@ -113,7 +113,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="88" height="64"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u6o-fr-ZoF">
-                                <rect key="frame" x="-4" y="366" width="383" height="301"/>
+                                <rect key="frame" x="-4" y="366" width="383" height="257"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
@@ -125,7 +125,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="u6o-fr-ZoF" secondAttribute="trailing" constant="-20" id="JmR-2y-kDg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="EEH-aO-Foj" secondAttribute="trailing" constant="-20" id="U82-tv-ijR"/>
                             <constraint firstItem="TdW-hg-4ZU" firstAttribute="top" secondItem="EEH-aO-Foj" secondAttribute="bottom" constant="8" id="UKE-Cb-Xan"/>
-                            <constraint firstItem="Pix-Qf-zTl" firstAttribute="top" secondItem="u6o-fr-ZoF" secondAttribute="bottom" constant="-44" id="kxa-ie-TpR"/>
+                            <constraint firstItem="Pix-Qf-zTl" firstAttribute="top" secondItem="u6o-fr-ZoF" secondAttribute="bottom" id="kxa-ie-TpR"/>
                             <constraint firstItem="EEH-aO-Foj" firstAttribute="leading" secondItem="r6H-BU-e30" secondAttribute="leadingMargin" constant="-20" id="m7y-km-irs"/>
                             <constraint firstItem="EEH-aO-Foj" firstAttribute="top" secondItem="G6R-v6-qnY" secondAttribute="bottom" id="rVw-ao-MGN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TdW-hg-4ZU" secondAttribute="trailing" constant="-20" id="uJM-Fu-Mia"/>
@@ -454,7 +454,7 @@
         <!--Post-->
         <scene sceneID="hGZ-0K-MpF">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5nU-qg-S5y" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5nU-qg-S5y" customClass="WTNavigationViewController" customModule="WatchTVTogether" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Post" image="ic_hot.png" selectedImage="ic_hot_h@3x.png" id="rb1-Zf-kqB">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
@@ -477,10 +477,10 @@
             </objects>
             <point key="canvasLocation" x="798" y="-523"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation View Controller-->
         <scene sceneID="LeE-u6-4vB">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LYG-4v-RDs" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LYG-4v-RDs" customClass="WTNavigationViewController" customModule="WatchTVTogether" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="ic_icon.png" selectedImage="ic_icon.png" id="da4-qW-o8l">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="tintAdjustmentMode">
@@ -506,7 +506,7 @@
         <!--Friends-->
         <scene sceneID="x7k-rS-0cV">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Srr-1b-fcM" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Srr-1b-fcM" customClass="WTNavigationViewController" customModule="WatchTVTogether" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Friends" image="ic_friend.png" selectedImage="ic_friend_h.png" id="dGZ-08-mRE">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
@@ -527,43 +527,26 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EMy-6V-5xP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="798" y="180"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="yct-hA-7Sv">
-            <objects>
-                <viewController id="t9D-Xo-71o" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dSx-BU-PgE"/>
-                        <viewControllerLayoutGuide type="bottom" id="o8J-Nx-wUc"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Gry-8r-Xns">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="A51-zY-wLF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
+            <point key="canvasLocation" x="797.5" y="190.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="cancel.png" width="40" height="40"/>
-        <image name="ic_chat.png" width="60" height="60"/>
+        <image name="ic_chat.png" width="25" height="25"/>
         <image name="ic_chat_h.png" width="60" height="60"/>
-        <image name="ic_friend.png" width="60" height="60"/>
+        <image name="ic_friend.png" width="25" height="25"/>
         <image name="ic_friend_h.png" width="60" height="60"/>
-        <image name="ic_hot.png" width="60" height="60"/>
+        <image name="ic_hot.png" width="25" height="25"/>
         <image name="ic_hot_h@3x.png" width="167" height="167"/>
-        <image name="ic_icon.png" width="80" height="80"/>
+        <image name="ic_icon.png" width="80" height="100"/>
         <image name="ic_logo_big.png" width="125" height="125"/>
-        <image name="ic_profile.png" width="60" height="60"/>
+        <image name="ic_profile.png" width="25" height="25"/>
         <image name="ic_profile_h.png" width="60" height="60"/>
         <image name="searching.png" width="414" height="736"/>
-        <image name="xd" width="600" height="400"/>
+        <image name="xd" width="875" height="143"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8nf-kc-sar"/>
+        <segue reference="sdS-76-M3G"/>
         <segue reference="3w7-H1-cLm"/>
     </inferredMetricsTieBreakers>
 </document>

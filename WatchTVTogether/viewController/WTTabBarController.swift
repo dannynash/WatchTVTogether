@@ -15,8 +15,8 @@ class WTTabBarController: UITabBarController {
         for barItem in self.tabBar.items!{
             barItem.image = barItem.image?.imageWithRenderingMode(.AlwaysOriginal)
         }
-
     }
-    
-    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
+    }
 }

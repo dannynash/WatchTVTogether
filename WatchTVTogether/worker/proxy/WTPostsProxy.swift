@@ -14,14 +14,9 @@ class WTPostsProxy{
     static let shareInstance = WTPostsProxy()
     
     func fetchPosts(completion: (result: [WTPost]) -> Void) {
-        let qUrl = "\(WTServerConfig.kServerUrl)popular"
+        let queryUrl = "\(WTServerConfig.kServerUrl)\(WTServerConfig.kQueryPosts)"
         
-        Alamofire.request(.GET, qUrl).responseJSON { [weak self] response in
-            
-            print(response.request)  // original URL request
-            print(response.response) // URL response
-            print(response.data)     // server data
-            print(response.result)   // result of response serialization
+        Alamofire.request(.GET, queryUrl).responseJSON { [weak self] response in
             
             guard response.response?.statusCode == 200 else{
                 
@@ -29,7 +24,6 @@ class WTPostsProxy{
             }
             if let value = response.result.value {
                 let json = JSON(value)
-                print(json["posts"])
                 let posts = self!.createPosts(json["posts"])
                 completion(result: posts)
             }

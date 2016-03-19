@@ -45,8 +45,8 @@ class WTChatViewController: ChatViewController {
         if (tabBarIsVisible() == visible) { return }
 
         let frame = self.tabBarController?.tabBar.frame
-        let height = frame?.size.height
-        let offsetY = (visible ? -height! : height)
+        let height = (frame?.size.height)! + 30
+        let offsetY = (visible ? -height : height)
         
         // zero duration means no animation
         let duration:NSTimeInterval = (animated ? 0.3 : 0.0)
@@ -54,7 +54,7 @@ class WTChatViewController: ChatViewController {
         //  animate the tabBar
         if frame != nil {
             UIView.animateWithDuration(duration) {
-                self.tabBarController?.tabBar.frame = CGRectOffset(frame!, 0, offsetY!)
+                self.tabBarController?.tabBar.frame = CGRectOffset(frame!, 0, offsetY)
                 return
             }
         }

@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -15,54 +14,45 @@
                 <rect key="frame" x="0.0" y="0.0" width="428" height="130"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="poX-QY-Kya">
-                        <rect key="frame" x="4" y="8" width="60" height="60"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="60" id="ZhH-Dh-2NS"/>
-                            <constraint firstAttribute="width" constant="60" id="b8L-4f-ArH"/>
-                        </constraints>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WilliWonka" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LoZ-Ls-1C0">
-                        <rect key="frame" x="72" y="11" width="75" height="18"/>
+                        <rect key="frame" x="8" y="8" width="75" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="0.92941176470588238" green="0.62745098039215685" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="好好看阿都快哭了～好好看阿都快哭了～好好看阿都快哭了～好好看阿都快哭了～好好看阿都快哭了～好好看阿都快哭了～好好看阿都快哭了～好好看阿都快哭了～" textAlignment="natural" lineBreakMode="clip" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fd-CW-13S">
-                        <rect key="frame" x="72" y="40" width="348" height="82"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12分鐘前" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rD-Mk-Dbg">
-                        <rect key="frame" x="359" y="11" width="61" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="12分鐘前" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rD-Mk-Dbg">
+                        <rect key="frame" x="119" y="8" width="301" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="21" id="Ibg-06-sxO"/>
+                            <constraint firstAttribute="height" constant="21" id="TUX-PU-Ddu"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="0.69803921568627447" green="0.69803921568627447" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="好好看阿都快哭了～好好看阿都快哭了～好好看阿都快哭了～好好看阿都快哭了～好好看阿都快哭了～好好看阿都快哭了～好好看阿都快哭了～好好看阿都快哭了～" textAlignment="natural" lineBreakMode="clip" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fd-CW-13S">
+                        <rect key="frame" x="8" y="34" width="412" height="88"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="3rD-Mk-Dbg" secondAttribute="trailing" constant="8" id="2zr-vF-hde"/>
-                    <constraint firstAttribute="trailing" secondItem="4fd-CW-13S" secondAttribute="trailing" constant="8" id="7cT-9t-xtG"/>
-                    <constraint firstItem="4fd-CW-13S" firstAttribute="leading" secondItem="poX-QY-Kya" secondAttribute="trailing" constant="8" id="AKb-BR-BBn"/>
-                    <constraint firstAttribute="bottom" secondItem="4fd-CW-13S" secondAttribute="bottom" constant="8" id="BxK-gO-dPJ"/>
-                    <constraint firstItem="3rD-Mk-Dbg" firstAttribute="top" secondItem="li0-OD-20U" secondAttribute="top" constant="11" id="G3s-fh-Ebr"/>
-                    <constraint firstItem="LoZ-Ls-1C0" firstAttribute="leading" secondItem="poX-QY-Kya" secondAttribute="trailing" constant="8" id="GlX-0N-2v6"/>
-                    <constraint firstItem="LoZ-Ls-1C0" firstAttribute="top" secondItem="li0-OD-20U" secondAttribute="top" constant="11" id="JJN-DV-zGv"/>
-                    <constraint firstItem="poX-QY-Kya" firstAttribute="leading" secondItem="li0-OD-20U" secondAttribute="leading" constant="4" id="g4M-dz-bCj"/>
-                    <constraint firstItem="4fd-CW-13S" firstAttribute="top" secondItem="3rD-Mk-Dbg" secondAttribute="bottom" constant="8" id="gQQ-EU-YmB"/>
-                    <constraint firstItem="LoZ-Ls-1C0" firstAttribute="top" secondItem="li0-OD-20U" secondAttribute="topMargin" constant="3" id="k9L-eW-j6L"/>
-                    <constraint firstItem="poX-QY-Kya" firstAttribute="top" secondItem="li0-OD-20U" secondAttribute="top" constant="8" id="qSf-ux-378"/>
+                    <constraint firstAttribute="trailing" secondItem="4fd-CW-13S" secondAttribute="trailing" constant="8" id="3Tb-DP-eyd"/>
+                    <constraint firstAttribute="bottom" secondItem="4fd-CW-13S" secondAttribute="bottom" constant="8" id="5PX-gX-vAH"/>
+                    <constraint firstItem="3rD-Mk-Dbg" firstAttribute="leading" secondItem="LoZ-Ls-1C0" secondAttribute="trailing" constant="36" id="9e1-S7-Upx"/>
+                    <constraint firstItem="LoZ-Ls-1C0" firstAttribute="leading" secondItem="li0-OD-20U" secondAttribute="leading" constant="8" id="JMd-rS-FRQ"/>
+                    <constraint firstItem="3rD-Mk-Dbg" firstAttribute="top" secondItem="li0-OD-20U" secondAttribute="top" constant="8" id="Jtf-Ko-Gvv"/>
+                    <constraint firstItem="4fd-CW-13S" firstAttribute="leading" secondItem="li0-OD-20U" secondAttribute="leading" constant="8" id="Lk6-lW-fhp"/>
+                    <constraint firstAttribute="trailing" secondItem="3rD-Mk-Dbg" secondAttribute="trailing" constant="8" id="NSM-fb-7MZ"/>
+                    <constraint firstItem="LoZ-Ls-1C0" firstAttribute="top" secondItem="li0-OD-20U" secondAttribute="top" constant="8" id="tlU-oa-SPB"/>
+                    <constraint firstItem="4fd-CW-13S" firstAttribute="top" secondItem="3rD-Mk-Dbg" secondAttribute="bottom" constant="5" id="uX6-e7-HUf"/>
+                    <constraint firstItem="3rD-Mk-Dbg" firstAttribute="leading" secondItem="LoZ-Ls-1C0" secondAttribute="trailing" constant="36" id="znZ-Wq-1yC"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="name" destination="LoZ-Ls-1C0" id="dx8-iM-gNf"/>
-                <outlet property="picture" destination="poX-QY-Kya" id="GY4-Je-9js"/>
                 <outlet property="response" destination="4fd-CW-13S" id="t4A-Px-7bN"/>
                 <outlet property="time" destination="3rD-Mk-Dbg" id="OUb-5r-00P"/>
             </connections>

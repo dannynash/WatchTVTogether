@@ -70,11 +70,9 @@ class WTAudioDetectorViewController: UIViewController, AFPDetectorDelegate{
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == WTSegue.kSearchToPost{
-//            let post = dataSource.posts[indexPath.section]
             let programVC = segue.destinationViewController as! WTProgramOverViewController
             let post = WTFakeTmpStorage.shareInstance.post!
             programVC.program = post.program
-
         }
     }
     

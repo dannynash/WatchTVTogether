@@ -11,7 +11,7 @@ import UIKit
 
 class WTDetailResponseCell:UITableViewCell{
     
-    @IBOutlet weak var picture: UIImageView!
+//    @IBOutlet weak var picture: UIImageView!
     
     @IBOutlet weak var name: UILabel!
     
@@ -24,9 +24,9 @@ class WTDetailResponseCell:UITableViewCell{
         self.name.text = response.name
         self.response.text = response.response
         
-        if let pic = response.userPicture{
-            self.picture.image = pic
-        }
+//        if let pic = response.userPicture{
+//            self.picture.image = pic
+//        }
         
         if let time = response.updateTime{
             self.time.text = WTTimeUtility().getResponseTime(time)

@@ -15,19 +15,8 @@ class WTThreadDataSource: NSObject, UITableViewDataSource {
 
     override init(){
         super.init()
-        
-        createFakeData()
     }
 
-    func createFakeData(){
-        let thread1 = WTThread(source: WTThreadSource.PTT, url: "", responseNum: 700, lastResponse: [WTResponse(name: "danny", response: "理性勿戰"), WTResponse(name: "danny", response: "理性勿戰")], lastUpdateTime: NSDate().timeIntervalSince1970/1000)
-        
-        let thread2 = WTThread(source: WTThreadSource.FB, url: "", responseNum: 700, lastResponse: [WTResponse(name: "danny", response: "賭神怎麼還不變身超級賽亞人")], lastUpdateTime: NSDate().timeIntervalSince1970/1000)
-        
-        threads.append(thread1)
-        threads.append(thread2)
-    }
-    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return threads.count
     }

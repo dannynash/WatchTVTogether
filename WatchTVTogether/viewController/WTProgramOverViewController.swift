@@ -20,8 +20,8 @@ class WTProgramOverViewController:UIViewController, UITableViewDelegate, UITable
     }
     var hotDiscusses = Array<WTThread>(){
         didSet{
-            hotDiscussTableView.reloadData()
             threadDataSource.threads = hotDiscusses
+            hotDiscussTableView.reloadData()
         }
     }
     
@@ -58,8 +58,13 @@ class WTProgramOverViewController:UIViewController, UITableViewDelegate, UITable
     
     func setHotDiscussTable(program:WTProgram){
         // TODO: show loading ui
-        WTHotDiscussWorker().fetchHotDiscuss(program) { (result) -> Void in
-            self.hotDiscusses = result
+        WTHotDiscussWorker().fetchHotDiscuss(program) { [weak self](result) -> Void in
+            guard let sSelf = self else {
+                return
+            }
+
+            sSelf.threadDataSource.threads = result
+            sSelf.hotDiscussTableView.reloadData()
         }
     }
     

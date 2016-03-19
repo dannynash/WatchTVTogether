@@ -17,6 +17,4 @@ struct WTServerConfig{
     static let kQueryDetailCommentPost = "post/" // & "postId"/comments
     static let kQueryDetailComment = "comments/" // & "postId"/comments
     
-    static let kQueryHotDiscussUrl = ""
-    
 }

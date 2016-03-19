@@ -22,47 +22,94 @@ struct WTDiscussProtocol {
 class WTHotDiscussWorker: WTHotDiscussProxy{
     
     func fetchHotDiscuss(program: WTProgram, completion: (result: [WTThread]) -> Void) {
+        let queryUrl = "\(WTServerConfig.kServerUrl)\(WTServerConfig.kQueryThreads)\(program.programId)"
         
-        Alamofire.request(.GET,WTServerConfig.kQueryHotDiscussUrl, parameters: [WTDiscussProtocol.kProgram: program.programId as AnyObject])
+        Alamofire.request(.GET, queryUrl)
             .responseJSON { response in
-                print(response.request)  // original URL request
-                print(response.response) // URL response
-                print(response.data)     // server data
-                print(response.result)   // result of response serialization
                 
-                if let value = response.result.value {
-                    let json = JSON(value)
-                    let discusses = self.createDiscusses(json)
-                    completion(result: discusses)
-                }
+            if let value = response.result.value {
+                let json = JSON(value)
+                let threads = self.createDiscusses(json["threads"])
+                completion(result: threads)
+            }
         }
     }
 
     func fetchThreadResponse(thread: WTThread, completion: (result: [WTResponse]) -> Void) {
         
-        let result = createThreadResponse()
-        completion(result: result)
+        let queryUrl = "\(WTServerConfig.kServerUrl)\(WTServerConfig.kQueryDetailCommentPost)\(thread.threadId)/\(WTServerConfig.kQueryDetailComment)"
+        
+        Alamofire.request(.GET, queryUrl)
+            .responseJSON { response in
+                
+            if let value = response.result.value {
+                let json = JSON(value)
+                let threads = self.createThreadResponse(json["comments"])
+                completion(result: threads)
+            }
+        }
+
     }
     
-    func createDiscusses(response:JSON) -> [WTThread]{
+    func createDiscusses(threads:JSON) -> [WTThread]{
         var discusses = [WTThread]()
-//        for program in response{
-//            let discuss = WTHotDiscuss(response: program)
-//            discusses.append(discuss)
-//        }
+        
+        for (index,thread):(String, JSON) in threads {
+            var s:WTThreadSource
+            
+            if thread["source"].stringValue == "fb" {
+                s = WTThreadSource.FB
+            } else if thread["source"].stringValue == "ptt" {
+                s = WTThreadSource.PTT
+            } else {
+                s = WTThreadSource.PTT
+            }
+            
+            let time = WTTimeUtility.shareInstance.timeIntervalWithServerTime(thread["lastUpdateTime"].intValue)
+            let responses = createRespones(thread["lastResponse"])
+            
+            let threadObject = WTThread(threadId:thread["threadId"].stringValue, source: s, url: "", responseNum: thread["responseNum"].intValue, lastResponse: responses, lastUpdateTime: time)
+            
+            discusses.append(threadObject)
+        }
         
         return discusses
     }
     
-    func createThreadResponse() -> [WTResponse]{
+    func createRespones(res:JSON) -> [WTResponse]{
+        var responses = [WTResponse]()
+        for (index,res):(String, JSON) in res {
+            let time = WTTimeUtility.shareInstance.timeIntervalWithServerTime(res["comment_time"].intValue)
+            let response = WTResponse(name: res["user"].stringValue, response: res["content"].stringValue, updateTime: time)
+            
+            responses.append(response)
+        }
+        return responses
+    }
+
+    func createThreadResponse(comments:JSON) -> [WTResponse]{
         var reponses = [WTResponse]()
         
-        for (var i=0; i<10; i++){
-            reponses.append(WTResponse(name: "Danny", response: "這摸蝦也有人看，今北七欸", updateTime: 1458373404.449833, userPicture: UIImage(named: "d873967.jpg")))
+        for (index,comment):(String, JSON) in comments {
+            let time = self.mongodbDateFormatter(comment["comment_time"].stringValue).timeIntervalSince1970
+            let response = WTResponse(name: comment["user"].stringValue, response: comment["content"].stringValue, updateTime: time)
+            reponses.append(response)
         }
         
         return reponses
     }
+    
+    
+    func mongodbDateFormatter(rawDate:String) -> NSDate {
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+        if let parsedDate = formatter.dateFromString(rawDate) {
+            return parsedDate
+        }
+        // you can handle as you wish
+        return NSDate()
+    }
+
     
     
 }

@@ -35,6 +35,10 @@ class WTPostWallViewController: UIViewController, UITableViewDelegate {
             }
         }
 
+        self.navigationItem.hidesBackButton = true
+        
+//        navigationController?.navigationBar.backItem?.setHidesBackButton(true, animated: false)
+
     }
     
     let myGradientView = WTGradientView()
