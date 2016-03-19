@@ -19,7 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         AFPDetector.showAllLog(AFPConfig.kShouldShowAllLog)
         
-        
+
+    
         return true
     }
 

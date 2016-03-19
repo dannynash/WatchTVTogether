@@ -109,7 +109,7 @@
                                     <constraint firstAttribute="height" constant="136" id="Z5Q-Xj-H19"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_chat_ranking＠3x.png" translatesAutoresizingMaskIntoConstraints="NO" id="FfM-DN-qEx">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xd" translatesAutoresizingMaskIntoConstraints="NO" id="FfM-DN-qEx">
                                 <rect key="frame" x="0.0" y="0.0" width="88" height="64"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u6o-fr-ZoF">
@@ -206,7 +206,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Chat" image="ic_chat.png" id="r6i-qq-cCq"/>
+                    <tabBarItem key="tabBarItem" title="Chat" image="ic_chat.png" id="r6i-qq-cCq">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hqp-Db-QhA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -321,7 +327,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="TG1-uT-pbv">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ccQ-02-db1" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ccQ-02-db1" customClass="WTTabBarController" customModule="WatchTVTogether" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -353,30 +359,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWK-Th-jod">
-                                <rect key="frame" x="253" y="363" width="95" height="30"/>
-                                <state key="normal" title="EnterProgram"/>
-                                <connections>
-                                    <segue destination="WkQ-It-Yus" kind="show" id="rTw-Mx-pf5"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kmE-2e-15c">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="searching.png" translatesAutoresizingMaskIntoConstraints="NO" id="kmE-2e-15c">
+                                <rect key="frame" x="-20" y="-40" width="414" height="736"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="搜尋頻道中" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2U-jz-wwQ">
-                                <rect key="frame" x="91" y="549" width="193" height="21"/>
+                                <rect key="frame" x="91" y="577" width="193" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_logo_big.png" translatesAutoresizingMaskIntoConstraints="NO" id="axN-Ns-XdI">
+                                <rect key="frame" x="125" y="271" width="125" height="125"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rf-Xq-1Rj">
+                                <rect key="frame" x="165" y="488" width="45" height="30"/>
+                                <state key="normal" title="button"/>
+                                <connections>
+                                    <action selector="tabCancel:" destination="rNw-0E-Kyn" eventType="touchUpInside" id="mxp-tP-NuI"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.11372549019607843" green="0.11372549019607843" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="GON-E2-Wms"/>
+                    <connections>
+                        <outlet property="icon" destination="axN-Ns-XdI" id="rJu-7I-JIl"/>
+                        <segue destination="WkQ-It-Yus" kind="show" id="8nf-kc-sar"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YWw-IS-Vzn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1609.5" y="901.5"/>
+            <point key="canvasLocation" x="1874.5" y="109.5"/>
         </scene>
         <!--Profile-->
         <scene sceneID="pJU-gK-aEn">
@@ -391,7 +404,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="ic_profile.png" selectedImage="ic_profile_h.png" id="8Ap-oY-LON"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="ic_profile.png" selectedImage="ic_profile_h.png" id="8Ap-oY-LON">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WgD-jL-LAd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -436,7 +455,13 @@
         <scene sceneID="hGZ-0K-MpF">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5nU-qg-S5y" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Post" image="ic_hot.png" selectedImage="ic_hot_h@3x.png" id="rb1-Zf-kqB"/>
+                    <tabBarItem key="tabBarItem" title="Post" image="ic_hot.png" selectedImage="ic_hot_h@3x.png" id="rb1-Zf-kqB">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vtZ-AU-AzY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -456,7 +481,13 @@
         <scene sceneID="LeE-u6-4vB">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LYG-4v-RDs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="ic_logo.png" selectedImage="ic_icon.png" id="da4-qW-o8l"/>
+                    <tabBarItem key="tabBarItem" title="" image="ic_icon.png" selectedImage="ic_icon.png" id="da4-qW-o8l">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="tintAdjustmentMode">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="WcN-CE-rez">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -476,7 +507,13 @@
         <scene sceneID="x7k-rS-0cV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Srr-1b-fcM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Friends" image="ic_friend.png" selectedImage="ic_friend_h.png" id="dGZ-08-mRE"/>
+                    <tabBarItem key="tabBarItem" title="Friends" image="ic_friend.png" selectedImage="ic_friend_h.png" id="dGZ-08-mRE">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="34F-lY-sCB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -513,18 +550,19 @@
     <resources>
         <image name="ic_chat.png" width="60" height="60"/>
         <image name="ic_chat_h.png" width="60" height="60"/>
-        <image name="ic_chat_ranking＠3x.png" width="600" height="400"/>
         <image name="ic_friend.png" width="60" height="60"/>
         <image name="ic_friend_h.png" width="60" height="60"/>
         <image name="ic_hot.png" width="60" height="60"/>
         <image name="ic_hot_h@3x.png" width="167" height="167"/>
         <image name="ic_icon.png" width="80" height="80"/>
-        <image name="ic_logo.png" width="167" height="167"/>
+        <image name="ic_logo_big.png" width="125" height="125"/>
         <image name="ic_profile.png" width="60" height="60"/>
         <image name="ic_profile_h.png" width="60" height="60"/>
+        <image name="searching.png" width="414" height="736"/>
+        <image name="xd" width="414" height="736"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="AiP-7t-tLZ"/>
-        <segue reference="sdS-76-M3G"/>
+        <segue reference="8nf-kc-sar"/>
     </inferredMetricsTieBreakers>
 </document>

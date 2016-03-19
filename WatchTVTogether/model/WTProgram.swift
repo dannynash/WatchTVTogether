@@ -14,20 +14,17 @@ struct WTProgram {
     let programId:String
     let programName:String
     let channelName:String
-    var picture:UIImage?
+    var pictureUrl:String?
 
     init(programId:String, programName:String, channelName:String, pictureUrl:String? = nil){
         self.programId = programId
         self.programName = programName
         self.channelName = channelName
         
-//        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0)) { [weak, self]() -> Void in
-//            
-//            if let sSelf = self {
-//                self.picture = picture
-//            }
-//
-//        }
-
+        guard pictureUrl != nil else {
+            return
+        }
+        
+        self.pictureUrl = pictureUrl
     }
 }

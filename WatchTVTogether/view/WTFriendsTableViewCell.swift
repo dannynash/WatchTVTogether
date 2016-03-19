@@ -18,7 +18,13 @@ class WTFriendsTableViewCell: UITableViewCell {
     func setFriend(friend:WTFriend){
         self.nameLabel.text = friend.userName
         self.programLabel.text = friend.programName
-        self.pictureView.image = friend.picture
+        
+        if friend.pictureUrl != nil{
+            self.setImage(friend.pictureUrl!)
+        }
     }
     
+    private func setImage(pictureUrl:String){
+        self.pictureView.image = UIImage(named: pictureUrl)
+    }
 }

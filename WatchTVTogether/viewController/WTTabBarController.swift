@@ -12,7 +12,11 @@ import UIKit
 class WTTabBarController: UITabBarController {
     
     override func viewDidLoad() {
-        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName:UIColor.whiteColor()], forState: .Normal)
+        for barItem in self.tabBar.items!{
+            barItem.image = barItem.image?.imageWithRenderingMode(.AlwaysOriginal)
+        }
+
     }
+    
     
 }

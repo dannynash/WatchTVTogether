@@ -13,6 +13,7 @@ struct WTSegue {
     static let kFriendsToChat = "FriendsToChat"
     static let kProgramToChat = "ProgramToChat"
     static let kProgramToThread = "ProgramToThread"
+    static let kSearchToPost = "searchToPost"
 
 }
 

@@ -34,11 +34,21 @@ class WTProgramOverViewController:UIViewController, UITableViewDelegate, UITable
         let programName = program.programName
         self.navigationTitle.title = programName
 
-        if let pic = program.picture{
-            self.picturceView.image = pic
+        if let pic = program.pictureUrl{
+            self.setImage(pic)
         }
     }
     
+    private func setImage(pictureUrl:String){
+        WTImageProxy().fetchImage(pictureUrl) { [weak self](result) -> Void in
+            
+            guard let sSelf = self else {
+                return
+            }
+            sSelf.picturceView.image = result
+        }
+    }
+
     func setFriendsTable(program:WTProgram){
         let friendsDataSource = WTFriendsDataSource.sharedInstance
         let programId = program.programId

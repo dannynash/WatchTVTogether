@@ -11,16 +11,16 @@ import Chatto
 import ChattoAdditions
 
 public class WTChatMessageReceiver{
-    let channel = WTSocketIOClient.sharedInstance
+//    let channel = WTSocketIOClient.sharedInstance
 
     public var onMessage: ((message: String) -> Void)?
 
     init(){
-        channel.onChatMessage = { [weak self] (message) in
-            guard let sSelf = self else { return }
-            let text = message["text"] as! String
-            sSelf.notifyMessageChanged(text)
-        }
+//        channel.onChatMessage = { [weak self] (message) in
+//            guard let sSelf = self else { return }
+//            let text = message["text"] as! String
+//            sSelf.notifyMessageChanged(text)
+//        }
     }
     
     private func notifyMessageChanged(message: String) {

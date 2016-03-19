@@ -12,8 +12,9 @@ import Alamofire
 import SwiftyJSON
 
 class WTImageProxy:BaseProxy{
+
     func fetchImage(url:String, completion:(result:UIImage) -> Void){
-        let qUrl = "\(WTServerConfig.kServerUrl)url"
+        let qUrl = "\(WTServerConfig.kServerUrl)\(url)"
 
         Alamofire.request(.GET, qUrl).responseJSON { response in
             if response.response?.statusCode == 200 {
@@ -23,5 +24,7 @@ class WTImageProxy:BaseProxy{
         }
         
     }
+    
+    
     
 }

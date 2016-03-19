@@ -26,13 +26,21 @@ class WTPostTableViewCell: UITableViewCell {
             rankLabel.text = ""
         }
 
-        if post.picture != nil{
-            self.pictrueView.image = post.picture
-            self.pictrueView.autoresizingMask = .FlexibleHeight
-            self.pictrueView.contentMode = .ScaleAspectFit
+        if post.pictureUrl != nil{
+            self.setImage(post.pictureUrl!)
         }
-        
-        
+    }
+    
+    private func setImage(pictureUrl:String){
+        WTImageProxy().fetchImage(pictureUrl) { [weak self](result) -> Void in
+            
+            guard let sSelf = self else {
+                return
+            }
+            sSelf.pictrueView.image = result
+            sSelf.pictrueView.autoresizingMask = .FlexibleHeight
+            sSelf.pictrueView.contentMode = .ScaleAspectFit
+        }
     }
     
 }

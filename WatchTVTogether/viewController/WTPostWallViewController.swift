@@ -28,15 +28,12 @@ class WTPostWallViewController: UIViewController, UITableViewDelegate {
         navigationController?.navigationBar.topItem?.title = NSLocalizedString("SpoilAlert", comment: "")
         
         
-        WTPostsProxy().fetchPosts { [weak self](result) -> Void in
+        WTPostsProxy.shareInstance.fetchPosts { [weak self](result) -> Void in
             if let sSelf = self{
                 sSelf.dataSource.posts = result
-                print("123")
-
+                sSelf.postTableView.reloadData()
             }
-            
         }
-        
 
     }
     

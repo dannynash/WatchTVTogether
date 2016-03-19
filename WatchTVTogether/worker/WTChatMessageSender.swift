@@ -27,14 +27,15 @@ extension TextMessageModel{
 }
 
 public class WTChatMessageSender {
-    let channel = WTSocketIOClient.sharedInstance
+//    let channel = WTSocketIOClient.sharedInstance
     
     var peerId:String
     var currentUserId:String
     
     init(peerId:String){
         self.peerId = peerId
-        self.currentUserId = channel.currentUserId
+//        self.currentUserId = channel.currentUserId
+        self.currentUserId = ""
     }
     public var onMessageChanged: ((message: MessageModelProtocol) -> Void)?
     
@@ -42,10 +43,10 @@ public class WTChatMessageSender {
     }
     
     public func sendTextMessage(message:TextMessageModel){
-        if channel.socket.status == .Connected{
-            channel.emit("chat", message.toPackage(currentUserId, peerId: peerId))
-            self.updateMessage(message, status: .Success)
-        }
+//        if channel.socket.status == .Connected{
+//            channel.emit("chat", message.toPackage(currentUserId, peerId: peerId))
+//            self.updateMessage(message, status: .Success)
+//        }
     }
     
     public func sendPhotoMessage(message:PhotoMessageModel){

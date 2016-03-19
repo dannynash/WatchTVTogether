@@ -53,7 +53,7 @@ class WTPostsDataSource:NSObject, UITableViewDataSource {
             cell = WTPostTableViewCell()
         }
         
-        (cell as! WTPostTableViewCell).setPost(posts[indexPath.section], rank: indexPath.row+1)
+        (cell as! WTPostTableViewCell).setPost(posts[indexPath.section], rank: indexPath.section+1)
         return cell!
         
     }

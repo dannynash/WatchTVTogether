@@ -25,7 +25,7 @@ func createTextMessageModel(uid: String, text: String, isIncoming: Bool) -> Text
 
 func createMessageModel(uid: String, isIncoming: Bool, type: String) -> MessageModel {
     let senderId = isIncoming ? "1" : "2"
-    let messageStatus = isIncoming ? MessageStatus.Success : .Sending
+    let messageStatus = isIncoming ? MessageStatus.Success : .Success
     let messageModel = MessageModel(uid: uid, senderId: senderId, type: type, isIncoming: isIncoming, date: NSDate(), status: messageStatus)
     return messageModel
 }

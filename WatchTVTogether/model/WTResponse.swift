@@ -21,6 +21,12 @@ class WTResponse {
         self.updateTime = updateTime
         self.userPicture = userPicture
     }
-    
-    
 }
+
+//class WTFBResponse:WTResponse{
+//    let updateTime:NSTimeInterval?
+//
+//    init(name: String, response: String, updateTime: NSTimeInterval?, userPicture: UIImage?) {
+//        <#code#>
+//    }
+//}

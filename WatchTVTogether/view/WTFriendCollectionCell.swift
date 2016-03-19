@@ -14,9 +14,12 @@ class WTFriendCollectionCell: UICollectionViewCell {
     @IBOutlet weak var pictureView: UIImageView!    
     @IBOutlet weak var nameLabel: UILabel!
     
-    
     func setFriend(friend:WTFriend){
         self.nameLabel.text = friend.userName
-        self.pictureView.image = friend.picture
+        
+        if friend.pictureUrl != nil {
+            self.pictureView.image = UIImage(named:friend.pictureUrl!)
+        }
     }
+    
 }

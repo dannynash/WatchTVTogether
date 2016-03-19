@@ -30,9 +30,9 @@ class WTPost {
             return program.channelName
         }
     }
-    var picture:UIImage?{
+    var pictureUrl:String?{
         get{
-            return program.picture
+            return program.pictureUrl
         }
     }
 
