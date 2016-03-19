@@ -20,7 +20,7 @@ class WTFriendsDataSource:NSObject, UITableViewDataSource {
     }
     
     func createFakeData(){
-        let friend1 = WTFriend(userId: "1", userName: "Danny", userStatus: .online, programId: "1")
+        let friend1 = WTFriend(userId: "1", userName: "Danny", userStatus: .online, programId: "1", picture:UIImage(named: "d873967.jpg"), programName:"甘味人生")
         friends.append(friend1)
         let friend2 = WTFriend(userId: "2", userName: "Ken")
         friends.append(friend2)

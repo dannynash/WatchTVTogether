@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (3.2.1)
   - Chatto (1.0.0)
   - ChattoAdditions (1.0.0):
     - Chatto
@@ -6,6 +7,7 @@ PODS:
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
+  - Alamofire (~> 3.0)
   - Chatto (= 1.0.0)
   - ChattoAdditions (= 1.0.0)
   - Socket.IO-Client-Swift (~> 5.5.0)
@@ -21,6 +23,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/SwiftyJSON/SwiftyJSON.git
 
 SPEC CHECKSUMS:
+  Alamofire: f11d8624a05f5d39e0c99309b3e600a3ba64298a
   Chatto: 531b14bbb7d21dfc50a86fc4ff70a90367171403
   ChattoAdditions: 27c7b59f4c1b1d51d5f37c7199164982fcc59edf
   Socket.IO-Client-Swift: f39dbd4e9b295907bb7fd4b9588b89c00426783d

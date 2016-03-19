@@ -17,6 +17,8 @@ class WTPostWallViewController: UIViewController, UITableViewDelegate {
     
     override func viewDidLoad() {
         postTableView.registerNib(UINib(nibName: "WTPostTableViewCell", bundle: nil), forCellReuseIdentifier: WTNibIdentifier.kPostCellIdentifier)
+        postTableView.registerNib(UINib(nibName: "WTResponseView", bundle: nil), forCellReuseIdentifier: WTNibIdentifier.kWTResponseViewIdentifier)
+        
         postTableView.rowHeight = 300
         postTableView.dataSource = dataSource
         postTableView.delegate = self
@@ -25,6 +27,17 @@ class WTPostWallViewController: UIViewController, UITableViewDelegate {
         setGradient()
         navigationController?.navigationBar.topItem?.title = NSLocalizedString("SpoilAlert", comment: "")
         
+        
+        WTPostsProxy().fetchPosts { [weak self](result) -> Void in
+            if let sSelf = self{
+                sSelf.dataSource.posts = result
+                print("123")
+
+            }
+            
+        }
+        
+
     }
     
 //    func setTabIcon(){
@@ -67,24 +80,22 @@ class WTPostWallViewController: UIViewController, UITableViewDelegate {
     
 //    var cell:UITableViewCell?
 //    
-//    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-//        cell = tableView.dequeueReusableCellWithIdentifier(WTNibIdentifier.kPostCellIdentifier)
-//        
-//        if cell == nil{
-//            cell = WTPostTableViewCell()
-//        }
-//        
-//        if var wrappedCell = cell {
-//
-//            setUpCell(&wrappedCell, indexPath: indexPath)
-//            wrappedCell.layoutIfNeeded()
-//            return 196.0
-////            return calculateHeightForConfiguredSizingCell(wrappedCell)
-//        }
-//        
-//        return CGFloat(0.0)
-//        
-//    }
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if indexPath.row == 0{
+            return 207.0
+        } else if isTheLastCellOfSection(indexPath) {
+            return 35.0
+        } else {
+            return 30.0
+        }
+    }
+    
+    func isTheLastCellOfSection(indexPath: NSIndexPath) -> Bool{
+        let lastResponseNum = dataSource.posts[indexPath.section].lastResponse.count
+        let a = Int(lastResponseNum) + 1
+        return indexPath.row == a
+    }
+    
     
     func setUpCell(inout cell:UITableViewCell, indexPath: NSIndexPath){
         let post = dataSource.posts[indexPath.row]
@@ -101,7 +112,7 @@ class WTPostWallViewController: UIViewController, UITableViewDelegate {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: false)
 
-        let post = dataSource.posts[indexPath.row]
+        let post = dataSource.posts[indexPath.section]
         self.performSegueWithIdentifier(WTSegue.kPostWallToProgram, sender: post)
     }
     

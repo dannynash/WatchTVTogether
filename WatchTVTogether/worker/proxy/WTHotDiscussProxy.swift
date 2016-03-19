@@ -11,7 +11,7 @@ import Alamofire
 import SwiftyJSON
 
 protocol WTHotDiscussProxy{
-    func fetchHotDiscuss(program:WTProgram, completion:(result:[WTHotDiscuss]) -> Void)
+    func fetchHotDiscuss(program:WTProgram, completion:(result:[WTThread]) -> Void)
     
 }
 
@@ -21,7 +21,7 @@ struct WTDiscussProtocol {
 
 class WTHotDiscussWorker: WTHotDiscussProxy{
     
-    func fetchHotDiscuss(program: WTProgram, completion: (result: [WTHotDiscuss]) -> Void) {
+    func fetchHotDiscuss(program: WTProgram, completion: (result: [WTThread]) -> Void) {
         
         Alamofire.request(.GET,WTServerConfig.kQueryHotDiscussUrl, parameters: [WTDiscussProtocol.kProgram: program.programId as AnyObject])
             .responseJSON { response in
@@ -38,9 +38,14 @@ class WTHotDiscussWorker: WTHotDiscussProxy{
         }
     }
 
-
-    func createDiscusses(response:JSON) -> [WTHotDiscuss]{
-        var discusses = [WTHotDiscuss]()
+    func fetchThreadResponse(thread: WTThread, completion: (result: [WTResponse]) -> Void) {
+        
+        let result = createThreadResponse()
+        completion(result: result)
+    }
+    
+    func createDiscusses(response:JSON) -> [WTThread]{
+        var discusses = [WTThread]()
 //        for program in response{
 //            let discuss = WTHotDiscuss(response: program)
 //            discusses.append(discuss)
@@ -48,5 +53,16 @@ class WTHotDiscussWorker: WTHotDiscussProxy{
         
         return discusses
     }
+    
+    func createThreadResponse() -> [WTResponse]{
+        var reponses = [WTResponse]()
+        
+        for (var i=0; i<10; i++){
+            reponses.append(WTResponse(name: "Danny", response: "這摸蝦也有人看，今北七欸", updateTime: 1458373404.449833, userPicture: UIImage(named: "d873967.jpg")))
+        }
+        
+        return reponses
+    }
+    
     
 }

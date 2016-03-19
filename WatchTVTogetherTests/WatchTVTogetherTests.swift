@@ -7,7 +7,8 @@
 //
 
 import XCTest
-@testable import WatchTVTogether
+//@testable import WatchTVTogether
+//import WatchTVTogether
 
 class WatchTVTogetherTests: XCTestCase {
     
@@ -33,4 +34,31 @@ class WatchTVTogetherTests: XCTestCase {
         }
     }
     
+    func testTime(){
+        let sec = NSTimeInterval(50)
+        XCTAssertEqual(getResponseTime(sec), "50秒前", "secs failed")
+    }
+    
+    func getResponseTime(timestamp:NSTimeInterval) -> String{
+        let now = NSDate().timeIntervalSince1970
+        let offset = now - timestamp
+        
+        if (offset < 60){
+            // sec
+            return "\(Int(offset))秒前"
+        } else if (offset < 3600){
+            // min
+            let min = offset/60.0
+            return "\(Int(min))分鐘前"
+            
+        } else if (offset < 86400){
+            // hour
+            let min = offset/3600
+            return "\(Int(min))小時前"
+            
+        } else {
+            return ""
+        }
+    }
+
 }

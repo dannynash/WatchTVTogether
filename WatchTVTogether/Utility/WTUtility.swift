@@ -17,3 +17,54 @@ func UIColorFromRGB(rgbValue: UInt) -> UIColor {
         alpha: CGFloat(1.0)
     )
 }
+
+extension NSTimeInterval {
+    var minuteSecondMS: String {
+        return String(format:"%d:%02d.%03d", minute, second, millisecond)
+    }
+    var minute: Int {
+        return Int(self/60.0 % 60)
+    }
+    var second: Int {
+        return Int(self % 60)
+    }
+    var millisecond: Int {
+        return Int(self*1000 % 1000 )
+    }
+}
+
+
+class WTTimeUtility{
+    
+    static let shareInstance = WTTimeUtility()
+    
+//    let reponseTimeFormatter =
+//    NSTimeInterval // sec
+    func getResponseTime(timestamp:NSTimeInterval) -> String{
+        let now = NSDate().timeIntervalSince1970
+        let offset = now - timestamp
+        
+        if (offset < 60){
+            // sec
+            return "\(Int(offset))秒前"
+        } else if (offset < 3600){
+            // min
+            let min = offset/60.0
+            return "\(Int(min))分鐘前"
+
+        } else if (offset < 86400){
+            // hour
+            let min = offset/3600
+            return "\(Int(min))小時前"
+            
+        } else {
+            return ""
+        }
+    }
+    
+    func timeIntervalWithServerTime(time:Int) -> NSTimeInterval{
+        
+        return NSTimeInterval(time/1000)
+    }
+
+}

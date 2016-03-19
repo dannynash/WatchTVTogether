@@ -84,12 +84,14 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-WatchTVTogether/Alamofire.framework"
   install_framework "Pods-WatchTVTogether/Chatto.framework"
   install_framework "Pods-WatchTVTogether/ChattoAdditions.framework"
   install_framework "Pods-WatchTVTogether/SocketIOClientSwift.framework"
   install_framework "Pods-WatchTVTogether/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-WatchTVTogether/Alamofire.framework"
   install_framework "Pods-WatchTVTogether/Chatto.framework"
   install_framework "Pods-WatchTVTogether/ChattoAdditions.framework"
   install_framework "Pods-WatchTVTogether/SocketIOClientSwift.framework"

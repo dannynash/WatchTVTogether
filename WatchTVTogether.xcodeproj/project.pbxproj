@@ -59,12 +59,10 @@
 		77F3220C1C9ADAD500C9BF4A /* WTChatMessageReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F3220B1C9ADAD500C9BF4A /* WTChatMessageReceiver.swift */; };
 		77F3220F1C9B8F4700C9BF4A /* WTUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F3220E1C9B8F4700C9BF4A /* WTUtility.swift */; };
 		77F3225D1C9BBD2A00C9BF4A /* WTFriendCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F3225C1C9BBD2A00C9BF4A /* WTFriendCollectionCell.swift */; };
-		77F322611C9BC00F00C9BF4A /* WTThreadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F322601C9BC00F00C9BF4A /* WTThreadCell.swift */; };
 		77F322661C9BC6FD00C9BF4A /* WTFriendCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77F322651C9BC6FD00C9BF4A /* WTFriendCollectionCell.xib */; };
 		77F322681C9BC8B000C9BF4A /* s27209056.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77F322671C9BC8B000C9BF4A /* s27209056.jpg */; };
 		77F3226A1C9BCF6500C9BF4A /* WTResponseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F322691C9BCF6500C9BF4A /* WTResponseView.swift */; };
 		77F3226C1C9BCF7800C9BF4A /* WTResponseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77F3226B1C9BCF7800C9BF4A /* WTResponseView.xib */; };
-		77F322701C9BD17700C9BF4A /* WTResponseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F3226F1C9BD17700C9BF4A /* WTResponseDataSource.swift */; };
 		77F322721C9BD1C000C9BF4A /* WTResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F322711C9BD1C000C9BF4A /* WTResponse.swift */; };
 		77F322831C9BE6FD00C9BF4A /* ic_chat_ Bubble@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F322771C9BE6FD00C9BF4A /* ic_chat_ Bubble@3x.png */; };
 		77F322841C9BE6FD00C9BF4A /* ic_chat_h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F322781C9BE6FD00C9BF4A /* ic_chat_h@3x.png */; };
@@ -83,6 +81,19 @@
 		77F322941C9BF81500C9BF4A /* WTTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F322931C9BF81500C9BF4A /* WTTabBar.swift */; };
 		77F322961C9BFBBF00C9BF4A /* WTTabBottomItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F322951C9BFBBF00C9BF4A /* WTTabBottomItem.swift */; };
 		77F322981C9BFF5900C9BF4A /* WTTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F322971C9BFF5900C9BF4A /* WTTabBarController.swift */; };
+		BD10F8921C9CF8CA008A6196 /* WTThreadDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD10F8911C9CF8CA008A6196 /* WTThreadDataSource.swift */; };
+		BD10F8941C9CF991008A6196 /* WTThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD10F8931C9CF991008A6196 /* WTThread.swift */; };
+		BD10F8981C9CFC9A008A6196 /* WTTheadTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD10F8971C9CFC9A008A6196 /* WTTheadTitleCell.swift */; };
+		BD10F89A1C9CFD55008A6196 /* WTTheadTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD10F8991C9CFD55008A6196 /* WTTheadTitleCell.xib */; };
+		BD10F89C1C9D0C84008A6196 /* d873967.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BD10F89B1C9D0C84008A6196 /* d873967.jpg */; };
+		BD10F89E1C9D108C008A6196 /* WTDetailThreadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD10F89D1C9D108C008A6196 /* WTDetailThreadViewController.swift */; };
+		BD10F8A01C9D10F8008A6196 /* WTDetailThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD10F89F1C9D10F8008A6196 /* WTDetailThread.swift */; };
+		BD10F8A41C9D1477008A6196 /* WTDetailResponseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD10F8A31C9D1477008A6196 /* WTDetailResponseCell.swift */; };
+		BD10F8A61C9D1490008A6196 /* WTDetailResponseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD10F8A51C9D1490008A6196 /* WTDetailResponseCell.xib */; };
+		BD10F8AC1C9D584F008A6196 /* WTPostsProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD10F8AB1C9D584F008A6196 /* WTPostsProxy.swift */; };
+		BD10F8AE1C9D5FC8008A6196 /* WTImageProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD10F8AD1C9D5FC8008A6196 /* WTImageProxy.swift */; };
+		BD10F8B01C9D5FF3008A6196 /* BaseProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD10F8AF1C9D5FF3008A6196 /* BaseProxy.swift */; };
+		BD10F8B41C9D7000008A6196 /* landing@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BD10F8B31C9D7000008A6196 /* landing@3x.jpg */; };
 		CF4FEBCD738ABE741FFFB87E /* Pods_WatchTVTogether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B90C6E4F7FF8DD2DF04A8E /* Pods_WatchTVTogether.framework */; };
 /* End PBXBuildFile section */
 
@@ -113,7 +124,7 @@
 		774F61081C913B1500101065 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		774F610A1C913B1500101065 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		774F610F1C913B1500101065 /* WatchTVTogetherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchTVTogetherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		774F61131C913B1500101065 /* WatchTVTogetherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchTVTogetherTests.swift; sourceTree = "<group>"; };
+		774F61131C913B1500101065 /* WatchTVTogetherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WatchTVTogetherTests.swift; path = WatchTVTogetherTests/WatchTVTogetherTests.swift; sourceTree = SOURCE_ROOT; };
 		774F61151C913B1500101065 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		774F611A1C913B1500101065 /* WatchTVTogetherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchTVTogetherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		774F611E1C913B1500101065 /* WatchTVTogetherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchTVTogetherUITests.swift; sourceTree = "<group>"; };
@@ -172,12 +183,10 @@
 		77F322281C9B9F6F00C9BF4A /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		77F322291C9BA01F00C9BF4A /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
 		77F3225C1C9BBD2A00C9BF4A /* WTFriendCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTFriendCollectionCell.swift; path = view/WTFriendCollectionCell.swift; sourceTree = "<group>"; };
-		77F322601C9BC00F00C9BF4A /* WTThreadCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTThreadCell.swift; path = view/WTThreadCell.swift; sourceTree = "<group>"; };
 		77F322651C9BC6FD00C9BF4A /* WTFriendCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WTFriendCollectionCell.xib; path = view/WTFriendCollectionCell.xib; sourceTree = "<group>"; };
 		77F322671C9BC8B000C9BF4A /* s27209056.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = s27209056.jpg; sourceTree = "<group>"; };
 		77F322691C9BCF6500C9BF4A /* WTResponseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTResponseView.swift; path = view/WTResponseView.swift; sourceTree = "<group>"; };
 		77F3226B1C9BCF7800C9BF4A /* WTResponseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WTResponseView.xib; path = view/WTResponseView.xib; sourceTree = "<group>"; };
-		77F3226F1C9BD17700C9BF4A /* WTResponseDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTResponseDataSource.swift; path = model/WTResponseDataSource.swift; sourceTree = "<group>"; };
 		77F322711C9BD1C000C9BF4A /* WTResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTResponse.swift; path = model/WTResponse.swift; sourceTree = "<group>"; };
 		77F322771C9BE6FD00C9BF4A /* ic_chat_ Bubble@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_chat_ Bubble@3x.png"; sourceTree = "<group>"; };
 		77F322781C9BE6FD00C9BF4A /* ic_chat_h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_chat_h@3x.png"; sourceTree = "<group>"; };
@@ -198,6 +207,19 @@
 		77F322971C9BFF5900C9BF4A /* WTTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTTabBarController.swift; path = viewController/WTTabBarController.swift; sourceTree = "<group>"; };
 		9C3AD2C1289F715CB1D9D621 /* Pods-WatchTVTogether.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTVTogether.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchTVTogether/Pods-WatchTVTogether.release.xcconfig"; sourceTree = "<group>"; };
 		A2050A9907B07256A8046A49 /* Pods-WatchTVTogether.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTVTogether.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchTVTogether/Pods-WatchTVTogether.debug.xcconfig"; sourceTree = "<group>"; };
+		BD10F8911C9CF8CA008A6196 /* WTThreadDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTThreadDataSource.swift; path = modelManager/WTThreadDataSource.swift; sourceTree = "<group>"; };
+		BD10F8931C9CF991008A6196 /* WTThread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTThread.swift; path = model/WTThread.swift; sourceTree = "<group>"; };
+		BD10F8971C9CFC9A008A6196 /* WTTheadTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTTheadTitleCell.swift; path = view/WTTheadTitleCell.swift; sourceTree = "<group>"; };
+		BD10F8991C9CFD55008A6196 /* WTTheadTitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WTTheadTitleCell.xib; path = view/WTTheadTitleCell.xib; sourceTree = "<group>"; };
+		BD10F89B1C9D0C84008A6196 /* d873967.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = d873967.jpg; sourceTree = "<group>"; };
+		BD10F89D1C9D108C008A6196 /* WTDetailThreadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTDetailThreadViewController.swift; path = viewController/WTDetailThreadViewController.swift; sourceTree = "<group>"; };
+		BD10F89F1C9D10F8008A6196 /* WTDetailThread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTDetailThread.swift; path = model/WTDetailThread.swift; sourceTree = "<group>"; };
+		BD10F8A31C9D1477008A6196 /* WTDetailResponseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTDetailResponseCell.swift; path = view/WTDetailResponseCell.swift; sourceTree = "<group>"; };
+		BD10F8A51C9D1490008A6196 /* WTDetailResponseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WTDetailResponseCell.xib; path = view/WTDetailResponseCell.xib; sourceTree = "<group>"; };
+		BD10F8AB1C9D584F008A6196 /* WTPostsProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTPostsProxy.swift; path = worker/proxy/WTPostsProxy.swift; sourceTree = "<group>"; };
+		BD10F8AD1C9D5FC8008A6196 /* WTImageProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTImageProxy.swift; path = worker/proxy/WTImageProxy.swift; sourceTree = "<group>"; };
+		BD10F8AF1C9D5FF3008A6196 /* BaseProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseProxy.swift; path = worker/proxy/BaseProxy.swift; sourceTree = "<group>"; };
+		BD10F8B31C9D7000008A6196 /* landing@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "landing@3x.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -321,6 +343,7 @@
 				77F3219F1C96D2DE00C9BF4A /* WTAudioDetectorViewController.swift */,
 				77F321B01C97F00000C9BF4A /* WTProgramOverViewController.swift */,
 				77F322971C9BFF5900C9BF4A /* WTTabBarController.swift */,
+				BD10F89D1C9D108C008A6196 /* WTDetailThreadViewController.swift */,
 			);
 			name = viewController;
 			sourceTree = "<group>";
@@ -364,11 +387,14 @@
 				77F321B71C97F31900C9BF4A /* WTFriendsTableViewCell.swift */,
 				77F3225C1C9BBD2A00C9BF4A /* WTFriendCollectionCell.swift */,
 				77F322651C9BC6FD00C9BF4A /* WTFriendCollectionCell.xib */,
-				77F322601C9BC00F00C9BF4A /* WTThreadCell.swift */,
 				77F321C01C98110400C9BF4A /* WTFriendsTableViewCell.xib */,
 				77F322691C9BCF6500C9BF4A /* WTResponseView.swift */,
 				77F3226B1C9BCF7800C9BF4A /* WTResponseView.xib */,
+				BD10F8971C9CFC9A008A6196 /* WTTheadTitleCell.swift */,
+				BD10F8991C9CFD55008A6196 /* WTTheadTitleCell.xib */,
 				77F3228F1C9BEDF000C9BF4A /* WTGradientView.swift */,
+				BD10F8A31C9D1477008A6196 /* WTDetailResponseCell.swift */,
+				BD10F8A51C9D1490008A6196 /* WTDetailResponseCell.xib */,
 				77F322911C9BF5AA00C9BF4A /* WTNavgationBar.swift */,
 				77F322931C9BF81500C9BF4A /* WTTabBar.swift */,
 				77F322951C9BFBBF00C9BF4A /* WTTabBottomItem.swift */,
@@ -391,6 +417,8 @@
 				77F321F11C996F7200C9BF4A /* WTProgram.swift */,
 				77F321FB1C9A3D9700C9BF4A /* WTHotDiscuss.swift */,
 				77F322711C9BD1C000C9BF4A /* WTResponse.swift */,
+				BD10F8931C9CF991008A6196 /* WTThread.swift */,
+				BD10F89F1C9D10F8008A6196 /* WTDetailThread.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -399,7 +427,7 @@
 			isa = PBXGroup;
 			children = (
 				77F321CA1C98F33800C9BF4A /* WTPostsDataSource.swift */,
-				77F3226F1C9BD17700C9BF4A /* WTResponseDataSource.swift */,
+				BD10F8911C9CF8CA008A6196 /* WTThreadDataSource.swift */,
 				77F321E91C996A4900C9BF4A /* WTFriendsDataSource.swift */,
 				77F321EF1C996F0300C9BF4A /* WTPrograms.swift */,
 			);
@@ -413,6 +441,8 @@
 				77F321E21C994BAB00C9BF4A /* maxresdefault.jpg */,
 				77F321E31C994BAB00C9BF4A /* photo.jpeg */,
 				77F322671C9BC8B000C9BF4A /* s27209056.jpg */,
+				BD10F89B1C9D0C84008A6196 /* d873967.jpg */,
+				BD10F8B31C9D7000008A6196 /* landing@3x.jpg */,
 				77F322771C9BE6FD00C9BF4A /* ic_chat_ Bubble@3x.png */,
 				77F322781C9BE6FD00C9BF4A /* ic_chat_h@3x.png */,
 				77F322791C9BE6FD00C9BF4A /* ic_chat_ranking@3x.png */,
@@ -445,6 +475,9 @@
 			isa = PBXGroup;
 			children = (
 				77F321F91C9A3D0A00C9BF4A /* WTHotDiscussProxy.swift */,
+				BD10F8AB1C9D584F008A6196 /* WTPostsProxy.swift */,
+				BD10F8AF1C9D5FF3008A6196 /* BaseProxy.swift */,
+				BD10F8AD1C9D5FC8008A6196 /* WTImageProxy.swift */,
 			);
 			name = proxy;
 			sourceTree = "<group>";
@@ -591,14 +624,18 @@
 				77F321C31C98111600C9BF4A /* WTPostTableViewCell.xib in Resources */,
 				77F3228A1C9BE6FD00C9BF4A /* ic_hot@3x.png in Resources */,
 				77F321C11C98110400C9BF4A /* WTFriendsTableViewCell.xib in Resources */,
+				BD10F8B41C9D7000008A6196 /* landing@3x.jpg in Resources */,
 				774F61091C913B1500101065 /* LaunchScreen.storyboard in Resources */,
 				77F322681C9BC8B000C9BF4A /* s27209056.jpg in Resources */,
 				77F322871C9BE6FD00C9BF4A /* ic_friend_h@3x.png in Resources */,
 				774F61061C913B1500101065 /* Assets.xcassets in Resources */,
 				77F321E41C994BAB00C9BF4A /* 1330867871-491610638.jpg in Resources */,
+				BD10F89A1C9CFD55008A6196 /* WTTheadTitleCell.xib in Resources */,
 				77F3228B1C9BE6FD00C9BF4A /* ic_icon@3x.png in Resources */,
+				BD10F8A61C9D1490008A6196 /* WTDetailResponseCell.xib in Resources */,
 				77F322051C9A987200C9BF4A /* Localizable.strings in Resources */,
 				77F321E51C994BAB00C9BF4A /* maxresdefault.jpg in Resources */,
+				BD10F89C1C9D0C84008A6196 /* d873967.jpg in Resources */,
 				77F322851C9BE6FD00C9BF4A /* ic_chat_ranking@3x.png in Resources */,
 				77F3228D1C9BE6FD00C9BF4A /* ic_profile_h@3x.png in Resources */,
 				77F322891C9BE6FD00C9BF4A /* ic_hot_h@3x.png in Resources */,
@@ -685,13 +722,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD10F89E1C9D108C008A6196 /* WTDetailThreadViewController.swift in Sources */,
 				77F321F01C996F0300C9BF4A /* WTPrograms.swift in Sources */,
 				77F321B81C97F31900C9BF4A /* WTFriendsTableViewCell.swift in Sources */,
 				77F3225D1C9BBD2A00C9BF4A /* WTFriendCollectionCell.swift in Sources */,
 				77E7AFD61C92A42B002B0467 /* WTChatUserActionHandlers.swift in Sources */,
+				BD10F8941C9CF991008A6196 /* WTThread.swift in Sources */,
 				77F321CB1C98F33800C9BF4A /* WTPostsDataSource.swift in Sources */,
 				774F61011C913B1500101065 /* ViewController.swift in Sources */,
 				77F321AD1C97ED1B00C9BF4A /* WTUserProfileViewController.swift in Sources */,
+				BD10F8A01C9D10F8008A6196 /* WTDetailThread.swift in Sources */,
 				77F321FE1C9A3FCB00C9BF4A /* WTServerConfig.swift in Sources */,
 				774F61361C9149A400101065 /* WTSocketIOClient.swift in Sources */,
 				77F321FC1C9A3D9700C9BF4A /* WTHotDiscuss.swift in Sources */,
@@ -703,6 +743,7 @@
 				77F321A01C96D2DE00C9BF4A /* WTAudioDetectorViewController.swift in Sources */,
 				77E7AFC91C92620B002B0467 /* ChatItemsDemoDecorator.swift in Sources */,
 				774F60FF1C913B1500101065 /* AppDelegate.swift in Sources */,
+				BD10F8B01C9D5FF3008A6196 /* BaseProxy.swift in Sources */,
 				77F321AF1C97ED9800C9BF4A /* WTFriendsListViewController.swift in Sources */,
 				77F3219E1C96D0FD00C9BF4A /* AFPConfig.swift in Sources */,
 				77F321A71C97EC9700C9BF4A /* WTPostWallViewController.swift in Sources */,
@@ -710,7 +751,6 @@
 				77F3220F1C9B8F4700C9BF4A /* WTUtility.swift in Sources */,
 				77F321FA1C9A3D0A00C9BF4A /* WTHotDiscussProxy.swift in Sources */,
 				77F322901C9BEDF000C9BF4A /* WTGradientView.swift in Sources */,
-				77F322701C9BD17700C9BF4A /* WTResponseDataSource.swift in Sources */,
 				77E7AFD81C92AD1F002B0467 /* WTChatMessageFactory.swift in Sources */,
 				77E7AFBD1C9260DF002B0467 /* SlidingDatasSource.swift in Sources */,
 				77F321CD1C98F4C400C9BF4A /* WTSegue.swift in Sources */,
@@ -718,16 +758,20 @@
 				77F321F21C996F7200C9BF4A /* WTProgram.swift in Sources */,
 				77F322941C9BF81500C9BF4A /* WTTabBar.swift in Sources */,
 				77F322921C9BF5AA00C9BF4A /* WTNavgationBar.swift in Sources */,
+				BD10F8AC1C9D584F008A6196 /* WTPostsProxy.swift in Sources */,
 				77F321B11C97F00000C9BF4A /* WTProgramOverViewController.swift in Sources */,
 				77F3220C1C9ADAD500C9BF4A /* WTChatMessageReceiver.swift in Sources */,
 				77E7AFD41C92A236002B0467 /* WTChatMessageSender.swift in Sources */,
+				BD10F8981C9CFC9A008A6196 /* WTTheadTitleCell.swift in Sources */,
 				77E7AFC21C926142002B0467 /* SendingStatusPresenter.swift in Sources */,
+				BD10F8A41C9D1477008A6196 /* WTDetailResponseCell.swift in Sources */,
+				BD10F8921C9CF8CA008A6196 /* WTThreadDataSource.swift in Sources */,
+				BD10F8AE1C9D5FC8008A6196 /* WTImageProxy.swift in Sources */,
 				77F322721C9BD1C000C9BF4A /* WTResponse.swift in Sources */,
 				77F3226A1C9BCF6500C9BF4A /* WTResponseView.swift in Sources */,
 				77F321B61C97F30200C9BF4A /* WTPostTableViewCell.swift in Sources */,
 				77F322981C9BFF5900C9BF4A /* WTTabBarController.swift in Sources */,
 				77E7AFC31C926142002B0467 /* SendingStatusCollectionViewCell.swift in Sources */,
-				77F322611C9BC00F00C9BF4A /* WTThreadCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -886,6 +930,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = "$(AFP_SDK_ROOT)/headers";
 				INFOPLIST_FILE = WatchTVTogether/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(AFP_SDK_ROOT)/",
@@ -907,6 +952,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = "$(AFP_SDK_ROOT)/headers";
 				INFOPLIST_FILE = WatchTVTogether/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(AFP_SDK_ROOT)/",

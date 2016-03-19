@@ -36,12 +36,14 @@ class WTNavgationBar:UINavigationBar {
     }
     
     override func layoutSubviews() {
-        self.navGradient.removeFromSuperview()
-        self.setGradientAndLayout()
+//        self.navGradient.removeFromSuperview()
+//        self.setGradientAndLayout()
         
-//        self.navGradient
+//        self.setColor()
     }
     
-    
+    func setColor(){
+        self.backgroundColor = UIColor(red: 232.0/255.0, green: 121.0/255.0, blue: 117.0/255.0, alpha: 1.0)
+    }
     
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -8,21 +8,21 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FriendCollectionCell" id="A4w-hR-BO7" customClass="WTFriendCollectionCell" customModule="WatchTVTogether" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1330867871-491610638.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="EF2-8I-utV">
-                        <rect key="frame" x="30" y="14" width="90" height="90"/>
+                        <rect key="frame" x="25" y="14" width="50" height="50"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="90" id="pT3-DL-ZC6"/>
-                            <constraint firstAttribute="width" constant="90" id="paa-g0-sG3"/>
+                            <constraint firstAttribute="height" constant="50" id="pT3-DL-ZC6"/>
+                            <constraint firstAttribute="width" constant="50" id="paa-g0-sG3"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7C-2g-lhn">
-                        <rect key="frame" x="8" y="114" width="134" height="21"/>
+                        <rect key="frame" x="0.0" y="74" width="100" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.92549019607843142" green="0.61176470588235299" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -31,12 +31,11 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="i7C-2g-lhn" secondAttribute="bottom" constant="15" id="1ZN-wJ-D8d"/>
                 <constraint firstItem="EF2-8I-utV" firstAttribute="top" secondItem="A4w-hR-BO7" secondAttribute="top" constant="14" id="7qv-aC-BNk"/>
                 <constraint firstItem="i7C-2g-lhn" firstAttribute="top" secondItem="EF2-8I-utV" secondAttribute="bottom" constant="10" id="AwP-IE-2l2"/>
                 <constraint firstItem="EF2-8I-utV" firstAttribute="centerX" secondItem="A4w-hR-BO7" secondAttribute="centerX" id="VtN-6f-1cU"/>
-                <constraint firstItem="i7C-2g-lhn" firstAttribute="leading" secondItem="A4w-hR-BO7" secondAttribute="leading" constant="8" id="mUD-pI-z69"/>
-                <constraint firstAttribute="trailing" secondItem="i7C-2g-lhn" secondAttribute="trailing" constant="8" id="rNd-wn-sZy"/>
+                <constraint firstItem="i7C-2g-lhn" firstAttribute="leading" secondItem="A4w-hR-BO7" secondAttribute="leading" id="XOJ-mX-4iQ"/>
+                <constraint firstAttribute="trailing" secondItem="i7C-2g-lhn" secondAttribute="trailing" id="e89-gc-4eh"/>
                 <constraint firstItem="i7C-2g-lhn" firstAttribute="top" secondItem="EF2-8I-utV" secondAttribute="bottom" constant="10" id="xie-jP-wBM"/>
             </constraints>
             <size key="customSize" width="149" height="149"/>

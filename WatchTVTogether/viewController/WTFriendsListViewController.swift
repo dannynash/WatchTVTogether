@@ -20,6 +20,7 @@ class WTFriendsListViewController: UIViewController, UITableViewDelegate {
 
         friendsTableView.dataSource = dataSource
         friendsTableView.delegate = self
+        friendsTableView.rowHeight = 85
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

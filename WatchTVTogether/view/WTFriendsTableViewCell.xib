@@ -1,56 +1,50 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WTFriendTabelViewCell" rowHeight="127" id="ayB-z7-wCs" customClass="WTFriendsTableViewCell" customModule="WatchTVTogether" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="665" height="127"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WTFriendTabelViewCell" rowHeight="86" id="ayB-z7-wCs" customClass="WTFriendsTableViewCell" customModule="WatchTVTogether" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="665" height="85"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ayB-z7-wCs" id="Z6Y-b3-9rH">
-                <rect key="frame" x="0.0" y="0.0" width="665" height="126"/>
+                <rect key="frame" x="0.0" y="0.0" width="665" height="84"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xcV-3J-bsv">
-                        <rect key="frame" x="8" y="8" width="110" height="110"/>
-                        <constraints>
-                            <constraint firstAttribute="width" secondItem="xcV-3J-bsv" secondAttribute="height" multiplier="1:1" id="CRT-gh-lcg"/>
-                        </constraints>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xcV-3J-bsv">
+                        <rect key="frame" x="8" y="8" width="60" height="60"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NBA 勇士v.s.小牛" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ai-BQ-RQy">
-                        <rect key="frame" x="525" y="52" width="132" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Danny" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a57-dx-tMs">
+                        <rect key="frame" x="76" y="14" width="329" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.92941176470588238" green="0.62745098039215685" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Danny" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a57-dx-tMs">
-                        <rect key="frame" x="126" y="52" width="49" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="正在收看" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wh9-ym-OgA">
+                        <rect key="frame" x="76" y="43" width="68" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NBA 勇士v.s.小牛" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ai-BQ-RQy">
+                        <rect key="frame" x="152" y="43" width="411" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.90980392156862744" green="0.47450980392156861" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <constraints>
-                    <constraint firstItem="a57-dx-tMs" firstAttribute="leading" secondItem="xcV-3J-bsv" secondAttribute="trailing" constant="8" id="45m-ZL-zGW"/>
-                    <constraint firstItem="xcV-3J-bsv" firstAttribute="leading" secondItem="Z6Y-b3-9rH" secondAttribute="leadingMargin" id="Bkn-fp-c2F"/>
-                    <constraint firstItem="4ai-BQ-RQy" firstAttribute="centerY" secondItem="xcV-3J-bsv" secondAttribute="centerY" id="e92-ie-VF1"/>
-                    <constraint firstItem="xcV-3J-bsv" firstAttribute="top" secondItem="Z6Y-b3-9rH" secondAttribute="topMargin" id="mWJ-q1-jl9"/>
-                    <constraint firstItem="a57-dx-tMs" firstAttribute="centerY" secondItem="xcV-3J-bsv" secondAttribute="centerY" id="sIt-ds-Gwu"/>
-                    <constraint firstAttribute="trailing" secondItem="4ai-BQ-RQy" secondAttribute="trailing" constant="8" id="uxv-tj-FG3"/>
-                    <constraint firstItem="xcV-3J-bsv" firstAttribute="bottom" secondItem="Z6Y-b3-9rH" secondAttribute="bottomMargin" id="yw7-dm-1k5"/>
-                </constraints>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="nameLabel" destination="a57-dx-tMs" id="iYm-xV-0C9"/>
                 <outlet property="pictureView" destination="xcV-3J-bsv" id="4ET-d8-hch"/>
                 <outlet property="programLabel" destination="4ai-BQ-RQy" id="66i-MK-jBB"/>
             </connections>
-            <point key="canvasLocation" x="268.5" y="320.5"/>
+            <point key="canvasLocation" x="268.5" y="300"/>
         </tableViewCell>
     </objects>
 </document>

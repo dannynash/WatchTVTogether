@@ -19,15 +19,17 @@ class WTFriend {
     let userName:String
     var userStatus:WTFriendStatus
     var programId:String?
+    var programName:String?
     var picture:UIImage?
     
-    init(userId:String, userName:String, userStatus:WTFriendStatus = WTFriendStatus.offline , programId:String? = nil, picture:UIImage? = nil){
+    init(userId:String, userName:String, userStatus:WTFriendStatus = WTFriendStatus.offline , programId:String? = nil, picture:UIImage? = nil, programName:String? = nil){
         
         self.userId = userId
         self.userName = userName
         self.userStatus = userStatus
         self.programId = programId
         self.picture = picture
+        self.programName = programName
     }
     
 }

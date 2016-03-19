@@ -11,9 +11,9 @@ import UIKit
 
 class WTPost {
     let program:WTProgram
-    var responseNums:String
-    var lastResponse:String
-    var lastUpdateTime:String
+    var responseNums:Int
+    var lastResponse:[WTResponse]
+    var lastUpdateTime:NSTimeInterval
     
     var programId:String{
         get{
@@ -36,7 +36,7 @@ class WTPost {
         }
     }
 
-    init(program:WTProgram, responseNums:String, lastResponse:String, lastUpdateTime:String){
+    init(program:WTProgram, responseNums:Int, lastResponse:[WTResponse], lastUpdateTime:NSTimeInterval){
         self.program = program
         self.responseNums = responseNums
         self.lastResponse = lastResponse
@@ -44,14 +44,14 @@ class WTPost {
         
     }
     
-    init(programId:String, programTitle:String, channelTitle:String, responseNums:String, lastResponse:String, lastUpdateTime:String, picture:UIImage?){
-    
-        self.program = WTProgram(programId: programId, programName: programTitle, channelName: channelTitle, picture: picture)
-        
-        self.responseNums = responseNums
-        self.lastResponse = lastResponse
-        self.lastUpdateTime = lastUpdateTime
-        
-    }
+//    init(programId:String, programTitle:String, channelTitle:String, responseNums:String, lastResponse:[WTResponse], lastUpdateTime:String, picture:UIImage?){
+//    
+//        self.program = WTProgram(programId: programId, programName: programTitle, channelName: channelTitle, picture: picture)
+//        
+//        self.responseNums = responseNums
+//        self.lastResponse = lastResponse
+//        self.lastUpdateTime = lastUpdateTime
+//        
+//    }
 
 }

@@ -9,6 +9,9 @@
 import Foundation
 
 struct WTServerConfig{
+    static let kServerUrl = "https://watchtvtogether-1251.appspot.com/"
+    
+    static let kQueryPosts = "popular"
     
     static let kQueryHotDiscussUrl = ""
 }

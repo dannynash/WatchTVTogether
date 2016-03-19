@@ -12,6 +12,8 @@ struct WTSegue {
     static let kPostWallToProgram = "PostWallToProgram"
     static let kFriendsToChat = "FriendsToChat"
     static let kProgramToChat = "ProgramToChat"
+    static let kProgramToThread = "ProgramToThread"
+
 }
 
 struct WTNibIdentifier {
@@ -19,4 +21,10 @@ struct WTNibIdentifier {
     static let kFriendCellIdentifier = "WTFriendTabelViewCell"
     static let kHotDiscussCellIdentifier = "HotDiscussCell"
     static let kFriendCollectionCellIdentifier = "FriendCollectionCell"
+    static let kWTResponseViewIdentifier = "WTResponseView"
+    
+    static let kWTThreadTitleCellIdentifier = "WTThreadTitleCell"
+    
+    static let kWTDetailResponseCellIdentifier = "DetailResponseCell"
+
 }

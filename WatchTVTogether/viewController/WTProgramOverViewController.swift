@@ -18,9 +18,10 @@ class WTProgramOverViewController:UIViewController, UITableViewDelegate, UITable
 //            friendsTableView.reloadData()
         }
     }
-    var hotDiscusses = Array<WTHotDiscuss>(){
+    var hotDiscusses = Array<WTThread>(){
         didSet{
             hotDiscussTableView.reloadData()
+            threadDataSource.threads = hotDiscusses
         }
     }
     
@@ -52,13 +53,18 @@ class WTProgramOverViewController:UIViewController, UITableViewDelegate, UITable
         }
     }
     
+    let threadDataSource = WTThreadDataSource()
+
     override func viewDidLoad() {
         friendsCollectionView.registerNib(UINib(nibName: "WTFriendCollectionCell", bundle: nil), forCellWithReuseIdentifier: WTNibIdentifier.kFriendCollectionCellIdentifier)
         
         friendsCollectionView.dataSource = self
         friendsCollectionView.delegate = self
         
-        hotDiscussTableView.dataSource = self
+        hotDiscussTableView.registerNib(UINib(nibName: "WTTheadTitleCell", bundle: nil), forCellReuseIdentifier: WTNibIdentifier.kWTThreadTitleCellIdentifier)
+        hotDiscussTableView.registerNib(UINib(nibName: "WTResponseView", bundle: nil), forCellReuseIdentifier: WTNibIdentifier.kWTResponseViewIdentifier)
+        
+        hotDiscussTableView.dataSource = threadDataSource
         hotDiscussTableView.delegate = self
         hotDiscussTableView.separatorStyle = .None
 
@@ -66,8 +72,6 @@ class WTProgramOverViewController:UIViewController, UITableViewDelegate, UITable
         setFriendsTable(program!)
         setHotDiscussTable(program!)
 
-
-//        navigationController?.navigationBar.backItem?.title = ""
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -80,22 +84,32 @@ class WTProgramOverViewController:UIViewController, UITableViewDelegate, UITable
             chatController.friend = friend
             chatController.dataSource = dataSource
             chatController.messageSender = dataSource.messageSender
+            
+        } else if segue.identifier == WTSegue.kProgramToThread{
+            let vc = segue.destinationViewController as! WTDetailThreadViewController
+            
+            guard touchedThread != nil else {
+                return
+            }
+            vc.setThread(WTDetailThread(thread: touchedThread!))
         }
     }
+    
+    var touchedThread:WTThread?
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: false)
 
-//        if tableView == friendsTableView{
-//            let friend = friends[indexPath.row]
-//            self.performSegueWithIdentifier(WTSegue.kProgramToChat, sender: friend)
-//        }
+        if tableView == hotDiscussTableView{
+            touchedThread = threadDataSource.threads[indexPath.section]
+            self.performSegueWithIdentifier(WTSegue.kProgramToThread, sender: nil)
+        }
     }
     
     
-    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        return createTableHeader(tableView)
-    }
+//    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        return createTableHeader(tableView)
+//    }
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -167,6 +181,12 @@ class WTProgramOverViewController:UIViewController, UITableViewDelegate, UITable
 
         return cell
     }
-
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        collectionView.deselectItemAtIndexPath(indexPath, animated: false)
+        
+        let friend = friends[indexPath.row]
+        self.performSegueWithIdentifier(WTSegue.kProgramToChat, sender: friend)
+    }
+    
 }
 
