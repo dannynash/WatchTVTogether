@@ -38,13 +38,8 @@ class WTAudioDetectorViewController: UIViewController, AFPDetectorDelegate{
 //        self.tabBarItem.image! = icon!
 //        
 //    }
-    override func viewWillDisappear(animated: Bool) {
-        self.setTabBarVisible(true, animated: false)
-        
-
-    }
     
-//    var timer = NSTimer()
+    var timer:NSTimer?
 
     @IBAction func tabCancel(sender: AnyObject) {
         self.tabBarController?.selectedIndex = 0
@@ -58,6 +53,29 @@ class WTAudioDetectorViewController: UIViewController, AFPDetectorDelegate{
             }, completion: {(finished: Bool) -> Void in
         })
 
+        if timer == nil{
+            timer = NSTimer(timeInterval: NSTimeInterval(3), target: self, selector: "enterRoom", userInfo: nil, repeats: false)
+        }
+    }
+    override func viewWillDisappear(animated: Bool) {
+        self.setTabBarVisible(true, animated: false)
+        if timer != nil{
+            timer?.invalidate()
+            timer = nil
+        }
+    }
+
+    func enterRoom(){
+        self.performSegueWithIdentifier(WTSegue.kSearchToPost, sender: nil)
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == WTSegue.kSearchToPost{
+//            let post = dataSource.posts[indexPath.section]
+            let programVC = segue.destinationViewController as! WTProgramOverViewController
+            let post = WTFakeTmpStorage.shareInstance.post!
+            programVC.program = post.program
+
+        }
     }
     
     override func viewDidLoad() {

@@ -24,37 +24,21 @@ class WTPostWallViewController: UIViewController, UITableViewDelegate {
         postTableView.delegate = self
         postTableView.separatorStyle = .None
         
-        setGradient()
         navigationController?.navigationBar.topItem?.title = NSLocalizedString("SpoilAlert", comment: "")
         
         
         WTPostsProxy.shareInstance.fetchPosts { [weak self](result) -> Void in
             if let sSelf = self{
                 sSelf.dataSource.posts = result
+                WTFakeTmpStorage.shareInstance.post = result[0]
                 sSelf.postTableView.reloadData()
             }
         }
 
     }
     
-//    func setTabIcon(){
-//        self.tabBarController.
-//    }
-    
     let myGradientView = WTGradientView()
     
-    func setGradient(){
-//        let firstColor = UIColor(red: 232.0/255.0, green: 121.0/255.0, blue: 117.0/255.0, alpha: 1.0)
-//        let secondColor = UIColor(red: 243.0/255.0, green: 199.0/255.0, blue: 161.0/255.0, alpha: 1.0)
-        
-//        let view = WTGradientView()
-//        let a = self.navigationController?.navigationBar.frame
-//        myGradientView.frame = a!
-//        myGradientView.backgroundColor = UIColor.yellowColor()
-//        myGradientView.gradientWithColors(firstColor, secondColor)
-
-//        navigationController?.navigationBar.insertSubview(myGradientView, atIndex: 0)
-    }
     
     override func viewDidLayoutSubviews() {
         self.myGradientView.gradientWithColors(UIColor.whiteColor(), UIColor.blueColor())
@@ -74,9 +58,7 @@ class WTPostWallViewController: UIViewController, UITableViewDelegate {
 
         }
     }
-    
-//    var cell:UITableViewCell?
-//    
+
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         if indexPath.row == 0{
             return 207.0

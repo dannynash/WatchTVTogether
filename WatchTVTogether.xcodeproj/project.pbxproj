@@ -111,6 +111,8 @@
 		BD10F8D51C9DAEEE008A6196 /* profile_14.png in Resources */ = {isa = PBXBuildFile; fileRef = BD10F8C51C9DAEEE008A6196 /* profile_14.png */; };
 		BD10F8D61C9DAEEE008A6196 /* profile_15.png in Resources */ = {isa = PBXBuildFile; fileRef = BD10F8C61C9DAEEE008A6196 /* profile_15.png */; };
 		BD10F8D71C9DAEEE008A6196 /* profile_16.png in Resources */ = {isa = PBXBuildFile; fileRef = BD10F8C71C9DAEEE008A6196 /* profile_16.png */; };
+		BD10F8D91C9DBFF3008A6196 /* cancel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD10F8D81C9DBFF3008A6196 /* cancel@3x.png */; };
+		BD10F8DB1C9DC12F008A6196 /* WTFakeTmpStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD10F8DA1C9DC12F008A6196 /* WTFakeTmpStorage.swift */; };
 		CF4FEBCD738ABE741FFFB87E /* Pods_WatchTVTogether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B90C6E4F7FF8DD2DF04A8E /* Pods_WatchTVTogether.framework */; };
 /* End PBXBuildFile section */
 
@@ -254,6 +256,8 @@
 		BD10F8C51C9DAEEE008A6196 /* profile_14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_14.png; sourceTree = "<group>"; };
 		BD10F8C61C9DAEEE008A6196 /* profile_15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_15.png; sourceTree = "<group>"; };
 		BD10F8C71C9DAEEE008A6196 /* profile_16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_16.png; sourceTree = "<group>"; };
+		BD10F8D81C9DBFF3008A6196 /* cancel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancel@3x.png"; sourceTree = "<group>"; };
+		BD10F8DA1C9DC12F008A6196 /* WTFakeTmpStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTFakeTmpStorage.swift; path = modelManager/WTFakeTmpStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -464,6 +468,7 @@
 				BD10F8911C9CF8CA008A6196 /* WTThreadDataSource.swift */,
 				77F321E91C996A4900C9BF4A /* WTFriendsDataSource.swift */,
 				77F321EF1C996F0300C9BF4A /* WTPrograms.swift */,
+				BD10F8DA1C9DC12F008A6196 /* WTFakeTmpStorage.swift */,
 			);
 			name = modelManager;
 			sourceTree = "<group>";
@@ -491,6 +496,7 @@
 				77F322801C9BE6FD00C9BF4A /* ic_logo_big@3x.png */,
 				77F322811C9BE6FD00C9BF4A /* ic_profile_h@3x.png */,
 				77F322821C9BE6FD00C9BF4A /* ic_profile@3x.png */,
+				BD10F8D81C9DBFF3008A6196 /* cancel@3x.png */,
 			);
 			path = assets;
 			sourceTree = "<group>";
@@ -691,6 +697,7 @@
 				77F321E41C994BAB00C9BF4A /* 1330867871-491610638.jpg in Resources */,
 				BD10F89A1C9CFD55008A6196 /* WTTheadTitleCell.xib in Resources */,
 				BD10F8D71C9DAEEE008A6196 /* profile_16.png in Resources */,
+				BD10F8D91C9DBFF3008A6196 /* cancel@3x.png in Resources */,
 				77F3228B1C9BE6FD00C9BF4A /* ic_icon@3x.png in Resources */,
 				BD10F8A61C9D1490008A6196 /* WTDetailResponseCell.xib in Resources */,
 				BD10F8C81C9DAEEE008A6196 /* profile_01.png in Resources */,
@@ -837,6 +844,7 @@
 				BD10F8AC1C9D584F008A6196 /* WTPostsProxy.swift in Sources */,
 				77F321B11C97F00000C9BF4A /* WTProgramOverViewController.swift in Sources */,
 				77F3220C1C9ADAD500C9BF4A /* WTChatMessageReceiver.swift in Sources */,
+				BD10F8DB1C9DC12F008A6196 /* WTFakeTmpStorage.swift in Sources */,
 				77E7AFD41C92A236002B0467 /* WTChatMessageSender.swift in Sources */,
 				BD10F8981C9CFC9A008A6196 /* WTTheadTitleCell.swift in Sources */,
 				77E7AFC21C926142002B0467 /* SendingStatusPresenter.swift in Sources */,

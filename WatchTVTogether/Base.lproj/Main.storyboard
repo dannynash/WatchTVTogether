@@ -77,7 +77,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EEH-aO-Foj">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EEH-aO-Foj">
                                 <rect key="frame" x="-4" y="64" width="383" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="gXf-Zr-kjX"/>
@@ -95,7 +95,7 @@
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dXn-c4-dhk">
                                         <rect key="frame" x="0.0" y="36" width="383" height="100"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eTf-Rz-40X">
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="eTf-Rz-40X">
                                             <size key="itemSize" width="100" height="100"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -371,9 +371,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_logo_big.png" translatesAutoresizingMaskIntoConstraints="NO" id="axN-Ns-XdI">
                                 <rect key="frame" x="125" y="271" width="125" height="125"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rf-Xq-1Rj">
-                                <rect key="frame" x="165" y="488" width="45" height="30"/>
-                                <state key="normal" title="button"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rf-Xq-1Rj">
+                                <rect key="frame" x="315" y="568" width="40" height="40"/>
+                                <state key="normal" image="cancel.png"/>
                                 <connections>
                                     <action selector="tabCancel:" destination="rNw-0E-Kyn" eventType="touchUpInside" id="mxp-tP-NuI"/>
                                 </connections>
@@ -548,6 +548,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cancel.png" width="40" height="40"/>
         <image name="ic_chat.png" width="60" height="60"/>
         <image name="ic_chat_h.png" width="60" height="60"/>
         <image name="ic_friend.png" width="60" height="60"/>
@@ -559,10 +560,10 @@
         <image name="ic_profile.png" width="60" height="60"/>
         <image name="ic_profile_h.png" width="60" height="60"/>
         <image name="searching.png" width="414" height="736"/>
-        <image name="xd" width="414" height="736"/>
+        <image name="xd" width="600" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="AiP-7t-tLZ"/>
         <segue reference="8nf-kc-sar"/>
+        <segue reference="3w7-H1-cLm"/>
     </inferredMetricsTieBreakers>
 </document>
