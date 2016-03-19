@@ -54,7 +54,7 @@ class WTAudioDetectorViewController: UIViewController, AFPDetectorDelegate{
         })
 
         if timer == nil{
-            timer = NSTimer(timeInterval: NSTimeInterval(3), target: self, selector: "enterRoom", userInfo: nil, repeats: false)
+            timer = NSTimer.scheduledTimerWithTimeInterval(NSTimeInterval(3), target: self, selector: "enterRoom:", userInfo: nil, repeats: false)
         }
     }
     override func viewWillDisappear(animated: Bool) {
@@ -79,7 +79,6 @@ class WTAudioDetectorViewController: UIViewController, AFPDetectorDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
     
     func setTabBarVisible(visible:Bool, animated:Bool) {
         // get a frame calculation ready

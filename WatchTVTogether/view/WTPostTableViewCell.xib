@@ -15,7 +15,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="612" height="206"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" image="1330867871-491610638.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dc6-TF-LXf">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dc6-TF-LXf">
                         <rect key="frame" x="6" y="8" width="600" height="200"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="200" id="MN1-2W-2at"/>
@@ -86,7 +86,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="1330867871-491610638.jpg" width="600" height="400"/>
         <image name="ic_chat_h.png" width="60" height="60"/>
     </resources>
 </document>

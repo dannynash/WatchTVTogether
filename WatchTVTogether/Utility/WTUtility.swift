@@ -58,7 +58,10 @@ class WTTimeUtility{
             return "\(Int(min))小時前"
             
         } else {
-            return ""
+            let formatter = NSDateFormatter()
+            formatter.dateFormat = "MM-dd HH:mm:ss"
+            let before = NSDate(timeIntervalSince1970: timestamp)
+            return formatter.stringFromDate(before)
         }
     }
     
