@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Chatto.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,7 +37,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>11BC8A497513D1C01A4A7199A80EB3DC</key>
+		<key>0F4FE45E557F3C7A1FEB933B94C5FDC5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>786BE88F91544F4067BF0E1752851EC5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,12 +62,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7E5F79AE152A56E5D5D8B03BC0C49DD2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A3FDA7EF27A191DB2B107D11526E6A8C</key>
+		<key>BB3A3B2D7A292E314CF25B1EC2B4FF92</key>
 		<dict>
 			<key>primary</key>
 			<true/>
