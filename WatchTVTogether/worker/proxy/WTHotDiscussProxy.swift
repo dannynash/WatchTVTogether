@@ -22,33 +22,69 @@ struct WTDiscussProtocol {
 class WTHotDiscussWorker: WTHotDiscussProxy{
     
     func fetchHotDiscuss(program: WTProgram, completion: (result: [WTThread]) -> Void) {
-        let queryUrl = "\(WTServerConfig.kServerUrl)\(WTServerConfig.kQueryThreads)\(program.programId)"
         
-        Alamofire.request(.GET, queryUrl)
-            .responseJSON { response in
-                
-            if let value = response.result.value {
-                let json = JSON(value)
-                let threads = self.createDiscusses(json["threads"])
-                completion(result: threads)
-            }
-        }
+        
+        let threads = self.createFakeThreads()
+        completion(result: threads)
+        return
+        
+//        let queryUrl = "\(WTServerConfig.kServerUrl)\(WTServerConfig.kQueryThreads)\(program.programId)"
+//        Alamofire.request(.GET, queryUrl)
+//            .responseJSON { [weak self] response in
+//                
+//                guard self != nil else {
+//                    completion(result: Array<WTThread>())
+//                    return
+//                }
+//                guard response.response?.statusCode == 200 else{
+//                    let threads = self!.createFakeThreads()
+//                    completion(result: threads)
+//                    return
+//                }
+//
+//                if let value = response.result.value {
+//                    let json = JSON(value)
+//                    let threads = self!.createDiscusses(json["threads"])
+//                    completion(result: threads)
+//                }
+//        }
+    }
+    
+    func createFakeThreads() -> [WTThread]{
+        let thread = WTThread(threadId: "1", source: WTThreadSource.PTT, url: "", responseNum: 799, lastResponse: [WTResponse](), lastUpdateTime: 1458537996.875392)
+        
+        return [thread]
     }
 
     func fetchThreadResponse(thread: WTThread, completion: (result: [WTResponse]) -> Void) {
         
-        let queryUrl = "\(WTServerConfig.kServerUrl)\(WTServerConfig.kQueryDetailCommentPost)\(thread.threadId)/\(WTServerConfig.kQueryDetailComment)"
         
-        Alamofire.request(.GET, queryUrl)
-            .responseJSON { response in
-                
-            if let value = response.result.value {
-                let json = JSON(value)
-                let threads = self.createThreadResponse(json["comments"])
-                completion(result: threads)
-            }
-        }
+        let responeses = self.createFakeThreadResponse()
+        completion(result: responeses)
+        return
 
+//        let queryUrl = "\(WTServerConfig.kServerUrl)\(WTServerConfig.kQueryDetailCommentPost)\(thread.threadId)/\(WTServerConfig.kQueryDetailComment)"
+//        
+//        Alamofire.request(.GET, queryUrl)
+//            .responseJSON { response in
+//                
+//            if let value = response.result.value {
+//                let json = JSON(value)
+//                let threads = self.createThreadResponse(json["comments"])
+//                completion(result: threads)
+//            }
+//        }
+
+    }
+    func createFakeThreadResponse() -> [WTResponse]{
+        var responeses = Array<WTResponse>()
+        let response1 = WTResponse(name: "danny", response: "shortResponse")
+        let response2 = WTResponse(name: "danny", response: "longResponselongResponselongResponselongResponselongResponselongResponselongResponselongResponselongResponselongResponselongResponselongResponselongResponselongResponselongResponselongResponselongResponse")
+        
+        responeses.append(response1)
+        responeses.append(response2)
+        
+        return responeses
     }
     
     func createDiscusses(threads:JSON) -> [WTThread]{

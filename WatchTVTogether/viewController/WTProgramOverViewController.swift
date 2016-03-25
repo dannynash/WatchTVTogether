@@ -87,8 +87,17 @@ class WTProgramOverViewController:UIViewController, UITableViewDelegate, UITable
         setFriendsTable(program!)
         setHotDiscussTable(program!)
 
+        setNavigationBackItem()
     }
-    
+    func setNavigationBackItem(){
+        let image = UIImage(named: "ic_back")!.imageWithRenderingMode(.AlwaysOriginal)
+        let backItem = UIBarButtonItem(image: image, style: .Plain, target: self, action: "backToPreviousVC")
+        self.navigationItem.leftBarButtonItem = backItem
+    }
+    func backToPreviousVC(){
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == WTSegue.kProgramToChat{
             let friend = sender as! WTFriend

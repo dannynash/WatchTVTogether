@@ -76,6 +76,10 @@
 		77F322941C9BF81500C9BF4A /* WTTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F322931C9BF81500C9BF4A /* WTTabBar.swift */; };
 		77F322961C9BFBBF00C9BF4A /* WTTabBottomItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F322951C9BFBBF00C9BF4A /* WTTabBottomItem.swift */; };
 		77F322981C9BFF5900C9BF4A /* WTTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F322971C9BFF5900C9BF4A /* WTTabBarController.swift */; };
+		77F86E791CA3D77E004CCC2A /* WTFlexibleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F86E781CA3D77E004CCC2A /* WTFlexibleCell.swift */; };
+		77F86E7B1CA3D78F004CCC2A /* WTFlexibleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77F86E7A1CA3D78F004CCC2A /* WTFlexibleCell.xib */; };
+		77F86E7D1CA3DBC5004CCC2A /* WTFlexibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F86E7C1CA3DBC5004CCC2A /* WTFlexibleViewController.swift */; };
+		77F86E7F1CA3DCA2004CCC2A /* WTFlexibleCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F86E7E1CA3DCA2004CCC2A /* WTFlexibleCell1.swift */; };
 		BD10F8921C9CF8CA008A6196 /* WTThreadDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD10F8911C9CF8CA008A6196 /* WTThreadDataSource.swift */; };
 		BD10F8941C9CF991008A6196 /* WTThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD10F8931C9CF991008A6196 /* WTThread.swift */; };
 		BD10F8981C9CFC9A008A6196 /* WTTheadTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD10F8971C9CFC9A008A6196 /* WTTheadTitleCell.swift */; };
@@ -221,6 +225,10 @@
 		77F322931C9BF81500C9BF4A /* WTTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTTabBar.swift; path = view/WTTabBar.swift; sourceTree = "<group>"; };
 		77F322951C9BFBBF00C9BF4A /* WTTabBottomItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTTabBottomItem.swift; path = view/WTTabBottomItem.swift; sourceTree = "<group>"; };
 		77F322971C9BFF5900C9BF4A /* WTTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTTabBarController.swift; path = viewController/WTTabBarController.swift; sourceTree = "<group>"; };
+		77F86E781CA3D77E004CCC2A /* WTFlexibleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTFlexibleCell.swift; path = view/WTFlexibleCell.swift; sourceTree = "<group>"; };
+		77F86E7A1CA3D78F004CCC2A /* WTFlexibleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WTFlexibleCell.xib; path = view/WTFlexibleCell.xib; sourceTree = "<group>"; };
+		77F86E7C1CA3DBC5004CCC2A /* WTFlexibleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTFlexibleViewController.swift; path = viewController/WTFlexibleViewController.swift; sourceTree = "<group>"; };
+		77F86E7E1CA3DCA2004CCC2A /* WTFlexibleCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTFlexibleCell1.swift; path = view/WTFlexibleCell1.swift; sourceTree = "<group>"; };
 		9C3AD2C1289F715CB1D9D621 /* Pods-WatchTVTogether.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTVTogether.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchTVTogether/Pods-WatchTVTogether.release.xcconfig"; sourceTree = "<group>"; };
 		A2050A9907B07256A8046A49 /* Pods-WatchTVTogether.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTVTogether.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchTVTogether/Pods-WatchTVTogether.debug.xcconfig"; sourceTree = "<group>"; };
 		BD10F8911C9CF8CA008A6196 /* WTThreadDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTThreadDataSource.swift; path = modelManager/WTThreadDataSource.swift; sourceTree = "<group>"; };
@@ -379,8 +387,9 @@
 			children = (
 				77F321B91C97FF3100C9BF4A /* shared */,
 				77E7AFAF1C915E6F002B0467 /* WTChatViewController.swift */,
-				77F321AE1C97ED9800C9BF4A /* WTFriendsListViewController.swift */,
+				77F86E7C1CA3DBC5004CCC2A /* WTFlexibleViewController.swift */,
 				77F321AC1C97ED1B00C9BF4A /* WTUserProfileViewController.swift */,
+				77F321AE1C97ED9800C9BF4A /* WTFriendsListViewController.swift */,
 				77F321A61C97EC9700C9BF4A /* WTPostWallViewController.swift */,
 				77F3219F1C96D2DE00C9BF4A /* WTAudioDetectorViewController.swift */,
 				77F321B01C97F00000C9BF4A /* WTProgramOverViewController.swift */,
@@ -441,6 +450,9 @@
 				77F322911C9BF5AA00C9BF4A /* WTNavgationBar.swift */,
 				77F322931C9BF81500C9BF4A /* WTTabBar.swift */,
 				77F322951C9BFBBF00C9BF4A /* WTTabBottomItem.swift */,
+				77F86E781CA3D77E004CCC2A /* WTFlexibleCell.swift */,
+				77F86E7A1CA3D78F004CCC2A /* WTFlexibleCell.xib */,
+				77F86E7E1CA3DCA2004CCC2A /* WTFlexibleCell1.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -730,6 +742,7 @@
 				BD10F8CD1C9DAEEE008A6196 /* profile_06.png in Resources */,
 				BD10F8D51C9DAEEE008A6196 /* profile_14.png in Resources */,
 				BD10F8DF1C9DC77C008A6196 /* ic_icon@3x.png in Resources */,
+				77F86E7B1CA3D78F004CCC2A /* WTFlexibleCell.xib in Resources */,
 				77F322841C9BE6FD00C9BF4A /* ic_chat_h@3x.png in Resources */,
 				BD10F8CC1C9DAEEE008A6196 /* profile_05.png in Resources */,
 				BD10F8E91C9DCE4D008A6196 /* ic_back@3x.png in Resources */,
@@ -823,6 +836,7 @@
 				77F321AD1C97ED1B00C9BF4A /* WTUserProfileViewController.swift in Sources */,
 				BD10F8A01C9D10F8008A6196 /* WTDetailThread.swift in Sources */,
 				77F321FE1C9A3FCB00C9BF4A /* WTServerConfig.swift in Sources */,
+				77F86E791CA3D77E004CCC2A /* WTFlexibleCell.swift in Sources */,
 				774F61361C9149A400101065 /* WTSocketIOClient.swift in Sources */,
 				77F321FC1C9A3D9700C9BF4A /* WTHotDiscuss.swift in Sources */,
 				77F322961C9BFBBF00C9BF4A /* WTTabBottomItem.swift in Sources */,
@@ -839,6 +853,8 @@
 				77F321A71C97EC9700C9BF4A /* WTPostWallViewController.swift in Sources */,
 				77E7AFB01C915E6F002B0467 /* WTChatViewController.swift in Sources */,
 				77F3220F1C9B8F4700C9BF4A /* WTUtility.swift in Sources */,
+				77F86E7F1CA3DCA2004CCC2A /* WTFlexibleCell1.swift in Sources */,
+				77F86E7D1CA3DBC5004CCC2A /* WTFlexibleViewController.swift in Sources */,
 				77F321FA1C9A3D0A00C9BF4A /* WTHotDiscussProxy.swift in Sources */,
 				77F322901C9BEDF000C9BF4A /* WTGradientView.swift in Sources */,
 				77E7AFD81C92AD1F002B0467 /* WTChatMessageFactory.swift in Sources */,

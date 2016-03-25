@@ -1,16 +1,16 @@
 //
-//  WTUserProfileViewController.swift
+//  WTFlexibleViewController.swift
 //  WatchTVTogether
 //
-//  Created by ChenDanny on 2016/3/15.
+//  Created by ChenDanny on 2016/3/24.
 //  Copyright © 2016年 ChenDanny. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-class WTUserProfileViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    var responses = Array<WTResponse>()
+class WTFlexibleViewController:UIViewController, UITableViewDataSource {
+    var responses = [WTResponse]()
     
     @IBOutlet weak var tableview: UITableView!
     
@@ -21,41 +21,29 @@ class WTUserProfileViewController: UIViewController, UITableViewDataSource, UITa
         responses.append(response1)
         responses.append(response2)
         
-        tableview.registerNib(UINib(nibName: "WTFlexibleCell", bundle: nil), forCellReuseIdentifier: "WTFlexibleCell")
         tableview.rowHeight = UITableViewAutomaticDimension
-        tableview.estimatedRowHeight = 600
+        tableview.estimatedRowHeight = 83
     }
-    
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let phoneNum = "tel://0933123456"
-        UIApplication.sharedApplication().openURL(NSURL(string: phoneNum)!)
-    }
-    
+
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return responses.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("WTFlexibleCell")
+        var cell = tableView.dequeueReusableCellWithIdentifier("WTFlexible1")
         
         if cell == nil{
-            cell = WTFlexibleCell()
+            cell = WTFlexibleCell1()
         }
         
         let response = responses[
             indexPath.row]
         
-        (cell as! WTFlexibleCell).setData(response)
-
+        (cell as! WTFlexibleCell1).setData(response)
+        
         return cell!
     }
     
     
-    override func viewWillAppear(animated: Bool) {
-        print("viewWillAppear")
-    }
     
-    override func viewWillDisappear(animated: Bool) {
-        print("viewWillDisappear")
-    }
 }

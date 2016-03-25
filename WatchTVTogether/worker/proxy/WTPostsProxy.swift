@@ -17,11 +17,18 @@ class WTPostsProxy{
         let queryUrl = "\(WTServerConfig.kServerUrl)\(WTServerConfig.kQueryPosts)"
         
         Alamofire.request(.GET, queryUrl).responseJSON { [weak self] response in
-            
-            guard response.response?.statusCode == 200 else{
-                
+
+            guard self != nil else {
+                completion(result: Array<WTPost>())
                 return
             }
+
+            guard response.response?.statusCode == 200 else{
+                let posts = self!.createFakeData()
+                completion(result: posts)
+                return
+            }
+            
             if let value = response.result.value {
                 let json = JSON(value)
                 let posts = self!.createPosts(json["posts"])
@@ -29,6 +36,7 @@ class WTPostsProxy{
             }
         }
     }
+    
     func createPosts(data:JSON) -> [WTPost]{
         var posts = [WTPost]()
         for (index,subJson):(String, JSON) in data {
@@ -60,8 +68,13 @@ class WTPostsProxy{
         return responses
     }
     
-//    func createFakeData() -> [WTPost]{
-//        let program1 = WTProgram(
-//    }
+    func createFakeData() -> [WTPost]{
+        let program1 = WTProgram(programId: "1", programName: "一把青", channelName: "公視")
+        let responses = [WTResponse(name: "danny", response: "HiHi")]
+        
+        let post = WTPost(program: program1, responseNums: 759, lastResponse: responses, lastUpdateTime: 1458537996.875392)
+        
+        return [post]
+    }
     
 }
